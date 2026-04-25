@@ -1,0 +1,7 @@
+pdfminer.six
+python-docx
+anthropic>=0.40.0
+agentic-doc
+python-dotenv
+rich
+requests
