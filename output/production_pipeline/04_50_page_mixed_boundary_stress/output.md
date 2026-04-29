@@ -62,8 +62,8 @@ Paragraph 5.2: The recovery owner checks service health, validates dependencies,
 
 Paragraph 5.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-05-3. This paragraph may continue across chunk boundaries.
 
-| rows |
-| --- |
+| ['Check', 'Expected Result', 'Evidence'] | ['C1', 'Result for page 5, check 1', 'EV-5-1'] | ['C2', 'Result for page 5, check 2', 'EV-5-2'] | ['C3', 'Result for page 5, check 3', 'EV-5-3'] | ['C4', 'Result for page 5, check 4', 'EV-5-4'] | ['C5', 'Result for page 5, check 5', 'EV-5-5'] | ['C6', 'Result for page 5, check 6', 'EV-5-6'] | ['C7', 'Result for page 5, check 7', 'EV-5-7'] |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Section 6.0 - Recovery Procedure Area 6
 
@@ -127,8 +127,8 @@ Paragraph 10.2: The recovery owner checks service health, validates dependencies
 
 Paragraph 10.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-10-3. This paragraph may continue across chunk boundaries.
 
-| rows |
-| --- |
+| ['Check', 'Expected Result', 'Evidence'] | ['C1', 'Result for page 10, check 1', 'EV-10-1'] | ['C2', 'Result for page 10, check 2', 'EV-10-2'] | ['C3', 'Result for page 10, check 3', 'EV-10-3'] | ['C4', 'Result for page 10, check 4', 'EV-10-4'] | ['C5', 'Result for page 10, check 5', 'EV-10-5'] | ['C6', 'Result for page 10, check 6', 'EV-10-6'] | ['C7', 'Result for page 10, check 7', 'EV-10-7'] |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Section 11.0 - Recovery Procedure Area 11
 
@@ -192,8 +192,8 @@ Paragraph 15.2: The recovery owner checks service health, validates dependencies
 
 Paragraph 15.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-15-3. This paragraph may continue across chunk boundaries.
 
-| rows |
-| --- |
+| ['Check', 'Expected Result', 'Evidence'] | ['C1', 'Result for page 15, check 1', 'EV-15-1'] | ['C2', 'Result for page 15, check 2', 'EV-15-2'] | ['C3', 'Result for page 15, check 3', 'EV-15-3'] | ['C4', 'Result for page 15, check 4', 'EV-15-4'] | ['C5', 'Result for page 15, check 5', 'EV-15-5'] | ['C6', 'Result for page 15, check 6', 'EV-15-6'] | ['C7', 'Result for page 15, check 7', 'EV-15-7'] |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Section 16.0 - Recovery Procedure Area 16
 
@@ -255,8 +255,8 @@ Paragraph 20.2: The recovery owner checks service health, validates dependencies
 
 Paragraph 20.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-20-3. This paragraph may continue across chunk boundaries.
 
-| rows |
-| --- |
+| ['Check', 'Expected Result', 'Evidence'] | ['C1', 'Result for page 20, check 1', 'EV-20-1'] | ['C2', 'Result for page 20, check 2', 'EV-20-2'] | ['C3', 'Result for page 20, check 3', 'EV-20-3'] | ['C4', 'Result for page 20, check 4', 'EV-20-4'] | ['C5', 'Result for page 20, check 5', 'EV-20-5'] | ['C6', 'Result for page 20, check 6', 'EV-20-6'] | ['C7', 'Result for page 20, check 7', 'EV-20-7'] |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Section 21.0 - Recovery Procedure Area 21
 
@@ -312,59 +312,68 @@ Paragraph 24.3: The recovery owner checks service health, validates dependencies
 
 Boundary marker PAGE-25-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 25.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-25-0. This paragraph may continue across chunk boundaries.
+Paragraph 25.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-25-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 25.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-25-1. This paragraph may continue across chunk boundaries.
+Paragraph 25.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-25-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 25.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-25-2. This paragraph may continue across chunk boundaries.
+Paragraph 25.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-25-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 25.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-25-3. This paragraph may continue across chunk boundaries.
+Paragraph 25.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-25-3. This paragraph may continue across chunk boundaries.
 
-| Check | Expected Result | Evidence |
-| --- | --- | --- |
-| C1 | Result for page 25, check 1 | EV-25-1 |
-| C2 | Result for page 25, check 2 | EV-25-2 |
-| C3 | Result for page 25, check 3 | EV-25-3 |
-| C4 | Result for page 25, check 4 | EV-25-4 |
-| C5 | Result for page 25, check 5 | EV-25-5 |
-| C6 | Result for page 25, check 6 | EV-25-6 |
-| C7 | Result for page 25, check 7 | EV-25-7 |
+| ['Check', 'Expected Result', 'Evidence'] | ['C1', 'Result for page 25, check 1', 'EV-25-1'] | ['C2', 'Result for page 25, check 2', 'EV-25-2'] | ['C3', 'Result for page 25, check 3', 'EV-25-3'] | ['C4', 'Result for page 25, check 4', 'EV-25-4'] | ['C5', 'Result for page 25, check 5', 'EV-25-5'] | ['C6', 'Result for page 25, check 6', 'EV-25-6'] | ['C7', 'Result for page 25, check 7', 'EV-25-7'] |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 # Section 26.0 - Recovery Procedure Area 26
 
 Boundary marker PAGE-26-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 26.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-26-0. This paragraph may continue across chunk boundaries.
+Paragraph 26.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-26-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 26.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-26-1. This paragraph may continue across chunk boundaries.
+Paragraph 26.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-26-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 26.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-26-2. This paragraph may continue across chunk boundaries.
+Paragraph 26.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-26-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 26.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-26-3. This paragraph may continue across chunk boundaries.
+Paragraph 26.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-26-3. This paragraph may continue across chunk boundaries.
 
 # Section 27.0 - Recovery Procedure Area 27
 
 Boundary marker PAGE-27-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 27.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-27-0. This paragraph may continue across chunk boundaries.
+Paragraph 27.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-27-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 27.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-27-1. This paragraph may continue across chunk boundaries.
+Paragraph 27.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-27-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 27.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-27-2. This paragraph may continue across chunk boundaries.
+Paragraph 27.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-27-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 27.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-27-3. This paragraph may continue across chunk boundaries.
+Paragraph 27.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-27-3. This paragraph may continue across chunk boundaries.
 
 # Section 28.0 - Recovery Procedure Area 28
 
 Boundary marker PAGE-28-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 28.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-28-0. This paragraph may continue across chunk boundaries.
+Paragraph 28.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-28-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 28.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-28-1. This paragraph may continue across chunk boundaries.
+Paragraph 28.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-28-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 28.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-28-2. This paragraph may continue across chunk boundaries.
+Paragraph 28.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-28-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 28.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-28-3. This paragraph may continue across chunk boundaries.
+Paragraph 28.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-28-3. This paragraph may continue across chunk boundaries.
 
 > **[Figure]** Figure 28. Architecture excerpt. Must remain associated with Section 28.0.
 
@@ -372,105 +381,119 @@ Paragraph 28.3: The recovery owner checks service health, validates dependencies
 
 Boundary marker PAGE-29-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 29.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-29-0. This paragraph may continue across chunk boundaries.
+Paragraph 29.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-29-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 29.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-29-1. This paragraph may continue across chunk boundaries.
+Paragraph 29.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-29-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 29.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-29-2. This paragraph may continue across chunk boundaries.
+Paragraph 29.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-29-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 29.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-29-3. This paragraph may continue across chunk boundaries.
+Paragraph 29.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-29-3. This paragraph may continue across chunk boundaries.
 
 # Section 30.0 - Recovery Procedure Area 30
 
 Boundary marker PAGE-30-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 30.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-30-0. This paragraph may continue across chunk boundaries.
+Paragraph 30.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-30-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 30.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-30-1. This paragraph may continue across chunk boundaries.
+Paragraph 30.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-30-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 30.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-30-2. This paragraph may continue across chunk boundaries.
+Paragraph 30.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-30-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 30.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-30-3. This paragraph may continue across chunk boundaries.
+Paragraph 30.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-30-3. This paragraph may continue across chunk boundaries.
 
-| Check | Expected Result | Evidence |
-| --- | --- | --- |
-| C1 | Result for page 30, check 1 | EV-30-1 |
-| C2 | Result for page 30, check 2 | EV-30-2 |
-| C3 | Result for page 30, check 3 | EV-30-3 |
-| C4 | Result for page 30, check 4 | EV-30-4 |
-| C5 | Result for page 30, check 5 | EV-30-5 |
-| C6 | Result for page 30, check 6 | EV-30-6 |
-| C7 | Result for page 30, check 7 | EV-30-7 |
+| ['Check', 'Expected Result', 'Evidence'] | ['C1', 'Result for page 30, check 1', 'EV-30-1'] | ['C2', 'Result for page 30, check 2', 'EV-30-2'] | ['C3', 'Result for page 30, check 3', 'EV-30-3'] | ['C4', 'Result for page 30, check 4', 'EV-30-4'] | ['C5', 'Result for page 30, check 5', 'EV-30-5'] | ['C6', 'Result for page 30, check 6', 'EV-30-6'] | ['C7', 'Result for page 30, check 7', 'EV-30-7'] |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 # Section 31.0 - Recovery Procedure Area 31
 
 Boundary marker PAGE-31-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 31.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-31-0. This paragraph may continue across chunk boundaries.
+Paragraph 31.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-31-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 31.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-31-1. This paragraph may continue across chunk boundaries.
+Paragraph 31.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-31-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 31.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-31-2. This paragraph may continue across chunk boundaries.
+Paragraph 31.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-31-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 31.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-31-3. This paragraph may continue across chunk boundaries.
+Paragraph 31.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-31-3. This paragraph may continue across chunk boundaries.
 
 # Section 32.0 - Recovery Procedure Area 32
 
 Boundary marker PAGE-32-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 32.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-32-0. This paragraph may continue across chunk boundaries.
+Paragraph 32.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-32-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 32.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-32-1. This paragraph may continue across chunk boundaries.
+Paragraph 32.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-32-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 32.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-32-2. This paragraph may continue across chunk boundaries.
+Paragraph 32.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-32-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 32.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-32-3. This paragraph may continue across chunk boundaries.
+Paragraph 32.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-32-3. This paragraph may continue across chunk boundaries.
 
 # Section 33.0 - Recovery Procedure Area 33
 
 Boundary marker PAGE-33-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 33.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-33-0. This paragraph may continue across chunk boundaries.
+Paragraph 33.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-33-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 33.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-33-1. This paragraph may continue across chunk boundaries.
+Paragraph 33.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-33-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 33.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-33-2. This paragraph may continue across chunk boundaries.
+Paragraph 33.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-33-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 33.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-33-3. This paragraph may continue across chunk boundaries.
+Paragraph 33.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-33-3. This paragraph may continue across chunk boundaries.
 
 # Section 34.0 - Recovery Procedure Area 34
 
 Boundary marker PAGE-34-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 34.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-34-0. This paragraph may continue across chunk boundaries.
+Paragraph 34.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-34-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 34.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-34-1. This paragraph may continue across chunk boundaries.
+Paragraph 34.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-34-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 34.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-34-2. This paragraph may continue across chunk boundaries.
+Paragraph 34.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-34-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 34.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-34-3. This paragraph may continue across chunk boundaries.
+Paragraph 34.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-34-3. This paragraph may continue across chunk boundaries.
 
 # Section 35.0 - Recovery Procedure Area 35
 
 Boundary marker PAGE-35-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 35.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-35-0. This paragraph may continue across chunk boundaries.
+Paragraph 35.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-35-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 35.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-35-1. This paragraph may continue across chunk boundaries.
+Paragraph 35.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-35-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 35.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-35-2. This paragraph may continue across chunk boundaries.
+Paragraph 35.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-35-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 35.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-35-3. This paragraph may continue across chunk boundaries.
+Paragraph 35.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-35-3. This paragraph may continue across chunk boundaries.
 
-| Check | Expected Result | Evidence |
-| --- | --- | --- |
-| C1 | Result for page 35, check 1 | EV-35-1 |
-| C2 | Result for page 35, check 2 | EV-35-2 |
-| C3 | Result for page 35, check 3 | EV-35-3 |
-| C4 | Result for page 35, check 4 | EV-35-4 |
-| C5 | Result for page 35, check 5 | EV-35-5 |
-| C6 | Result for page 35, check 6 | EV-35-6 |
-| C7 | Result for page 35, check 7 | EV-35-7 |
+| ['Check', 'Expected Result', 'Evidence'] | ['C1', 'Result for page 35, check 1', 'EV-35-1'] | ['C2', 'Result for page 35, check 2', 'EV-35-2'] | ['C3', 'Result for page 35, check 3', 'EV-35-3'] | ['C4', 'Result for page 35, check 4', 'EV-35-4'] | ['C5', 'Result for page 35, check 5', 'EV-35-5'] | ['C6', 'Result for page 35, check 6', 'EV-35-6'] | ['C7', 'Result for page 35, check 7', 'EV-35-7'] |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 > **[Figure]** Figure 35. Architecture excerpt. Must remain associated with Section 35.0.
 
@@ -478,95 +501,116 @@ Paragraph 35.3: The recovery owner checks service health, validates dependencies
 
 Boundary marker PAGE-36-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 36.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-36-0. This paragraph may continue across chunk boundaries.
+Paragraph 36.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-36-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 36.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-36-1. This paragraph may continue across chunk boundaries.
+Paragraph 36.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-36-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 36.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-36-2. This paragraph may continue across chunk boundaries.
+Paragraph 36.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-36-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 36.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-36-3. This paragraph may continue across chunk boundaries.
+Paragraph 36.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-36-3. This paragraph may continue across chunk boundaries.
 
 # Section 37.0 - Recovery Procedure Area 37
 
 Boundary marker PAGE-37-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 37.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-37-0. This paragraph may continue across chunk boundaries.
+Paragraph 37.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-37-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 37.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-37-1. This paragraph may continue across chunk boundaries.
+Paragraph 37.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-37-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 37.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-37-2. This paragraph may continue across chunk boundaries.
+Paragraph 37.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-37-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 37.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-37-3. This paragraph may continue across chunk boundaries.
+Paragraph 37.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-37-3. This paragraph may continue across chunk boundaries.
 
 # Section 38.0 - Recovery Procedure Area 38
 
 Boundary marker PAGE-38-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 38.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-38-0. This paragraph may continue across chunk boundaries.
+Paragraph 38.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-38-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 38.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-38-1. This paragraph may continue across chunk boundaries.
+Paragraph 38.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-38-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 38.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-38-2. This paragraph may continue across chunk boundaries.
+Paragraph 38.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-38-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 38.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-38-3. This paragraph may continue across chunk boundaries.
+Paragraph 38.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-38-3. This paragraph may continue across chunk boundaries.
 
 # Section 39.0 - Recovery Procedure Area 39
 
 Boundary marker PAGE-39-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 39.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-39-0. This paragraph may continue across chunk boundaries.
+Paragraph 39.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-39-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 39.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-39-1. This paragraph may continue across chunk boundaries.
+Paragraph 39.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-39-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 39.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-39-2. This paragraph may continue across chunk boundaries.
+Paragraph 39.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-39-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 39.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-39-3. This paragraph may continue across chunk boundaries.
+Paragraph 39.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-39-3. This paragraph may continue across chunk boundaries.
 
 # Section 40.0 - Recovery Procedure Area 40
 
 Boundary marker PAGE-40-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 40.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-40-0. This paragraph may continue across chunk boundaries.
+Paragraph 40.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-40-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 40.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-40-1. This paragraph may continue across chunk boundaries.
+Paragraph 40.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-40-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 40.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-40-2. This paragraph may continue across chunk boundaries.
+Paragraph 40.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-40-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 40.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-40-3. This paragraph may continue across chunk boundaries.
+Paragraph 40.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-40-3. This paragraph may continue across chunk boundaries.
 
-| Check | Expected Result | Evidence |
-| --- | --- | --- |
-| C1 | Result for page 40, check 1 | EV-40-1 |
-| C2 | Result for page 40, check 2 | EV-40-2 |
-| C3 | Result for page 40, check 3 | EV-40-3 |
-| C4 | Result for page 40, check 4 | EV-40-4 |
-| C5 | Result for page 40, check 5 | EV-40-5 |
-| C6 | Result for page 40, check 6 | EV-40-6 |
-| C7 | Result for page 40, check 7 | EV-40-7 |
+| ['Check', 'Expected Result', 'Evidence'] | ['C1', 'Result for page 40, check 1', 'EV-40-1'] | ['C2', 'Result for page 40, check 2', 'EV-40-2'] | ['C3', 'Result for page 40, check 3', 'EV-40-3'] | ['C4', 'Result for page 40, check 4', 'EV-40-4'] | ['C5', 'Result for page 40, check 5', 'EV-40-5'] | ['C6', 'Result for page 40, check 6', 'EV-40-6'] | ['C7', 'Result for page 40, check 7', 'EV-40-7'] |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 # Section 41.0 - Recovery Procedure Area 41
 
 Boundary marker PAGE-41-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 41.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-41-0. This paragraph may continue across chunk boundaries.
+Paragraph 41.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-41-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 41.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-41-1. This paragraph may continue across chunk boundaries.
+Paragraph 41.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-41-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 41.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-41-2. This paragraph may continue across chunk boundaries.
+Paragraph 41.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-41-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 41.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-41-3. This paragraph may continue across chunk boundaries.
+Paragraph 41.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-41-3. This paragraph may continue across chunk boundaries.
 
 # Section 42.0 - Recovery Procedure Area 42
 
 Boundary marker PAGE-42-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 42.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-42-0. This paragraph may continue across chunk boundaries.
+Paragraph 42.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-42-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 42.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-42-1. This paragraph may continue across chunk boundaries.
+Paragraph 42.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-42-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 42.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-42-2. This paragraph may continue across chunk boundaries.
+Paragraph 42.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-42-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 42.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-42-3. This paragraph may continue across chunk boundaries.
+Paragraph 42.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-42-3. This paragraph may continue across chunk boundaries.
 
 > **[Figure]** Figure 42. Architecture excerpt. Must remain associated with Section 42.0.
 
@@ -574,95 +618,116 @@ Paragraph 42.3: The recovery owner checks service health, validates dependencies
 
 Boundary marker PAGE-43-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 43.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-43-0. This paragraph may continue across chunk boundaries.
+Paragraph 43.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-43-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 43.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-43-1. This paragraph may continue across chunk boundaries.
+Paragraph 43.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-43-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 43.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-43-2. This paragraph may continue across chunk boundaries.
+Paragraph 43.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-43-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 43.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-43-3. This paragraph may continue across chunk boundaries.
+Paragraph 43.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-43-3. This paragraph may continue across chunk boundaries.
 
 # Section 44.0 - Recovery Procedure Area 44
 
 Boundary marker PAGE-44-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 44.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-44-0. This paragraph may continue across chunk boundaries.
+Paragraph 44.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-44-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 44.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-44-1. This paragraph may continue across chunk boundaries.
+Paragraph 44.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-44-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 44.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-44-2. This paragraph may continue across chunk boundaries.
+Paragraph 44.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-44-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 44.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-44-3. This paragraph may continue across chunk boundaries.
+Paragraph 44.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-44-3. This paragraph may continue across chunk boundaries.
 
 # Section 45.0 - Recovery Procedure Area 45
 
 Boundary marker PAGE-45-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 45.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-45-0. This paragraph may continue across chunk boundaries.
+Paragraph 45.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-45-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 45.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-45-1. This paragraph may continue across chunk boundaries.
+Paragraph 45.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-45-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 45.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-45-2. This paragraph may continue across chunk boundaries.
+Paragraph 45.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-45-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 45.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-45-3. This paragraph may continue across chunk boundaries.
+Paragraph 45.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-45-3. This paragraph may continue across chunk boundaries.
 
-| Check | Expected Result | Evidence |
-| --- | --- | --- |
-| C1 | Result for page 45, check 1 | EV-45-1 |
-| C2 | Result for page 45, check 2 | EV-45-2 |
-| C3 | Result for page 45, check 3 | EV-45-3 |
-| C4 | Result for page 45, check 4 | EV-45-4 |
-| C5 | Result for page 45, check 5 | EV-45-5 |
-| C6 | Result for page 45, check 6 | EV-45-6 |
-| C7 | Result for page 45, check 7 | EV-45-7 |
+| ['Check', 'Expected Result', 'Evidence'] | ['C1', 'Result for page 45, check 1', 'EV-45-1'] | ['C2', 'Result for page 45, check 2', 'EV-45-2'] | ['C3', 'Result for page 45, check 3', 'EV-45-3'] | ['C4', 'Result for page 45, check 4', 'EV-45-4'] | ['C5', 'Result for page 45, check 5', 'EV-45-5'] | ['C6', 'Result for page 45, check 6', 'EV-45-6'] | ['C7', 'Result for page 45, check 7', 'EV-45-7'] |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 # Section 46.0 - Recovery Procedure Area 46
 
 Boundary marker PAGE-46-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 46.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-46-0. This paragraph may continue across chunk boundaries.
+Paragraph 46.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-46-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 46.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-46-1. This paragraph may continue across chunk boundaries.
+Paragraph 46.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-46-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 46.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-46-2. This paragraph may continue across chunk boundaries.
+Paragraph 46.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-46-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 46.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-46-3. This paragraph may continue across chunk boundaries.
+Paragraph 46.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-46-3. This paragraph may continue across chunk boundaries.
 
 # Section 47.0 - Recovery Procedure Area 47
 
 Boundary marker PAGE-47-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 47.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-47-0. This paragraph may continue across chunk boundaries.
+Paragraph 47.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-47-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 47.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-47-1. This paragraph may continue across chunk boundaries.
+Paragraph 47.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-47-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 47.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-47-2. This paragraph may continue across chunk boundaries.
+Paragraph 47.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-47-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 47.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-47-3. This paragraph may continue across chunk boundaries.
+Paragraph 47.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-47-3. This paragraph may continue across chunk boundaries.
 
 # Section 48.0 - Recovery Procedure Area 48
 
 Boundary marker PAGE-48-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 48.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-48-0. This paragraph may continue across chunk boundaries.
+Paragraph 48.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-48-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 48.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-48-1. This paragraph may continue across chunk boundaries.
+Paragraph 48.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-48-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 48.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-48-2. This paragraph may continue across chunk boundaries.
+Paragraph 48.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-48-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 48.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-48-3. This paragraph may continue across chunk boundaries.
+Paragraph 48.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-48-3. This paragraph may continue across chunk boundaries.
 
 # Section 49.0 - Recovery Procedure Area 49
 
 Boundary marker PAGE-49-START. Similar headings and recurring labels require structure-aware parsing.
 
-Paragraph 49.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-49-0. This paragraph may continue across chunk boundaries.
+Paragraph 49.0: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-49-0. This paragraph may continue across chunk boundaries.
 
-Paragraph 49.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-49-1. This paragraph may continue across chunk boundaries.
+Paragraph 49.1: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-49-1. This paragraph may continue across chunk boundaries.
 
-Paragraph 49.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-49-2. This paragraph may continue across chunk boundaries.
+Paragraph 49.2: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-49-2. This paragraph may continue across chunk boundaries.
 
-Paragraph 49.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-49-3. This paragraph may continue across chunk boundaries.
+Paragraph 49.3: The recovery owner checks service health, validates dependencies, confirms escalation path,
+and records evidence ID EVID-49-3. This paragraph may continue across chunk boundaries.
 
 > **[Figure]** Figure 49. Architecture excerpt. Must remain associated with Section 49.0.
 

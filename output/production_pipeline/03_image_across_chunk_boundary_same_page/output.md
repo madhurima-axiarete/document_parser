@@ -125,50 +125,34 @@ Boundary marker CHUNK-PRE-41. Figure reference: see Figure 2 for the dependency 
 
 > **[Figure]** Figure 2. Dependency graph after a long repetitive text run. Caption must stay attached even if chunks split around the image.
 
-Chunk filler paragraph 42: post-figure continuation with boundary marker CHUNK-POST-42. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 42: post-figure continuation with boundary marker CHUNK-POST-42. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 43: post-figure continuation with boundary marker CHUNK-POST-43. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 43: post-figure continuation with boundary marker CHUNK-POST-43. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 44: post-figure continuation with boundary marker CHUNK-POST-44. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 44: post-figure continuation with boundary marker CHUNK-POST-44. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 45: post-figure continuation with boundary marker CHUNK-POST-45. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 45: post-figure continuation with boundary marker CHUNK-POST-45. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 46: post-figure continuation with boundary marker CHUNK-POST-46. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 46: post-figure continuation with boundary marker CHUNK-POST-46. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 47: post-figure continuation with boundary marker CHUNK-POST-47. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 47: post-figure continuation with boundary marker CHUNK-POST-47. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 48: post-figure continuation with boundary marker CHUNK-POST-48. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 48: post-figure continuation with boundary marker CHUNK-POST-48. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 49: post-figure continuation with boundary marker CHUNK-POST-49. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 49: post-figure continuation with boundary marker CHUNK-POST-49. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 50: post-figure continuation with boundary marker CHUNK-POST-50. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 50: post-figure continuation with boundary marker CHUNK-POST-50. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 51: post-figure continuation with boundary marker CHUNK-POST-51. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 51: post-figure continuation with boundary marker CHUNK-POST-51. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 52: post-figure continuation with boundary marker CHUNK-POST-52. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 52: post-figure continuation with boundary marker CHUNK-POST-52. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 53: post-figure continuation with boundary marker CHUNK-POST-53. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 53: post-figure continuation with boundary marker CHUNK-POST-53. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 54: post-figure continuation with boundary marker CHUNK-POST-54. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 54: post-figure continuation with boundary marker CHUNK-POST-54. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 55: post-figure continuation with boundary marker CHUNK-POST-55. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 55: post-figure continuation with boundary marker CHUNK-POST-55. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 56: post-figure continuation with boundary marker CHUNK-POST-56. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 56: post-figure continuation with boundary marker CHUNK-POST-56. This checks whether final Markdown preserves image placement.
 
-Chunk filler paragraph 57: post-figure continuation with boundary marker CHUNK-POST-57. This checks
-whether final Markdown preserves image placement.
+Chunk filler paragraph 57: post-figure continuation with boundary marker CHUNK-POST-57. This checks whether final Markdown preserves image placement.

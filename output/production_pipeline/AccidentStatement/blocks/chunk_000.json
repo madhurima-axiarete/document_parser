@@ -56,23 +56,23 @@
           "12h41"
         ],
         [
-          "2. Locality - Place",
-          "Linmatstrasse"
+          "2. Locality: Place",
+          "Limmatstrasse"
         ],
         [
-          "2. Locality - Country",
+          "2. Locality: Country",
           "CH"
         ],
         [
           "3. Injury(es) even if slight",
-          "no: checked, yes: unchecked"
+          "no \u2611  yes \u25a1"
         ]
       ],
       "page_number": 1,
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
@@ -90,22 +90,22 @@
         ],
         [
           "4. Material damage other than to vehicles A and B",
-          "no: checked, yes: unchecked"
+          "no \u2611  yes \u25a1"
         ],
         [
-          "4. Objects other than vehicles",
-          "no: checked, yes: unchecked"
+          "4. Material damage objects other than vehicles",
+          "no \u2611  yes \u25a1"
         ],
         [
           "5. Witnesses: names, addresses, tel.",
-          "Luke Smith, sample@email.com, 73 24 56 8790"
+          "Luke Smith  sample@email.com  73 24 56 8790"
         ]
       ],
       "page_number": 1,
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
@@ -127,7 +127,9 @@
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
-      "metadata": {}
+      "metadata": {
+        "section": "Vehicle A"
+      }
     },
     {
       "block_id": "AccidentStatement_p1_b0005",
@@ -138,7 +140,7 @@
           "Value"
         ],
         [
-          "6. Insured/policyholder - NAME",
+          "6. Insured/policyholder NAME",
           "Doe"
         ],
         [
@@ -166,13 +168,16 @@
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
-      "metadata": {}
+      "metadata": {
+        "section": "Vehicle A",
+        "field": "6. Insured/policyholder"
+      }
     },
     {
       "block_id": "AccidentStatement_p1_b0006",
@@ -203,14 +208,15 @@
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "section": "7. Vehicle - Vehicle A"
+        "section": "Vehicle A",
+        "field": "7. Vehicle"
       }
     },
     {
@@ -222,7 +228,7 @@
           "Value"
         ],
         [
-          "8. Insurance company - NAME",
+          "8. Insurance company NAME",
           "CDE Assurance"
         ],
         [
@@ -235,14 +241,10 @@
         ],
         [
           "Insurance Certificate or Green Card valid from",
-          "02.2021"
+          "02.2021 to: 02.2029"
         ],
         [
-          "Insurance Certificate or Green Card valid to",
-          "02.2029"
-        ],
-        [
-          "Agency (or bureau, or broker) - NAME",
+          "Agency (or bureau, or broker) NAME",
           "CDE Assurance"
         ],
         [
@@ -259,21 +261,22 @@
         ],
         [
           "Does the policy cover material damage to the vehicle?",
-          "no: checked, yes: unchecked"
+          "no \u2611  yes \u25a1"
         ]
       ],
       "page_number": 1,
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "section": "8. Insurance company - Vehicle A"
+        "section": "Vehicle A",
+        "field": "8. Insurance company"
       }
     },
     {
@@ -285,7 +288,7 @@
           "Value"
         ],
         [
-          "9. Driver - NAME",
+          "9. Driver NAME",
           "Doe"
         ],
         [
@@ -325,14 +328,15 @@
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "section": "9. Driver - Vehicle A"
+        "section": "Vehicle A",
+        "field": "9. Driver"
       }
     },
     {
@@ -349,135 +353,121 @@
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
-      "metadata": {}
+      "metadata": {
+        "section": "Circumstances"
+      }
     },
     {
       "block_id": "AccidentStatement_p1_b0010",
-      "block_type": "paragraph",
-      "content": "Put a cross in each of the relevant boxes to help explain the drawing\n* delete where appropriate",
-      "page_number": 1,
-      "source_file": "AccidentStatement.pdf",
-      "chunk_id": "AccidentStatement_chunk000",
-      "sequence": 0,
-      "confidence": 1.0,
-      "extraction_method": "vision",
-      "heading_level": null,
-      "is_truncated": false,
-      "is_continuation": false,
-      "bbox": null,
-      "metadata": {}
-    },
-    {
-      "block_id": "AccidentStatement_p1_b0011",
       "block_type": "table",
       "content": [
         [
-          "No.",
+          "#",
           "Description",
-          "A checked",
-          "B checked"
+          "Vehicle A",
+          "Vehicle B"
         ],
         [
           "1",
           "* parked/stopped",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "2",
           "* leaving a parking place/ opening the door",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "3",
           "entering a parking place",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "4",
           "emerging from a car park, from private ground, from a track",
-          "yes",
-          "no"
+          "\u2611",
+          "\u25a1"
         ],
         [
           "5",
           "entering a car park, private ground, a track",
-          "no",
-          "yes"
+          "\u25a1",
+          "\u2611"
         ],
         [
           "6",
           "entering a roundabout",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "7",
           "circulating a roundabout",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "8",
           "striking the rear of the other vehicle while going in the same direction and in the same lane",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "9",
           "going in the same direction but in a different lane",
-          "no",
-          "yes"
+          "\u25a1",
+          "\u2611"
         ],
         [
           "10",
           "changing lanes",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "11",
           "overtaking",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "12",
           "turning to the right",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "13",
           "turning to the left",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "14",
           "reversing",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "15",
           "encroaching on a lane reserved for circulation in the opposite direction",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "16",
           "coming from the right (at road junctions)",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "17",
           "had not observed a right of way sign or a red light",
-          "no",
-          "no"
+          "\u25a1",
+          "\u25a1"
         ],
         [
           "State number of boxes marked with a cross",
@@ -490,7 +480,25 @@
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
+      "extraction_method": "vision",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {
+        "section": "12. Circumstances"
+      }
+    },
+    {
+      "block_id": "AccidentStatement_p1_b0011",
+      "block_type": "paragraph",
+      "content": "Put a cross in each of the relevant boxes to help explain the drawing\n* delete where appropriate",
+      "page_number": 1,
+      "source_file": "AccidentStatement.pdf",
+      "chunk_id": "AccidentStatement_chunk000",
+      "sequence": 0,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
@@ -508,7 +516,7 @@
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
@@ -530,7 +538,9 @@
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
-      "metadata": {}
+      "metadata": {
+        "section": "Vehicle B"
+      }
     },
     {
       "block_id": "AccidentStatement_p1_b0014",
@@ -541,7 +551,7 @@
           "Value"
         ],
         [
-          "6. Insured/policyholder - NAME",
+          "6. Insured/policyholder NAME",
           "Smith"
         ],
         [
@@ -569,14 +579,15 @@
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "section": "6. Insured/policyholder - Vehicle B"
+        "section": "Vehicle B",
+        "field": "6. Insured/policyholder"
       }
     },
     {
@@ -608,14 +619,15 @@
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "section": "7. Vehicle - Vehicle B"
+        "section": "Vehicle B",
+        "field": "7. Vehicle"
       }
     },
     {
@@ -627,7 +639,7 @@
           "Value"
         ],
         [
-          "8. Insurance company - NAME",
+          "8. Insurance company NAME",
           "ZYX Assurance"
         ],
         [
@@ -640,14 +652,10 @@
         ],
         [
           "Insurance Certificate or Green Card valid from",
-          "03.2021"
+          "03.2021 to: 03.2029"
         ],
         [
-          "Insurance Certificate or Green Card valid to",
-          "03.2029"
-        ],
-        [
-          "Agency (or bureau, or broker) - NAME",
+          "Agency (or bureau, or broker) NAME",
           "ZYX Assurance"
         ],
         [
@@ -664,21 +672,22 @@
         ],
         [
           "Does the policy cover material damage to the vehicle?",
-          "no: checked, yes: unchecked"
+          "no \u2611  yes \u25a1"
         ]
       ],
       "page_number": 1,
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "section": "8. Insurance company - Vehicle B"
+        "section": "Vehicle B",
+        "field": "8. Insurance company"
       }
     },
     {
@@ -690,7 +699,7 @@
           "Value"
         ],
         [
-          "9. Driver - NAME",
+          "9. Driver NAME",
           "Smith"
         ],
         [
@@ -730,20 +739,21 @@
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "section": "9. Driver - Vehicle B"
+        "section": "Vehicle B",
+        "field": "9. Driver"
       }
     },
     {
       "block_id": "AccidentStatement_p1_b0018",
       "block_type": "figure",
-      "content": "Section 10 and 13: Sketch of accident when impact occurred. Shows two vehicle outlines labeled A and B. Vehicle B is depicted as a rectangle in the upper-center area. Vehicle A is depicted as an arrow/shape in the lower-center area pointing upward-left, suggesting movement. Vehicle A has an arrow on the left side of its diagram indicating the point of initial impact. Vehicle B has an arrow on the right side of its diagram indicating the point of initial impact. The sketch suggests Vehicle A was emerging from a private area/car park while Vehicle B was entering, and they collided.",
+      "content": "Section 10 for Vehicle A: Diagram of a car (top-down view) with an arrow indicating the point of initial impact to vehicle A. The arrow points to the rear-right area of the vehicle.",
       "page_number": 1,
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
@@ -755,7 +765,8 @@
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "section": "10 & 13. Point of impact and sketch"
+        "section": "Vehicle A",
+        "field": "10. Indicate the point of initial impact to vehicle A"
       }
     },
     {
@@ -773,11 +784,82 @@
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "vehicle": "A"
+        "section": "Vehicle A"
       }
     },
     {
       "block_id": "AccidentStatement_p1_b0020",
+      "block_type": "paragraph",
+      "content": "11. Visible damage to vehicle A:\n.rear right bumper......",
+      "page_number": 1,
+      "source_file": "AccidentStatement.pdf",
+      "chunk_id": "AccidentStatement_chunk000",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "vision",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {
+        "section": "Vehicle A"
+      }
+    },
+    {
+      "block_id": "AccidentStatement_p1_b0021",
+      "block_type": "figure",
+      "content": "Section 13: Sketch of accident when impact occurred. The sketch shows two vehicles labeled A and B on a road/parking area. Vehicle B (rectangle) is shown moving from left, and Vehicle A (arrow-shaped outline) is shown emerging from a side track or private ground. The vehicles are depicted at the point of impact, with A coming from below-right and B traveling horizontally. Arrows indicate direction of travel for each vehicle.",
+      "page_number": 1,
+      "source_file": "AccidentStatement.pdf",
+      "chunk_id": "AccidentStatement_chunk000",
+      "sequence": 0,
+      "confidence": 0.9,
+      "extraction_method": "vision",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {
+        "section": "13. Sketch of accident when impact occurred"
+      }
+    },
+    {
+      "block_id": "AccidentStatement_p1_b0022",
+      "block_type": "paragraph",
+      "content": "13. Sketch of accident when impact occurred\nIndicate: 1. the layout of the road - 2. by arrows the direction of the vehicles A, B - 3. their positions at the time of impact - 4. the road signs - 5. names of the streets or roads",
+      "page_number": 1,
+      "source_file": "AccidentStatement.pdf",
+      "chunk_id": "AccidentStatement_chunk000",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "vision",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "AccidentStatement_p1_b0023",
+      "block_type": "figure",
+      "content": "Section 10 for Vehicle B: Diagram of a car (top-down view) with an arrow indicating the point of initial impact to vehicle B. The arrow points to the front-right area of the vehicle.",
+      "page_number": 1,
+      "source_file": "AccidentStatement.pdf",
+      "chunk_id": "AccidentStatement_chunk000",
+      "sequence": 0,
+      "confidence": 0.9,
+      "extraction_method": "vision",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {
+        "section": "Vehicle B",
+        "field": "10. Indicate the point of initial impact to vehicle B"
+      }
+    },
+    {
+      "block_id": "AccidentStatement_p1_b0024",
       "block_type": "paragraph",
       "content": "10. Indicate the point of initial impact to vehicle B by an arrow \u2192",
       "page_number": 1,
@@ -791,99 +873,67 @@
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "vehicle": "B"
-      }
-    },
-    {
-      "block_id": "AccidentStatement_p1_b0021",
-      "block_type": "paragraph",
-      "content": "11. Visible damage to vehicle A: rear right bumper",
-      "page_number": 1,
-      "source_file": "AccidentStatement.pdf",
-      "chunk_id": "AccidentStatement_chunk000",
-      "sequence": 0,
-      "confidence": 0.95,
-      "extraction_method": "vision",
-      "heading_level": null,
-      "is_truncated": false,
-      "is_continuation": false,
-      "bbox": null,
-      "metadata": {
-        "vehicle": "A"
-      }
-    },
-    {
-      "block_id": "AccidentStatement_p1_b0022",
-      "block_type": "paragraph",
-      "content": "11. Visible damage to vehicle B: front right bumper",
-      "page_number": 1,
-      "source_file": "AccidentStatement.pdf",
-      "chunk_id": "AccidentStatement_chunk000",
-      "sequence": 0,
-      "confidence": 0.95,
-      "extraction_method": "vision",
-      "heading_level": null,
-      "is_truncated": false,
-      "is_continuation": false,
-      "bbox": null,
-      "metadata": {
-        "vehicle": "B"
-      }
-    },
-    {
-      "block_id": "AccidentStatement_p1_b0023",
-      "block_type": "paragraph",
-      "content": "13. Sketch of accident when impact occurred\nIndicate: 1. the layout of the road - 2. by arrows the direction of the vehicles A, B - 3. their positions at the time of impact - 4. the road signs - 5. names of the streets or roads",
-      "page_number": 1,
-      "source_file": "AccidentStatement.pdf",
-      "chunk_id": "AccidentStatement_chunk000",
-      "sequence": 0,
-      "confidence": 0.95,
-      "extraction_method": "vision",
-      "heading_level": null,
-      "is_truncated": false,
-      "is_continuation": false,
-      "bbox": null,
-      "metadata": {}
-    },
-    {
-      "block_id": "AccidentStatement_p1_b0024",
-      "block_type": "paragraph",
-      "content": "14. My remarks (Vehicle A): was on his phone!",
-      "page_number": 1,
-      "source_file": "AccidentStatement.pdf",
-      "chunk_id": "AccidentStatement_chunk000",
-      "sequence": 0,
-      "confidence": 0.95,
-      "extraction_method": "vision",
-      "heading_level": null,
-      "is_truncated": false,
-      "is_continuation": false,
-      "bbox": null,
-      "metadata": {
-        "vehicle": "A"
+        "section": "Vehicle B"
       }
     },
     {
       "block_id": "AccidentStatement_p1_b0025",
       "block_type": "paragraph",
-      "content": "14. My remarks (Vehicle B): Didn't have a turn signal",
+      "content": "11. Visible damage to vehicle B:\nfront right bumper...",
       "page_number": 1,
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 1.0,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "vehicle": "B"
+        "section": "Vehicle B"
       }
     },
     {
       "block_id": "AccidentStatement_p1_b0026",
+      "block_type": "paragraph",
+      "content": "14. My remarks:\nwas on his phone!",
+      "page_number": 1,
+      "source_file": "AccidentStatement.pdf",
+      "chunk_id": "AccidentStatement_chunk000",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "vision",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {
+        "section": "Vehicle A",
+        "field": "14. My remarks"
+      }
+    },
+    {
+      "block_id": "AccidentStatement_p1_b0027",
+      "block_type": "paragraph",
+      "content": "14. My remarks:\nDidn't have a turn signal",
+      "page_number": 1,
+      "source_file": "AccidentStatement.pdf",
+      "chunk_id": "AccidentStatement_chunk000",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "vision",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {
+        "section": "Vehicle B",
+        "field": "14. My remarks"
+      }
+    },
+    {
+      "block_id": "AccidentStatement_p1_b0028",
       "block_type": "paragraph",
       "content": "15. Signatures of the drivers",
       "page_number": 1,
@@ -899,21 +949,21 @@
       "metadata": {}
     },
     {
-      "block_id": "AccidentStatement_p1_b0027",
+      "block_id": "AccidentStatement_p1_b0029",
       "block_type": "figure",
-      "content": "Signature of Driver A (handwritten signature present, labeled A) and Signature of Driver B (handwritten signature present, labeled B).",
+      "content": "Signatures of both drivers. Vehicle A driver signature appears on the left labeled 'A', Vehicle B driver signature appears on the right labeled 'B'.",
       "page_number": 1,
       "source_file": "AccidentStatement.pdf",
       "chunk_id": "AccidentStatement_chunk000",
       "sequence": 0,
-      "confidence": 0.95,
+      "confidence": 0.9,
       "extraction_method": "vision",
       "heading_level": null,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "section": "15. Signatures"
+        "section": "15. Signatures of the drivers"
       }
     }
   ]

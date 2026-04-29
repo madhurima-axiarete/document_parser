@@ -1,0 +1,432 @@
+[
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p1_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 0]",
+    "page_number": 1,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk000",
+    "sequence": 0,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {}
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p51_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 1]",
+    "page_number": 51,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk001",
+    "sequence": 1,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p101_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 2]",
+    "page_number": 101,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk002",
+    "sequence": 2,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p151_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 3]",
+    "page_number": 151,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk003",
+    "sequence": 3,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p201_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 4]",
+    "page_number": 201,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk004",
+    "sequence": 4,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p251_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 5]",
+    "page_number": 251,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk005",
+    "sequence": 5,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p295_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 6]",
+    "page_number": 295,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk006",
+    "sequence": 6,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p343_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 7]",
+    "page_number": 343,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk007",
+    "sequence": 7,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p392_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 8]",
+    "page_number": 392,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk008",
+    "sequence": 8,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p439_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 9]",
+    "page_number": 439,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk009",
+    "sequence": 9,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p489_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 10]",
+    "page_number": 489,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk010",
+    "sequence": 10,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p539_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 11]",
+    "page_number": 539,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk011",
+    "sequence": 11,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p584_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 12]",
+    "page_number": 584,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk012",
+    "sequence": 12,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p631_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 13]",
+    "page_number": 631,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk013",
+    "sequence": 13,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p679_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 14]",
+    "page_number": 679,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk014",
+    "sequence": 14,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p723_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 15]",
+    "page_number": 723,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk015",
+    "sequence": 15,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p770_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 16]",
+    "page_number": 770,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk016",
+    "sequence": 16,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p820_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 17]",
+    "page_number": 820,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk017",
+    "sequence": 17,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p865_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 18]",
+    "page_number": 865,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk018",
+    "sequence": 18,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p912_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 19]",
+    "page_number": 912,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk019",
+    "sequence": 19,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p960_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 20]",
+    "page_number": 960,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk020",
+    "sequence": 20,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p1005_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 21]",
+    "page_number": 1005,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk021",
+    "sequence": 21,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p1051_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 22]",
+    "page_number": 1051,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk022",
+    "sequence": 22,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  },
+  {
+    "block_id": "salesforce_release_notes_3-25-2026_p1095_b0000",
+    "block_type": "paragraph",
+    "content": "[EXTRACTION FAILED: chunk 23]",
+    "page_number": 1095,
+    "source_file": "salesforce_release_notes_3-25-2026.pdf",
+    "chunk_id": "salesforce_release_notes_3-25-2026_chunk023",
+    "sequence": 23,
+    "confidence": 0.0,
+    "extraction_method": "none",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "suppress_in_output": true
+    }
+  }
+]

@@ -18,7 +18,7 @@
   {
     "block_id": "PerformanceCharts_p1_b0001",
     "block_type": "paragraph",
-    "content": "We have established a global carbon accounting system in accordance with the GHG Protocol Corporate Standard, and we independently verify our emissions against the ISO 14064-3 standard.11 We report emissions in metric kilotons of carbon dioxide equivalent (KtCO\u2082e). A detailed description of our greenhouse gas reporting methodology and Scope 3 reporting boundary is available in the Appendix (page 86).",
+    "content": "We have established a global carbon accounting system in accordance with the GHG Protocol Corporate Standard, and we independently verify our emissions against the ISO 14064-3 standard.11 We report emissions in metric kilotons of carbon dioxide equivalent (KtCO2e). A detailed description of our greenhouse gas reporting methodology and Scope 3 reporting boundary is available in the Appendix (page 86).",
     "page_number": 1,
     "source_file": "PerformanceCharts.pdf",
     "chunk_id": "PerformanceCharts_chunk000",
@@ -82,12 +82,12 @@
   {
     "block_id": "PerformanceCharts_p1_b0005",
     "block_type": "figure",
-    "content": "A grouped bar chart showing BCG's Greenhouse Gas Emissions in KtCO\u2082e from 2018 to 2022, with a -31% reduction noted between 2018 and 2022. Each bar is segmented into Scope 1 (blue), Scope 2 (dark green), and Scope 3 (light green). The years 2020 and 2021 are marked as 'COVID-19 restrictions imposed' with a dashed border. Data values per year are as follows: 2018: Scope 1=5, Scope 2=25, Scope 3=553, Total=584 (approximately). 2019: Scope 1=6, Scope 2=0, Scope 3=566, Total=572 (approximately). 2020: Scope 1=4, Scope 2=0, Scope 3=174 (shown as 177 total including small Scope 1/2). 2021: Scope 1=3, Scope 2=0, Scope 3=148 (shown as 151 total). 2022: Scope 1=3, Scope 2=0, Scope 3=403, Total=406 (approximately).",
+    "content": "A grouped bar chart showing BCG's Greenhouse Gas Emissions in KtCO2e from 2018 to 2022, with a -31% reduction noted between 2018 and 2022. Each year shows stacked bars for Scope 1 (blue), Scope 2 (dark green), and Scope 3 (light green). The years 2020 and 2021 are marked as 'COVID-19 restrictions imposed' with a dashed border. Data values are as follows: 2018: Scope 1=5, Scope 2=25, Scope 3=553, Total=584 (approximately). 2019: Scope 1=6, Scope 2=0, Scope 3=566, Total=572 (approximately). 2020: Scope 1=4, Scope 2=0, Scope 3=174 (shown as 177 total with breakdown), Total=177 (approximately). 2021: Scope 1=3, Scope 2=0, Scope 3=148 (shown as 151 total), Total=151 (approximately). 2022: Scope 1=3, Scope 2=0, Scope 3=403, Total=406 (approximately).",
     "page_number": 1,
     "source_file": "PerformanceCharts.pdf",
     "chunk_id": "PerformanceCharts_chunk000",
     "sequence": 5,
-    "confidence": 0.95,
+    "confidence": 0.9,
     "extraction_method": "vision",
     "heading_level": null,
     "is_truncated": false,
@@ -95,7 +95,7 @@
     "bbox": null,
     "metadata": {
       "chart_data": {
-        "unit": "KtCO\u2082e",
+        "unit": "KtCO2e",
         "overall_change": "-31%",
         "years": [
           "2018",
@@ -132,14 +132,14 @@
           151,
           406
         ],
-        "note": "2020 and 2021 marked as COVID-19 restrictions imposed"
+        "notes": "2020 and 2021 marked as COVID-19 restrictions imposed"
       }
     }
   },
   {
     "block_id": "PerformanceCharts_p1_b0006",
     "block_type": "paragraph",
-    "content": "Source: BCG analysis.\nNote: KtCO\u2082e = metric kilotons of carbon dioxide equivalent.",
+    "content": "Source: BCG analysis.\nNote: KtCO2e = metric kilotons of carbon dioxide equivalent.",
     "page_number": 1,
     "source_file": "PerformanceCharts.pdf",
     "chunk_id": "PerformanceCharts_chunk000",
@@ -171,7 +171,7 @@
   {
     "block_id": "PerformanceCharts_p1_b0008",
     "block_type": "list_item",
-    "content": "12.   Although CO\u2082 is a significant and crucially long-lived pollutant from aviation, it represents only about 50% of the total warming caused by flying. Other emissions from aviation, such as nitrogen oxides (NOx), sulfur oxides (SOx), and particulate matter (PM), as well as indirect factors such as the formation of contrails and clouds, contribute to effective radiative forcing (ERF). Following best practice, we account for the non-GHG climate impact of aviation by multiplying the CO\u2082 impact by 1.9, effectively doubling our flight emissions. We include non-GHG warming effects within our full reported GHG boundary. But in accordance with the Science Based Targets initiative (SBTi) aviation sector guidance, we exclude them from our business travel target boundary. For the same travel target, we also include upstream well-to-tank emissions from the combustion of aviation fuel; however we do not include these in the full reported GHG inventory above. Please see Table 1 on page 87 of the Appendix for a summary of our full GHG inventory and target boundaries.",
+    "content": "12.   Although CO2 is a significant and crucially long-lived pollutant from aviation, it represents only about 50% of the total warming caused by flying. Other emissions from aviation, such as nitrogen oxides (NOx), sulfur oxides (SOx), and particulate matter (PM), as well as indirect factors such as the formation of contrails and clouds, contribute to effective radiative forcing (ERF). Following best practice, we account for the non-GHG climate impact of aviation by multiplying the CO2 impact by 1.9, effectively doubling our flight emissions. We include non-GHG warming effects within our full reported GHG boundary. But in accordance with the Science Based Targets initiative (SBTi) aviation sector guidance, we exclude them from our business travel target boundary. For the same travel target, we also include upstream well-to-tank emissions from the combustion of aviation fuel; however we do not include these in the full reported GHG inventory above. Please see Table 1 on page 87 of the Appendix for a summary of our full GHG inventory and target boundaries.",
     "page_number": 1,
     "source_file": "PerformanceCharts.pdf",
     "chunk_id": "PerformanceCharts_chunk000",
@@ -187,7 +187,7 @@
   {
     "block_id": "PerformanceCharts_p1_b0009",
     "block_type": "footer",
-    "content": "48                                                                                                                               EXPANDING OUR REACH, ENHANCING OUR IMPACT",
+    "content": "48                                                                                                              EXPANDING OUR REACH, ENHANCING OUR IMPACT",
     "page_number": 1,
     "source_file": "PerformanceCharts.pdf",
     "chunk_id": "PerformanceCharts_chunk000",

@@ -47,9 +47,9 @@ COMPATIBLE WITH PERFORATING DISORDER WITH FEATURES OF ELASTOSIS PERFORANS SERPIG
 2.
 ASSOCIATED SPONGIOTIC DERMATITIS WITH OCCASIONAL EOSINOPHILS (SEE NOTE).
 
-> **[Figure]** Two photomicrograph images labeled A and B, representing histological slides from the right arm (A) and left neck (B) shave biopsies respectively.
+> **[Figure]** Two photomicrograph images labeled A and B showing histological slides corresponding to the right arm and left neck shave biopsies respectively.
 
-NOTE: Elastosis perforans serpiginosa presents as small papules, either grouped or in a circular or serpiginous arrangement, often on the face, neck, upper extremities, and trunk. The disorder has a predilection for males and typically occurs in the second decade. Up to a third of cases have been reported to be associated with an associated systemic disorder or connective tissue disorder. Some cases are associated with prolonged use of penicillamine.  Clinical correlation is recommended.
+NOTE: Elastosis perforans serpiginosa presents as small papules, either grouped or in a circular or serpiginous arrangement, often on the face, neck, upper extremities, and trunk. The disorder has a predilection for males and typically occurs in the second decade. Up to a third of cases have been reported to be associated with an associated systemic disorder or connective tissue disorder. Some cases are associated with prolonged use of penicillamine. Clinical correlation is recommended.
 
 DERMATOPATHOLOGY REPORT
 3301 C Street, Ste 200E
@@ -89,11 +89,11 @@ B. Received in formalin in a container labeled with the patient's name and "L ne
 
 ## MICROSCOPIC DESCRIPTION:
 
-The sections show a hyperplastic epidermis with channels containing brightly eosinophilic elastic fibers and basophilic debris.  The adjacent dermis contains foci of foreign-body giant cells. Special stains for micro-organisms (PAS and GMS on both parts A and B, Gram on part A) are negative.
+The sections show a hyperplastic epidermis with channels containing brightly eosinophilic elastic fibers and basophilic debris. The adjacent dermis contains foci of foreign-body giant cells. Special stains for micro-organisms (PAS and GMS on both parts A and B, Gram on part A) are negative.
 
 DKM:kg; 709.8
 
-This report may include a photomicrograph of the slide under examination.  For a variety of reasons, including the limitations of some electronic interfaces, the photomicrograph may not appear on the version of this report that you view.  The photomicrograph is not of diagnostic quality and should not be relied upon by any professional.  Health care professionals should rely only upon the pathologist's written interpretation.
+This report may include a photomicrograph of the slide under examination. For a variety of reasons, including the limitations of some electronic interfaces, the photomicrograph may not appear on the version of this report that you view. The photomicrograph is not of diagnostic quality and should not be relied upon by any professional. Health care professionals should rely only upon the pathologist's written interpretation.
 
 Final Diagnosis performed by Derek K Marsee M.D., Ph.D
 Electronically signed 05/07/2014

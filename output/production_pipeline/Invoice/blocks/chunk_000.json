@@ -10,7 +10,7 @@
     {
       "block_id": "Invoice_p1_b0000",
       "block_type": "figure",
-      "content": "Liberty Mutual logo featuring the Statue of Liberty torch with the text 'LIBERTY MUTUAL' beneath it.",
+      "content": "Liberty Mutual logo featuring the Statue of Liberty torch and the text 'LIBERTY MUTUAL' with a registered trademark symbol.",
       "page_number": 1,
       "source_file": "Invoice.jpg",
       "chunk_id": "Invoice_chunk000",
@@ -85,26 +85,13 @@
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
-      "metadata": {}
+      "metadata": {
+        "account": "# 00 40 66",
+        "invoice": "# 0125"
+      }
     },
     {
       "block_id": "Invoice_p1_b0005",
-      "block_type": "paragraph",
-      "content": "Account  # 00 40 66\nInvoice  # 0125",
-      "page_number": 1,
-      "source_file": "Invoice.jpg",
-      "chunk_id": "Invoice_chunk000",
-      "sequence": 0,
-      "confidence": 1.0,
-      "extraction_method": "vision",
-      "heading_level": null,
-      "is_truncated": false,
-      "is_continuation": false,
-      "bbox": null,
-      "metadata": {}
-    },
-    {
-      "block_id": "Invoice_p1_b0006",
       "block_type": "heading",
       "content": "In Account with LIBERTY MUTUAL INSURANCE COMPANY",
       "page_number": 1,
@@ -120,7 +107,7 @@
       "metadata": {}
     },
     {
-      "block_id": "Invoice_p1_b0007",
+      "block_id": "Invoice_p1_b0006",
       "block_type": "paragraph",
       "content": "FOURTEENTH Retrospective Premium and Dividend  Adjustment",
       "page_number": 1,
@@ -136,7 +123,7 @@
       "metadata": {}
     },
     {
-      "block_id": "Invoice_p1_b0008",
+      "block_id": "Invoice_p1_b0007",
       "block_type": "paragraph",
       "content": "Effective:   01-01-76  TO  01-01-77",
       "page_number": 1,
@@ -152,7 +139,7 @@
       "metadata": {}
     },
     {
-      "block_id": "Invoice_p1_b0009",
+      "block_id": "Invoice_p1_b0008",
       "block_type": "table",
       "content": [
         [
@@ -232,8 +219,8 @@
       "metadata": {}
     },
     {
-      "block_id": "Invoice_p1_b0010",
-      "block_type": "paragraph",
+      "block_id": "Invoice_p1_b0009",
+      "block_type": "footer",
       "content": "NRD 3",
       "page_number": 1,
       "source_file": "Invoice.jpg",
@@ -248,7 +235,7 @@
       "metadata": {}
     },
     {
-      "block_id": "Invoice_p1_b0011",
+      "block_id": "Invoice_p1_b0010",
       "block_type": "footer",
       "content": "3",
       "page_number": 1,

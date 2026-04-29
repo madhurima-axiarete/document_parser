@@ -656,19 +656,10 @@
       "is_continuation": false,
       "bbox": null,
       "metadata": {
-        "columns": [
-          "Row ID",
-          "Service",
-          "RTO",
-          "RPO",
-          "Dependency",
-          "Recovery Note"
-        ],
-        "spans_pages": [
-          1,
-          2
-        ],
-        "row_count": 74
+        "start_page": 1,
+        "end_page": 2,
+        "repeating_header": true,
+        "total_data_rows": 74
       }
     }
   ]

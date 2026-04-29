@@ -171,7 +171,7 @@
   {
     "block_id": "LabReport_p1_b0009",
     "block_type": "figure",
-    "content": "Two photomicrograph images labeled A and B, representing histological slides from the right arm (A) and left neck (B) shave biopsies respectively.",
+    "content": "Two photomicrograph images labeled A and B showing histological slides corresponding to the right arm and left neck shave biopsies respectively.",
     "page_number": 1,
     "source_file": "LabReport.pdf",
     "chunk_id": "LabReport_chunk000",
@@ -187,7 +187,7 @@
   {
     "block_id": "LabReport_p1_b0010",
     "block_type": "paragraph",
-    "content": "NOTE: Elastosis perforans serpiginosa presents as small papules, either grouped or in a circular or serpiginous arrangement, often on the face, neck, upper extremities, and trunk. The disorder has a predilection for males and typically occurs in the second decade. Up to a third of cases have been reported to be associated with an associated systemic disorder or connective tissue disorder. Some cases are associated with prolonged use of penicillamine.  Clinical correlation is recommended.",
+    "content": "NOTE: Elastosis perforans serpiginosa presents as small papules, either grouped or in a circular or serpiginous arrangement, often on the face, neck, upper extremities, and trunk. The disorder has a predilection for males and typically occurs in the second decade. Up to a third of cases have been reported to be associated with an associated systemic disorder or connective tissue disorder. Some cases are associated with prolonged use of penicillamine. Clinical correlation is recommended.",
     "page_number": 1,
     "source_file": "LabReport.pdf",
     "chunk_id": "LabReport_chunk000",
@@ -356,7 +356,7 @@
   {
     "block_id": "LabReport_p2_b0019",
     "block_type": "paragraph",
-    "content": "The sections show a hyperplastic epidermis with channels containing brightly eosinophilic elastic fibers and basophilic debris.  The adjacent dermis contains foci of foreign-body giant cells. Special stains for micro-organisms (PAS and GMS on both parts A and B, Gram on part A) are negative.",
+    "content": "The sections show a hyperplastic epidermis with channels containing brightly eosinophilic elastic fibers and basophilic debris. The adjacent dermis contains foci of foreign-body giant cells. Special stains for micro-organisms (PAS and GMS on both parts A and B, Gram on part A) are negative.",
     "page_number": 2,
     "source_file": "LabReport.pdf",
     "chunk_id": "LabReport_chunk000",
@@ -388,7 +388,7 @@
   {
     "block_id": "LabReport_p2_b0021",
     "block_type": "paragraph",
-    "content": "This report may include a photomicrograph of the slide under examination.  For a variety of reasons, including the limitations of some electronic interfaces, the photomicrograph may not appear on the version of this report that you view.  The photomicrograph is not of diagnostic quality and should not be relied upon by any professional.  Health care professionals should rely only upon the pathologist's written interpretation.",
+    "content": "This report may include a photomicrograph of the slide under examination. For a variety of reasons, including the limitations of some electronic interfaces, the photomicrograph may not appear on the version of this report that you view. The photomicrograph is not of diagnostic quality and should not be relied upon by any professional. Health care professionals should rely only upon the pathologist's written interpretation.",
     "page_number": 2,
     "source_file": "LabReport.pdf",
     "chunk_id": "LabReport_chunk000",

@@ -1,4 +1,4 @@
-> **[Figure]** Liberty Mutual logo featuring the Statue of Liberty torch with the text 'LIBERTY MUTUAL' beneath it.
+> **[Figure]** Liberty Mutual logo featuring the Statue of Liberty torch and the text 'LIBERTY MUTUAL' with a registered trademark symbol.
 
 # INSURANCE COMPANY
 
@@ -11,9 +11,6 @@ PHILIP MORRIS INCORPORATED
 ATTN: MR. PAUL GOLDSCHMIDT, INS. MGR.
 100 PARK AVENUE
 NEW YORK, NY  10017
-
-Account  # 00 40 66
-Invoice  # 0125
 
 ## In Account with LIBERTY MUTUAL INSURANCE COMPANY
 

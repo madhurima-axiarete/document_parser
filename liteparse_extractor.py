@@ -34,6 +34,29 @@ def get_test_files(test_docs_dir: Path) -> list[Path]:
     return files
 
 
+def detect_document_type(file_path: Path) -> tuple[str, int]:
+    """
+    Detect if document is high-res scan or born-digital, return type and adaptive DPI.
+    High-res scans (width > 1500 or height > 2000) need lower DPI to avoid over-zoom.
+    """
+    try:
+        import PyPDF2
+        with open(file_path, 'rb') as f:
+            reader = PyPDF2.PdfReader(f)
+            page = reader.pages[0]
+            width = float(page.mediabox.width)
+            height = float(page.mediabox.height)
+
+        # High-res scan detected
+        if width > 1500 or height > 2000:
+            return "high-res-scan", 150
+        else:
+            return "born-digital", 300
+    except Exception:
+        # Fallback: assume born-digital if detection fails
+        return "unknown", 300
+
+
 def parse_file(parser: LiteParse, file_path: Path, output_dir: Path) -> dict:
     """Parse a single file and save output."""
     txt_path = output_dir / f"{file_path.stem}.txt"
@@ -43,13 +66,17 @@ def parse_file(parser: LiteParse, file_path: Path, output_dir: Path) -> dict:
     start_time = time.time()
 
     try:
+        # Detect document type and use adaptive DPI
+        doc_type, adaptive_dpi = detect_document_type(file_path)
+        print(f"  Document type: {doc_type} (DPI: {adaptive_dpi})")
+
         # Use best parameters for accurate extraction (matching .js version)
         result = parser.parse(
             str(file_path),
             ocr_enabled=True,                  # Enable OCR for all documents
             precise_bounding_box=True,         # Get exact coordinates (layout-aware)
             preserve_very_small_text=True,     # Keep footnotes, captions, fine print
-            dpi=300,                           # High quality (2x better than 150)
+            dpi=adaptive_dpi,                  # Adaptive: 150 for scans, 300 for digital
             ocr_language="en",                 # English language for OCR
             num_workers=8,                     # Parallel OCR processing
         )
