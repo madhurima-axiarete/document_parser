@@ -1,0 +1,166 @@
+{
+  "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
+  "chunk_index": 1,
+  "target_pages": [
+    51
+  ],
+  "context_before": [
+    50
+  ],
+  "context_after": [],
+  "blocks": [
+    {
+      "block_id": "04_50_page_mixed_boundary_stress_p51_b0000",
+      "block_type": "heading",
+      "content": "Section 50.0 - Recovery Procedure Area 50",
+      "page_number": 51,
+      "source_file": "04_50_page_mixed_boundary_stress.pdf",
+      "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "native",
+      "heading_level": 2,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "04_50_page_mixed_boundary_stress_p51_b0001",
+      "block_type": "paragraph",
+      "content": "Boundary marker PAGE-50-START. Similar headings and recurring labels require structure-aware parsing.",
+      "page_number": 51,
+      "source_file": "04_50_page_mixed_boundary_stress.pdf",
+      "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "native",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "04_50_page_mixed_boundary_stress_p51_b0002",
+      "block_type": "paragraph",
+      "content": "Paragraph 50.0: The recovery owner checks service health, validates dependencies, confirms escalation path,\nand records evidence ID EVID-50-0. This paragraph may continue across chunk boundaries.",
+      "page_number": 51,
+      "source_file": "04_50_page_mixed_boundary_stress.pdf",
+      "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "native",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "04_50_page_mixed_boundary_stress_p51_b0003",
+      "block_type": "paragraph",
+      "content": "Paragraph 50.1: The recovery owner checks service health, validates dependencies, confirms escalation path,\nand records evidence ID EVID-50-1. This paragraph may continue across chunk boundaries.",
+      "page_number": 51,
+      "source_file": "04_50_page_mixed_boundary_stress.pdf",
+      "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "native",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "04_50_page_mixed_boundary_stress_p51_b0004",
+      "block_type": "paragraph",
+      "content": "Paragraph 50.2: The recovery owner checks service health, validates dependencies, confirms escalation path,\nand records evidence ID EVID-50-2. This paragraph may continue across chunk boundaries.",
+      "page_number": 51,
+      "source_file": "04_50_page_mixed_boundary_stress.pdf",
+      "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "native",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "04_50_page_mixed_boundary_stress_p51_b0005",
+      "block_type": "paragraph",
+      "content": "Paragraph 50.3: The recovery owner checks service health, validates dependencies, confirms escalation path,\nand records evidence ID EVID-50-3. This paragraph may continue across chunk boundaries.",
+      "page_number": 51,
+      "source_file": "04_50_page_mixed_boundary_stress.pdf",
+      "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "native",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {}
+    },
+    {
+      "block_id": "04_50_page_mixed_boundary_stress_p51_b0006",
+      "block_type": "table",
+      "content": [
+        [
+          "Check",
+          "Expected Result",
+          "Evidence"
+        ],
+        [
+          "C1",
+          "Result for page 50, check 1",
+          "EV-50-1"
+        ],
+        [
+          "C2",
+          "Result for page 50, check 2",
+          "EV-50-2"
+        ],
+        [
+          "C3",
+          "Result for page 50, check 3",
+          "EV-50-3"
+        ],
+        [
+          "C4",
+          "Result for page 50, check 4",
+          "EV-50-4"
+        ],
+        [
+          "C5",
+          "Result for page 50, check 5",
+          "EV-50-5"
+        ],
+        [
+          "C6",
+          "Result for page 50, check 6",
+          "EV-50-6"
+        ],
+        [
+          "C7",
+          "Result for page 50, check 7",
+          "EV-50-7"
+        ]
+      ],
+      "page_number": 51,
+      "source_file": "04_50_page_mixed_boundary_stress.pdf",
+      "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
+      "sequence": 0,
+      "confidence": 1.0,
+      "extraction_method": "native",
+      "heading_level": null,
+      "is_truncated": false,
+      "is_continuation": false,
+      "bbox": null,
+      "metadata": {}
+    }
+  ]
+}

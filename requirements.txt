@@ -1,7 +1,10 @@
-pdfminer.six
 python-docx
+python-pptx
+openpyxl
 anthropic>=0.40.0
 agentic-doc
+llama-cloud
 python-dotenv
 rich
 requests
+liteparse

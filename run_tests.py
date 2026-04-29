@@ -1,17 +1,18 @@
 """
 run_tests.py
 
-Runs all four extractors (pdfminer, landing_ai, claude, databricks) against the test
+Runs all extractors (landing_ai, claude, databricks, llamaparse, gemma4) against the test
 documents and writes Markdown output to output/{method}/ folders.
 
 Usage:
     python run_tests.py
 
 Output:
-    output/pdfminer/LabReport.md
     output/landing_ai/LabReport.md
     output/claude/LabReport.md
     output/databricks/LabReport.md
+    output/llamaparse/LabReport.md
+    output/gemma4/LabReport.md
     ... (one file per document per method)
 """
 
@@ -30,27 +31,30 @@ try:
 except ImportError:
     pass
 
-import pdfminer_extractor
 import landing_ai_extractor
 import claude_extractor
 import databricks_extractor
+import llamaparse_extractor
+import gemma4_extractor
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
 BASE_DIR = Path(__file__).parent
 
 TEST_FILES = [
-    BASE_DIR / "PerformanceCharts.pdf",
-    BASE_DIR / "LabReport.pdf",
-    BASE_DIR / "Invoice.jpg",
-    BASE_DIR / "AccidentStatement.pdf",
+    BASE_DIR / "test_docs" / "PerformanceCharts.pdf",
+    BASE_DIR / "test_docs" / "LabReport.pdf",
+    BASE_DIR / "test_docs" / "Invoice.jpg",
+    BASE_DIR / "test_docs" / "AccidentStatement.pdf",
+    BASE_DIR / "test_docs" / "salesforce_release_notes_3-25-2026.pdf",
 ]
 
 EXTRACTORS = [
-    ("pdfminer",    pdfminer_extractor.extract),
     ("landing_ai",  landing_ai_extractor.extract),
     ("claude",      claude_extractor.extract),
     ("databricks",  databricks_extractor.extract),
+    ("llamaparse",  llamaparse_extractor.extract),
+    ("gemma4",      gemma4_extractor.extract),
 ]
 
 OUTPUT_DIR = BASE_DIR / "output"

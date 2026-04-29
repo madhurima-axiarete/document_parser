@@ -1,0 +1,79 @@
+[
+  {
+    "chunk_index": 0,
+    "chunk_id": "04_50_page_mixed_boundary_stress_chunk000",
+    "target_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "context_before": [],
+    "context_after": [
+      51
+    ],
+    "estimated_input_tokens": 19672,
+    "uses_vision": false,
+    "has_boundary_risk": false
+  },
+  {
+    "chunk_index": 1,
+    "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
+    "target_pages": [
+      51
+    ],
+    "context_before": [
+      50
+    ],
+    "context_after": [],
+    "estimated_input_tokens": 457,
+    "uses_vision": false,
+    "has_boundary_risk": false
+  }
+]

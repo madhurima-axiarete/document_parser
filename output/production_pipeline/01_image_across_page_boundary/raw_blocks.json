@@ -1,0 +1,231 @@
+[
+  {
+    "block_id": "01_image_across_page_boundary_p1_b0000",
+    "block_type": "heading",
+    "content": "Test 01 - Image Across Page Boundary",
+    "page_number": 1,
+    "source_file": "01_image_across_page_boundary.pdf",
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "sequence": 0,
+    "confidence": 1.0,
+    "extraction_method": "vision",
+    "heading_level": 1,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {}
+  },
+  {
+    "block_id": "01_image_across_page_boundary_p1_b0001",
+    "block_type": "paragraph",
+    "content": "Purpose: same tall figure intentionally cut across two PDF pages.",
+    "page_number": 1,
+    "source_file": "01_image_across_page_boundary.pdf",
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "sequence": 1,
+    "confidence": 1.0,
+    "extraction_method": "vision",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {}
+  },
+  {
+    "block_id": "01_image_across_page_boundary_p1_b0002",
+    "block_type": "figure",
+    "content": "Top half of a service architecture diagram showing a flow of services connected by arrows. Row 1: Service 1 (ID SVC-100, blue) \u2192 Service 2 (ID SVC-101, green) \u2192 Service 3 (ID SVC-102, peach/orange). Row 2: Service 4 (ID SVC-103, purple) \u2192 Service 5 (ID SVC-104, blue) \u2192 Service 6 (ID SVC-105, green). Row 3: Service 7 (ID SVC-106, peach/orange) \u2192 Service 8 (ID SVC-107, purple) \u2192 Service 9 (ID SVC-108, blue). Diagonal connector lines link the rows. A red horizontal line near the bottom of the figure marks the page boundary, with a red label reading 'IMPORTANT: THIS FIGURE CONTINUES ON NEXT PAGE - boundary line must reconcile'. Partially visible Row 4 at bottom: Service 10 (ID SVC-109, green) \u2192 Service 11 (ID SVC-110, peach/orange) \u2192 Service 12 (ID SVC-111, purple).",
+    "page_number": 1,
+    "source_file": "01_image_across_page_boundary.pdf",
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "sequence": 2,
+    "confidence": 0.85,
+    "extraction_method": "vision",
+    "heading_level": null,
+    "is_truncated": true,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "services": [
+        {
+          "name": "Service 1",
+          "id": "SVC-100",
+          "color": "blue"
+        },
+        {
+          "name": "Service 2",
+          "id": "SVC-101",
+          "color": "green"
+        },
+        {
+          "name": "Service 3",
+          "id": "SVC-102",
+          "color": "peach"
+        },
+        {
+          "name": "Service 4",
+          "id": "SVC-103",
+          "color": "purple"
+        },
+        {
+          "name": "Service 5",
+          "id": "SVC-104",
+          "color": "blue"
+        },
+        {
+          "name": "Service 6",
+          "id": "SVC-105",
+          "color": "green"
+        },
+        {
+          "name": "Service 7",
+          "id": "SVC-106",
+          "color": "peach"
+        },
+        {
+          "name": "Service 8",
+          "id": "SVC-107",
+          "color": "purple"
+        },
+        {
+          "name": "Service 9",
+          "id": "SVC-108",
+          "color": "blue"
+        },
+        {
+          "name": "Service 10",
+          "id": "SVC-109",
+          "color": "green"
+        },
+        {
+          "name": "Service 11",
+          "id": "SVC-110",
+          "color": "peach"
+        },
+        {
+          "name": "Service 12",
+          "id": "SVC-111",
+          "color": "purple"
+        }
+      ],
+      "page_boundary_note": "IMPORTANT: THIS FIGURE CONTINUES ON NEXT PAGE - boundary line must reconcile"
+    }
+  },
+  {
+    "block_id": "01_image_across_page_boundary_p1_b0003",
+    "block_type": "paragraph",
+    "content": "Figure 1a. Top half of architecture diagram. Continuation marker at bottom.",
+    "page_number": 1,
+    "source_file": "01_image_across_page_boundary.pdf",
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "sequence": 3,
+    "confidence": 1.0,
+    "extraction_method": "vision",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "caption": true
+    }
+  },
+  {
+    "block_id": "01_image_across_page_boundary_p2_b0004",
+    "block_type": "heading",
+    "content": "Test 01 - Image Across Page Boundary, continued",
+    "page_number": 2,
+    "source_file": "01_image_across_page_boundary.pdf",
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "sequence": 4,
+    "confidence": 1.0,
+    "extraction_method": "vision",
+    "heading_level": 1,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {}
+  },
+  {
+    "block_id": "01_image_across_page_boundary_p2_b0005",
+    "block_type": "figure",
+    "content": "Bottom half of a service architecture diagram, continuing from previous page. A red horizontal line at the top of the figure marks the page boundary continuation, with a label reading 'IMPORTANT: THIS FIGURE CONTINUES ON NEXT PAGE - boundary line must reconcile'. Row 4 (repeated/continued): Service 10 (ID SVC-109, green) \u2192 Service 11 (ID SVC-110, peach/orange) \u2192 Service 12 (ID SVC-111, purple). Diagonal connector lines link to subsequent rows. Row 5: Service 13 (ID SVC-112, blue) \u2192 Service 14 (ID SVC-113, green) \u2192 Service 15 (ID SVC-114, peach/orange). Row 6: Service 16 (ID SVC-115, purple) \u2192 Service 17 (ID SVC-116, blue) \u2192 Service 18 (ID SVC-117, green). Diagonal connector lines link the rows.",
+    "page_number": 2,
+    "source_file": "01_image_across_page_boundary.pdf",
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "sequence": 5,
+    "confidence": 0.85,
+    "extraction_method": "vision",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": true,
+    "bbox": null,
+    "metadata": {
+      "services": [
+        {
+          "name": "Service 10",
+          "id": "SVC-109",
+          "color": "green"
+        },
+        {
+          "name": "Service 11",
+          "id": "SVC-110",
+          "color": "peach"
+        },
+        {
+          "name": "Service 12",
+          "id": "SVC-111",
+          "color": "purple"
+        },
+        {
+          "name": "Service 13",
+          "id": "SVC-112",
+          "color": "blue"
+        },
+        {
+          "name": "Service 14",
+          "id": "SVC-113",
+          "color": "green"
+        },
+        {
+          "name": "Service 15",
+          "id": "SVC-114",
+          "color": "peach"
+        },
+        {
+          "name": "Service 16",
+          "id": "SVC-115",
+          "color": "purple"
+        },
+        {
+          "name": "Service 17",
+          "id": "SVC-116",
+          "color": "blue"
+        },
+        {
+          "name": "Service 18",
+          "id": "SVC-117",
+          "color": "green"
+        }
+      ],
+      "page_boundary_note": "IMPORTANT: THIS FIGURE CONTINUES ON NEXT PAGE - boundary line must reconcile"
+    }
+  },
+  {
+    "block_id": "01_image_across_page_boundary_p2_b0006",
+    "block_type": "paragraph",
+    "content": "Figure 1b. Bottom half of same architecture diagram. Parser should merge with previous page.",
+    "page_number": 2,
+    "source_file": "01_image_across_page_boundary.pdf",
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "sequence": 6,
+    "confidence": 1.0,
+    "extraction_method": "vision",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "caption": true
+    }
+  }
+]

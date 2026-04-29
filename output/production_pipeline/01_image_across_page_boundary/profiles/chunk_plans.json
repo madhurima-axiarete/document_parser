@@ -1,0 +1,15 @@
+[
+  {
+    "chunk_index": 0,
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "target_pages": [
+      1,
+      2
+    ],
+    "context_before": [],
+    "context_after": [],
+    "estimated_input_tokens": 2210,
+    "uses_vision": true,
+    "has_boundary_risk": false
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "source_file": "Invoice.jpg",
+  "total_pages": 1,
+  "file_size_bytes": 103772,
+  "avg_text_chars_per_page": 0.0,
+  "avg_input_tokens_per_page": 1615.0,
+  "scanned_page_count": 1,
+  "image_heavy_page_count": 0,
+  "table_heavy_page_count": 0,
+  "estimated_total_output_chars": 0,
+  "page_profiles": [
+    {
+      "page_number": 1,
+      "text_char_count": 0,
+      "image_count": 0,
+      "image_area_fraction": 0.0,
+      "table_count": 0,
+      "garble_rate": 0.0,
+      "is_scanned": true,
+      "is_image_heavy": false,
+      "is_table_heavy": false,
+      "estimated_input_tokens": 1615,
+      "page_width_pts": 754.0,
+      "page_height_pts": 1000.0
+    }
+  ]
+}

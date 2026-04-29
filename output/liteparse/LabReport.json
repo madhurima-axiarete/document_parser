@@ -1,0 +1,2472 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "width": 612,
+      "height": 792,
+      "text": "                  <>        Parorocy                DERMATOPATHOLOGY                    3301 C Street, Ste 200E\n                                                                                        Sacramento,CA 95816\n                                                         REPORT                         (916) 446-0424\n                                                                                        Fax: (916) 446-9330\n                            Group INC                                                   www.dpmginc.com\n\n    Patient:   TEST, PATIENT                        Age:   14 (01/01/00)  Pathology #:    DDS-14-10962\n    Acct#:                                          Sex:   MALE         DPMG use only:    0730&0230/#11/P\n    Doctor:    DPMG                                                     Date Obtained:    04/30/2014\n               3301 C st Suite 200E                                     Date Received:    05/01/2014\n               Sacramento CA, 95816\n\n    CLINICAL DATA: 238.2, A: R/O WART, B: R/O TINEA\n\n    SPECIMEN:              A. RIGHT ARM SHAVE BIOPSY\n                           B. LEFT NECK SHAVE BIOPSY\n\n    DIAGNOSIS:\n\n              A.       SKIN, RIGHT ARM, SHAVE BIOPSY:\n                       COMPATIBLE WITH PERFORATING DISORDER WITH FEATURES OF\n                       ELASTOSIS PERFORANS SERPIGINOSA.\n\n              B.       SKIN, LEFT NECK, SHAVE BIOPSY:\n                       1.    COMPATIBLE WITH PERFORATING DISORDER WITH FEATURES\n                             OF ELASTOSIS PERFORANS SERPIGINOSA.\n                       2.    ASSOCIATED  SPONGIOTIC        DERMATITIS           WITH      OCCASIONAL\n                             EOSINOPHILS (SEE NOTE).\n\n                                 Sk                            \u00a9     >    17 oar 4         pe\n\n                                 ;      %                      |      Tp                 7\n\n                  :              TR >     \\                    f   J      bi             po\n\n\n\n                             A                                B\n\n                                                    >\n    NOTE: Elastosis perforans serpiginosa presents as small papules, either grouped or in a circular or\n    serpiginous arrangement, often on the face, neck, upper extremities, and trunk. The disorder has a predilection\n    for males and typically occurs in the second decade. Up to a third of cases have been reported to be associated\n    with an associated systemic disorder or connective tissue disorder. Some cases are associated with prolonged\n    use of penicillamine. Clinical correlation is recommended.\n\n\n\n                                                                                                                    Page 1 of 2\n      Robert W. Ghiselli, M.D.              David R. Guill\u00e9n, M.D.              Derek Marsee, M.D., PhD.        Shayesteh Pashaei, M.D.                         Limin Yu, M.D.\nBoard Certified in Dermatopathology  Board Certified in Dermatopathology  Board Certified in Dermatopathology   Board Certified in Dermatopathology  Board Certified in Dermatopathology\n    Laboratory Medical Director",
+      "textItems": [
+        {
+          "text": "DERMATOPATHOLOGY",
+          "x": 236.700336,
+          "y": 33.179796000000024,
+          "width": 164.0734739999998,
+          "height": 13.980000000000004,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.98,
+          "confidence": 1
+        },
+        {
+          "text": "REPORT",
+          "x": 290.700882,
+          "y": 49.31970600000001,
+          "width": 58.26863999999995,
+          "height": 13.980000000000004,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.98,
+          "confidence": 1
+        },
+        {
+          "text": "3301 C Street, Ste 200E",
+          "x": 476.1,
+          "y": 27.47969999999998,
+          "width": 86.3982000000002,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Sacramento,CA 95816",
+          "x": 476.1,
+          "y": 37.85939999999994,
+          "width": 81.44999999999993,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "(916) 446-0424",
+          "x": 476.1,
+          "y": 48.17969999999991,
+          "width": 56.21760000000006,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Fax: (916) 446-9330",
+          "x": 476.1,
+          "y": 58.55939999999987,
+          "width": 75.51720000000023,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "www.dpmginc.com",
+          "x": 476.1,
+          "y": 68.87969999999984,
+          "width": 68.4864,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Patient:",
+          "x": 43.2,
+          "y": 104.94000000000004,
+          "width": 30.554987999999994,
+          "height": 10.019999999999996,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "TEST, PATIENT",
+          "x": 89.1,
+          "y": 104.88000000000001,
+          "width": 84.77332200000004,
+          "height": 13.980000000000004,
+          "fontName": "g_d0_f6",
+          "fontSize": 13.98,
+          "confidence": 1
+        },
+        {
+          "text": "Age:",
+          "x": 287.1,
+          "y": 104.94000000000004,
+          "width": 19.496916,
+          "height": 10.019999999999996,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "14 (01/01/00)",
+          "x": 323.09985600000005,
+          "y": 105.12035999999999,
+          "width": 51.108011999999974,
+          "height": 10.019999999999996,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Pathology #:",
+          "x": 423.42009600000006,
+          "y": 104.94000000000004,
+          "width": 50.926649999999995,
+          "height": 10.019999999999996,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "DDS-14-10962",
+          "x": 485.1,
+          "y": 104.88000000000001,
+          "width": 76.48737599999993,
+          "height": 13.980000000000004,
+          "fontName": "g_d0_f6",
+          "fontSize": 13.98,
+          "confidence": 1
+        },
+        {
+          "text": "Acct#:",
+          "x": 43.2,
+          "y": 129.06000000000003,
+          "width": 26.753399999999985,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Sex:",
+          "x": 287.100828,
+          "y": 129.06000000000003,
+          "width": 17.821572000000003,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "MALE",
+          "x": 323.100684,
+          "y": 129.24035999999998,
+          "width": 22.332576000000017,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "DPMG use only:",
+          "x": 413.28,
+          "y": 129.05989999999997,
+          "width": 61.11809999999991,
+          "height": 9,
+          "fontName": "g_d0_f4",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "0730&0230/#11/P",
+          "x": 485.09999999999997,
+          "y": 129.17959999999994,
+          "width": 59.03190000000012,
+          "height": 9,
+          "fontName": "g_d0_f5",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Doctor:",
+          "x": 43.2,
+          "y": 148.61999999999998,
+          "width": 30.556991999999994,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Date Obtained:",
+          "x": 413.52016199999997,
+          "y": 148.61999999999998,
+          "width": 60.84845400000006,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "04/30/2014",
+          "x": 485.1,
+          "y": 148.62000000000003,
+          "width": 50.13687600000003,
+          "height": 10.97999999999999,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.98,
+          "confidence": 1
+        },
+        {
+          "text": "Date Received",
+          "x": 413.460042,
+          "y": 161.27975999999998,
+          "width": 58.64505599999973,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": ":",
+          "x": 472.080048,
+          "y": 161.27975999999998,
+          "width": 2.284559999999999,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "05/01/2014",
+          "x": 485.1,
+          "y": 161.22000000000006,
+          "width": 50.13687600000003,
+          "height": 10.97999999999999,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.98,
+          "confidence": 1
+        },
+        {
+          "text": "DPMG",
+          "x": 89.1,
+          "y": 148.79989999999995,
+          "width": 24.658218000000005,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "3301 C st Suite 200E",
+          "x": 89.1,
+          "y": 160.25977399999996,
+          "width": 77.54478000000009,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Sacramento CA, 95816",
+          "x": 89.1,
+          "y": 171.71964799999998,
+          "width": 85.26418800000002,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Page 1 of 2",
+          "x": 520.3199999999999,
+          "y": 728.46,
+          "width": 55.672799999999825,
+          "height": 12,
+          "fontName": "g_d0_f1",
+          "fontSize": 12,
+          "confidence": 1
+        },
+        {
+          "text": "Robert W. Ghiselli, M.D.",
+          "x": 49.32,
+          "y": 746.8799,
+          "width": 90.32760000000002,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 49.08,
+          "y": 757.4399,
+          "width": 90.87119999999997,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "Laboratory Medical Director",
+          "x": 53.22,
+          "y": 764.28,
+          "width": 82.50044399999999,
+          "height": 7.019999999999982,
+          "fontName": "g_d0_f3",
+          "fontSize": 7.02,
+          "confidence": 1
+        },
+        {
+          "text": "David R. Guill\u00e9n, M.D.",
+          "x": 160.8,
+          "y": 746.8799,
+          "width": 84.17520000000002,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 157.5,
+          "y": 757.4399,
+          "width": 90.87120000000033,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "Derek Marsee, M.D., PhD.",
+          "x": 264.4203,
+          "y": 746.8799,
+          "width": 97.46639999999974,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 267.78,
+          "y": 757.4399,
+          "width": 90.87119999999953,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "Shayesteh Pashaei, M.D.",
+          "x": 378.3003,
+          "y": 746.8799,
+          "width": 90.27449999999988,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 378,
+          "y": 757.4399,
+          "width": 90.87119999999953,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "Limin Yu, M.D.",
+          "x": 499.0197,
+          "y": 746.8799,
+          "width": 55.73520000000002,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 481.5,
+          "y": 757.4399,
+          "width": 90.87120000000073,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "CLINICAL DATA:",
+          "x": 43.2,
+          "y": 206.04,
+          "width": 92.19665999999994,
+          "height": 10.97999999999999,
+          "fontName": "g_d0_f1",
+          "fontSize": 10.98,
+          "confidence": 1
+        },
+        {
+          "text": "238.2, A: R/O WART, B: R/O TINEA",
+          "x": 137.93973599999998,
+          "y": 206.99999999999997,
+          "width": 154.846074,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "SPECIMEN:",
+          "x": 44.1,
+          "y": 230.22000000000006,
+          "width": 61.722972000000006,
+          "height": 10.97999999999999,
+          "fontName": "g_d0_f1",
+          "fontSize": 10.98,
+          "confidence": 1
+        },
+        {
+          "text": "A. RIGHT ARM SHAVE BIOPSY",
+          "x": 138.6,
+          "y": 230.15999999999994,
+          "width": 141.967368,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "B. LEFT NECK SHAVE BIOPSY",
+          "x": 138.6,
+          "y": 241.61987399999995,
+          "width": 139.28801999999988,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "DIAGNOSIS:",
+          "x": 43.2,
+          "y": 273.96000000000004,
+          "width": 77.28672000000005,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "A.",
+          "x": 79.2,
+          "y": 302.70000000000005,
+          "width": 12.650232000000003,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "SKIN, RIGHT ARM, SHAVE BIOPSY:",
+          "x": 115.18467600000001,
+          "y": 302.70000000000005,
+          "width": 223.20576599999993,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "COMPATIBLE WITH PERFORATING DISORDER WITH FEATURES OF",
+          "x": 115.2003,
+          "y": 317.70034200000003,
+          "width": 460.8012360000005,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "ELASTOSIS PERFORANS SERPIGINOSA.",
+          "x": 115.20029999999997,
+          "y": 332.64079200000003,
+          "width": 251.1258540000003,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "B.",
+          "x": 79.19999999999996,
+          "y": 362.52169200000003,
+          "width": 11.936735999999996,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "SKIN, LEFT NECK, SHAVE BIOPSY:",
+          "x": 115.19378999999995,
+          "y": 362.52169200000003,
+          "width": 220.35568799999984,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "1.",
+          "x": 115.20029999999997,
+          "y": 377.46214200000003,
+          "width": 9.761094,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "COMPATIBLE WITH PERFORATING DISORDER WITH FEATURES",
+          "x": 151.16544599999997,
+          "y": 377.46214200000003,
+          "width": 424.8517140000006,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "OF ELASTOSIS PERFORANS SERPIGINOSA.",
+          "x": 151.20059999999992,
+          "y": 392.402592,
+          "width": 272.37319200000036,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "2.",
+          "x": 115.20029999999991,
+          "y": 407.343042,
+          "width": 9.758489999999995,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "ASSOCIATED",
+          "x": 151.16284199999993,
+          "y": 407.343042,
+          "width": 84.58443000000005,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "SPONGIOTIC",
+          "x": 247.86108000000004,
+          "y": 407.343042,
+          "width": 82.97776200000001,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "DERMATITIS",
+          "x": 342.9760860000002,
+          "y": 407.343042,
+          "width": 83.85140399999989,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "WITH",
+          "x": 438.87619800000016,
+          "y": 407.343042,
+          "width": 36.86352600000009,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "OCCASIONAL",
+          "x": 487.7884320000003,
+          "y": 407.343042,
+          "width": 88.14409800000021,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "EOSINOPHILS (SEE NOTE).",
+          "x": 151.2005999999999,
+          "y": 422.343384,
+          "width": 169.49566199999992,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "A",
+          "x": 170.04032999999998,
+          "y": 591.599462,
+          "width": 7.234440000000006,
+          "height": 10.019999999999982,
+          "fontName": "g_d0_f8",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "B",
+          "x": 441.839858,
+          "y": 591.599462,
+          "width": 7.234440000000006,
+          "height": 10.019999999999982,
+          "fontName": "g_d0_f8",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": ">",
+          "x": 310.68,
+          "y": 612.6599,
+          "width": 0.5956800000000158,
+          "height": 1.0199999999999818,
+          "fontName": "g_d0_f8",
+          "fontSize": 1.02,
+          "confidence": 1
+        },
+        {
+          "text": "NOTE:",
+          "x": 43.2,
+          "y": 614.2199,
+          "width": 41.249964000000006,
+          "height": 13.019999999999982,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.02,
+          "confidence": 1
+        },
+        {
+          "text": "Elastosis perforans serpiginosa presents as small papules, either grouped or in a circular or",
+          "x": 91.26,
+          "y": 615.2399,
+          "width": 484.71719999999993,
+          "height": 12,
+          "fontName": "g_d0_f4",
+          "fontSize": 12,
+          "confidence": 1
+        },
+        {
+          "text": "serpiginous arrangement, often on the face, neck, upper extremities, and trunk. The disorder has a predilection",
+          "x": 43.200000000000045,
+          "y": 629.0998999999999,
+          "width": 532.8600000000001,
+          "height": 12,
+          "fontName": "g_d0_f4",
+          "fontSize": 12,
+          "confidence": 1
+        },
+        {
+          "text": "for males and typically occurs in the second decade. Up to a third of cases have been reported to be associated",
+          "x": 43.200000000000045,
+          "y": 642.8999,
+          "width": 532.8312000000002,
+          "height": 12,
+          "fontName": "g_d0_f4",
+          "fontSize": 12,
+          "confidence": 1
+        },
+        {
+          "text": "with an associated systemic disorder or connective tissue disorder. Some cases are associated with prolonged",
+          "x": 43.200000000000045,
+          "y": 656.6999,
+          "width": 532.7928,
+          "height": 12,
+          "fontName": "g_d0_f4",
+          "fontSize": 12,
+          "confidence": 1
+        },
+        {
+          "text": "use of penicillamine. Clinical correlation is recommended.",
+          "x": 43.200000000000045,
+          "y": 670.4999,
+          "width": 284.2571999999999,
+          "height": 12,
+          "fontName": "g_d0_f4",
+          "fontSize": 12,
+          "confidence": 1
+        },
+        {
+          "text": "<>",
+          "x": 96,
+          "y": 22.56,
+          "width": 24.72,
+          "height": 19.2,
+          "fontName": "OCR",
+          "fontSize": 19.2,
+          "confidence": 0.35
+        },
+        {
+          "text": "Parorocy",
+          "x": 140.64,
+          "y": 35.519999999999996,
+          "width": 46.32,
+          "height": 13.92,
+          "fontName": "OCR",
+          "fontSize": 13.92,
+          "confidence": 0.41
+        },
+        {
+          "text": "Group",
+          "x": 141.12,
+          "y": 67.92,
+          "width": 29.759999999999998,
+          "height": 15.36,
+          "fontName": "OCR",
+          "fontSize": 15.36,
+          "confidence": 0.41
+        },
+        {
+          "text": "INC",
+          "x": 172.07999999999998,
+          "y": 73.92,
+          "width": 13.44,
+          "height": 8.16,
+          "fontName": "OCR",
+          "fontSize": 8.16,
+          "confidence": 0.78
+        },
+        {
+          "text": "Sk",
+          "x": 200.4,
+          "y": 448.32,
+          "width": 10.799999999999999,
+          "height": 1.92,
+          "fontName": "OCR",
+          "fontSize": 1.92,
+          "confidence": 0.34
+        },
+        {
+          "text": "\u00a9",
+          "x": 383.03999999999996,
+          "y": 448.32,
+          "width": 5.52,
+          "height": 4.32,
+          "fontName": "OCR",
+          "fontSize": 4.32,
+          "confidence": 0.58
+        },
+        {
+          "text": ">",
+          "x": 400.8,
+          "y": 455.28,
+          "width": 1.2,
+          "height": 1.68,
+          "fontName": "OCR",
+          "fontSize": 1.68,
+          "confidence": 0.88
+        },
+        {
+          "text": "17",
+          "x": 406.08,
+          "y": 450.71999999999997,
+          "width": 12.24,
+          "height": 5.279999999999999,
+          "fontName": "OCR",
+          "fontSize": 5.279999999999999,
+          "confidence": 0.46
+        },
+        {
+          "text": "oar",
+          "x": 421.68,
+          "y": 448.32,
+          "width": 25.919999999999998,
+          "height": 8.4,
+          "fontName": "OCR",
+          "fontSize": 8.4,
+          "confidence": 0.45
+        },
+        {
+          "text": "4",
+          "x": 455.28,
+          "y": 455.28,
+          "width": 0.96,
+          "height": 1.68,
+          "fontName": "OCR",
+          "fontSize": 1.68,
+          "confidence": 0.62
+        },
+        {
+          "text": "pe",
+          "x": 513.36,
+          "y": 453.12,
+          "width": 4.32,
+          "height": 1.92,
+          "fontName": "OCR",
+          "fontSize": 1.92,
+          "confidence": 0.34
+        },
+        {
+          "text": ";",
+          "x": 229.67999999999998,
+          "y": 483.84,
+          "width": 0.48,
+          "height": 0.48,
+          "fontName": "OCR",
+          "fontSize": 0.48,
+          "confidence": 0.74
+        },
+        {
+          "text": "|",
+          "x": 373.44,
+          "y": 485.03999999999996,
+          "width": 0.24,
+          "height": 0.72,
+          "fontName": "OCR",
+          "fontSize": 0.72,
+          "confidence": 0.83
+        },
+        {
+          "text": "7",
+          "x": 479.03999999999996,
+          "y": 468.96,
+          "width": 24.96,
+          "height": 20.88,
+          "fontName": "OCR",
+          "fontSize": 20.88,
+          "confidence": 0.68
+        },
+        {
+          "text": "%",
+          "x": 259.68,
+          "y": 493.91999999999996,
+          "width": 7.199999999999999,
+          "height": 3.36,
+          "fontName": "OCR",
+          "fontSize": 3.36,
+          "confidence": 0.61
+        },
+        {
+          "text": "Tp",
+          "x": 413.28,
+          "y": 486,
+          "width": 28.32,
+          "height": 13.44,
+          "fontName": "OCR",
+          "fontSize": 13.44,
+          "confidence": 0.39
+        },
+        {
+          "text": ":",
+          "x": 104.88,
+          "y": 531.84,
+          "width": 0.48,
+          "height": 0.48,
+          "fontName": "OCR",
+          "fontSize": 0.48,
+          "confidence": 0.56
+        },
+        {
+          "text": "TR",
+          "x": 175.68,
+          "y": 532.3199999999999,
+          "width": 36.48,
+          "height": 12.24,
+          "fontName": "OCR",
+          "fontSize": 12.24,
+          "confidence": 0.43
+        },
+        {
+          "text": ">",
+          "x": 220.79999999999998,
+          "y": 537.12,
+          "width": 0.72,
+          "height": 0.24,
+          "fontName": "OCR",
+          "fontSize": 0.24,
+          "confidence": 0.77
+        },
+        {
+          "text": "\\",
+          "x": 270.48,
+          "y": 543.6,
+          "width": 0.48,
+          "height": 0.48,
+          "fontName": "OCR",
+          "fontSize": 0.48,
+          "confidence": 0.52
+        },
+        {
+          "text": "f",
+          "x": 349.44,
+          "y": 536.4,
+          "width": 0.48,
+          "height": 0.48,
+          "fontName": "OCR",
+          "fontSize": 0.48,
+          "confidence": 0.92
+        },
+        {
+          "text": "J",
+          "x": 355.68,
+          "y": 530.4,
+          "width": 4.08,
+          "height": 13.92,
+          "fontName": "OCR",
+          "fontSize": 13.92,
+          "confidence": 0.85
+        },
+        {
+          "text": "bi",
+          "x": 432,
+          "y": 527.28,
+          "width": 19.439999999999998,
+          "height": 19.68,
+          "fontName": "OCR",
+          "fontSize": 19.68,
+          "confidence": 0.33
+        },
+        {
+          "text": "po",
+          "x": 478.56,
+          "y": 530.16,
+          "width": 12.959999999999999,
+          "height": 9.84,
+          "fontName": "OCR",
+          "fontSize": 9.84,
+          "confidence": 0.37
+        }
+      ],
+      "boundingBoxes": [
+        {
+          "x1": 236.700336,
+          "y1": 33.179796000000024,
+          "x2": 400.7738099999998,
+          "y2": 47.15979600000003
+        },
+        {
+          "x1": 290.700882,
+          "y1": 49.31970600000001,
+          "x2": 348.9695219999999,
+          "y2": 63.299706000000015
+        },
+        {
+          "x1": 476.1,
+          "y1": 27.47969999999998,
+          "x2": 562.4982000000002,
+          "y2": 36.47969999999998
+        },
+        {
+          "x1": 476.1,
+          "y1": 37.85939999999994,
+          "x2": 557.55,
+          "y2": 46.85939999999994
+        },
+        {
+          "x1": 476.1,
+          "y1": 48.17969999999991,
+          "x2": 532.3176000000001,
+          "y2": 57.17969999999991
+        },
+        {
+          "x1": 476.1,
+          "y1": 58.55939999999987,
+          "x2": 551.6172000000003,
+          "y2": 67.55939999999987
+        },
+        {
+          "x1": 476.1,
+          "y1": 68.87969999999984,
+          "x2": 544.5864,
+          "y2": 77.87969999999984
+        },
+        {
+          "x1": 43.2,
+          "y1": 104.94000000000004,
+          "x2": 73.754988,
+          "y2": 114.96000000000004
+        },
+        {
+          "x1": 89.1,
+          "y1": 104.88000000000001,
+          "x2": 173.87332200000003,
+          "y2": 118.86000000000001
+        },
+        {
+          "x1": 287.1,
+          "y1": 104.94000000000004,
+          "x2": 306.596916,
+          "y2": 114.96000000000004
+        },
+        {
+          "x1": 323.09985600000005,
+          "y1": 105.12035999999999,
+          "x2": 374.207868,
+          "y2": 115.14035999999999
+        },
+        {
+          "x1": 423.42009600000006,
+          "y1": 104.94000000000004,
+          "x2": 474.34674600000005,
+          "y2": 114.96000000000004
+        },
+        {
+          "x1": 485.1,
+          "y1": 104.88000000000001,
+          "x2": 561.587376,
+          "y2": 118.86000000000001
+        },
+        {
+          "x1": 43.2,
+          "y1": 129.06000000000003,
+          "x2": 69.95339999999999,
+          "y2": 139.08000000000004
+        },
+        {
+          "x1": 287.100828,
+          "y1": 129.06000000000003,
+          "x2": 304.9224,
+          "y2": 139.08000000000004
+        },
+        {
+          "x1": 323.100684,
+          "y1": 129.24035999999998,
+          "x2": 345.43326,
+          "y2": 139.26036
+        },
+        {
+          "x1": 413.28,
+          "y1": 129.05989999999997,
+          "x2": 474.3980999999999,
+          "y2": 138.05989999999997
+        },
+        {
+          "x1": 485.09999999999997,
+          "y1": 129.17959999999994,
+          "x2": 544.1319000000001,
+          "y2": 138.17959999999994
+        },
+        {
+          "x1": 43.2,
+          "y1": 148.61999999999998,
+          "x2": 73.756992,
+          "y2": 158.64
+        },
+        {
+          "x1": 413.52016199999997,
+          "y1": 148.61999999999998,
+          "x2": 474.36861600000003,
+          "y2": 158.64
+        },
+        {
+          "x1": 485.1,
+          "y1": 148.62000000000003,
+          "x2": 535.236876,
+          "y2": 159.60000000000002
+        },
+        {
+          "x1": 413.460042,
+          "y1": 161.27975999999998,
+          "x2": 472.1050979999997,
+          "y2": 171.29976
+        },
+        {
+          "x1": 472.080048,
+          "y1": 161.27975999999998,
+          "x2": 474.364608,
+          "y2": 171.29976
+        },
+        {
+          "x1": 485.1,
+          "y1": 161.22000000000006,
+          "x2": 535.236876,
+          "y2": 172.20000000000005
+        },
+        {
+          "x1": 89.1,
+          "y1": 148.79989999999995,
+          "x2": 113.758218,
+          "y2": 158.81989999999996
+        },
+        {
+          "x1": 89.1,
+          "y1": 160.25977399999996,
+          "x2": 166.64478000000008,
+          "y2": 170.27977399999997
+        },
+        {
+          "x1": 89.1,
+          "y1": 171.71964799999998,
+          "x2": 174.364188,
+          "y2": 181.739648
+        },
+        {
+          "x1": 520.3199999999999,
+          "y1": 728.46,
+          "x2": 575.9927999999998,
+          "y2": 740.46
+        },
+        {
+          "x1": 49.32,
+          "y1": 746.8799,
+          "x2": 139.6476,
+          "y2": 755.8799
+        },
+        {
+          "x1": 49.08,
+          "y1": 757.4399,
+          "x2": 139.95119999999997,
+          "y2": 763.4399
+        },
+        {
+          "x1": 53.22,
+          "y1": 764.28,
+          "x2": 135.720444,
+          "y2": 771.3
+        },
+        {
+          "x1": 160.8,
+          "y1": 746.8799,
+          "x2": 244.97520000000003,
+          "y2": 755.8799
+        },
+        {
+          "x1": 157.5,
+          "y1": 757.4399,
+          "x2": 248.37120000000033,
+          "y2": 763.4399
+        },
+        {
+          "x1": 264.4203,
+          "y1": 746.8799,
+          "x2": 361.88669999999973,
+          "y2": 755.8799
+        },
+        {
+          "x1": 267.78,
+          "y1": 757.4399,
+          "x2": 358.6511999999995,
+          "y2": 763.4399
+        },
+        {
+          "x1": 378.3003,
+          "y1": 746.8799,
+          "x2": 468.57479999999987,
+          "y2": 755.8799
+        },
+        {
+          "x1": 378,
+          "y1": 757.4399,
+          "x2": 468.87119999999953,
+          "y2": 763.4399
+        },
+        {
+          "x1": 499.0197,
+          "y1": 746.8799,
+          "x2": 554.7549,
+          "y2": 755.8799
+        },
+        {
+          "x1": 481.5,
+          "y1": 757.4399,
+          "x2": 572.3712000000007,
+          "y2": 763.4399
+        },
+        {
+          "x1": 43.2,
+          "y1": 206.04,
+          "x2": 135.39665999999994,
+          "y2": 217.01999999999998
+        },
+        {
+          "x1": 137.93973599999998,
+          "y1": 206.99999999999997,
+          "x2": 292.78580999999997,
+          "y2": 217.01999999999998
+        },
+        {
+          "x1": 44.1,
+          "y1": 230.22000000000006,
+          "x2": 105.82297200000001,
+          "y2": 241.20000000000005
+        },
+        {
+          "x1": 138.6,
+          "y1": 230.15999999999994,
+          "x2": 280.567368,
+          "y2": 240.17999999999995
+        },
+        {
+          "x1": 138.6,
+          "y1": 241.61987399999995,
+          "x2": 277.88801999999987,
+          "y2": 251.63987399999996
+        },
+        {
+          "x1": 43.2,
+          "y1": 273.96000000000004,
+          "x2": 120.48672000000005,
+          "y2": 286.98
+        },
+        {
+          "x1": 79.2,
+          "y1": 302.70000000000005,
+          "x2": 91.850232,
+          "y2": 315.72
+        },
+        {
+          "x1": 115.18467600000001,
+          "y1": 302.70000000000005,
+          "x2": 338.39044199999995,
+          "y2": 315.72
+        },
+        {
+          "x1": 115.2003,
+          "y1": 317.70034200000003,
+          "x2": 576.0015360000004,
+          "y2": 330.720342
+        },
+        {
+          "x1": 115.20029999999997,
+          "y1": 332.64079200000003,
+          "x2": 366.32615400000026,
+          "y2": 345.660792
+        },
+        {
+          "x1": 79.19999999999996,
+          "y1": 362.52169200000003,
+          "x2": 91.13673599999996,
+          "y2": 375.541692
+        },
+        {
+          "x1": 115.19378999999995,
+          "y1": 362.52169200000003,
+          "x2": 335.5494779999998,
+          "y2": 375.541692
+        },
+        {
+          "x1": 115.20029999999997,
+          "y1": 377.46214200000003,
+          "x2": 124.96139399999997,
+          "y2": 390.482142
+        },
+        {
+          "x1": 151.16544599999997,
+          "y1": 377.46214200000003,
+          "x2": 576.0171600000006,
+          "y2": 390.482142
+        },
+        {
+          "x1": 151.20059999999992,
+          "y1": 392.402592,
+          "x2": 423.57379200000025,
+          "y2": 405.422592
+        },
+        {
+          "x1": 115.20029999999991,
+          "y1": 407.343042,
+          "x2": 124.95878999999991,
+          "y2": 420.363042
+        },
+        {
+          "x1": 151.16284199999993,
+          "y1": 407.343042,
+          "x2": 235.74727199999998,
+          "y2": 420.363042
+        },
+        {
+          "x1": 247.86108000000004,
+          "y1": 407.343042,
+          "x2": 330.83884200000006,
+          "y2": 420.363042
+        },
+        {
+          "x1": 342.9760860000002,
+          "y1": 407.343042,
+          "x2": 426.82749000000007,
+          "y2": 420.363042
+        },
+        {
+          "x1": 438.87619800000016,
+          "y1": 407.343042,
+          "x2": 475.73972400000025,
+          "y2": 420.363042
+        },
+        {
+          "x1": 487.7884320000003,
+          "y1": 407.343042,
+          "x2": 575.9325300000005,
+          "y2": 420.363042
+        },
+        {
+          "x1": 151.2005999999999,
+          "y1": 422.343384,
+          "x2": 320.6962619999998,
+          "y2": 435.363384
+        },
+        {
+          "x1": 170.04032999999998,
+          "y1": 591.599462,
+          "x2": 177.27477,
+          "y2": 601.619462
+        },
+        {
+          "x1": 441.839858,
+          "y1": 591.599462,
+          "x2": 449.074298,
+          "y2": 601.619462
+        },
+        {
+          "x1": 310.68,
+          "y1": 612.6599,
+          "x2": 311.27568,
+          "y2": 613.6799
+        },
+        {
+          "x1": 43.2,
+          "y1": 614.2199,
+          "x2": 84.44996400000001,
+          "y2": 627.2399
+        },
+        {
+          "x1": 91.26,
+          "y1": 615.2399,
+          "x2": 575.9771999999999,
+          "y2": 627.2399
+        },
+        {
+          "x1": 43.200000000000045,
+          "y1": 629.0998999999999,
+          "x2": 576.0600000000002,
+          "y2": 641.0998999999999
+        },
+        {
+          "x1": 43.200000000000045,
+          "y1": 642.8999,
+          "x2": 576.0312000000002,
+          "y2": 654.8999
+        },
+        {
+          "x1": 43.200000000000045,
+          "y1": 656.6999,
+          "x2": 575.9928000000001,
+          "y2": 668.6999
+        },
+        {
+          "x1": 43.200000000000045,
+          "y1": 670.4999,
+          "x2": 327.45719999999994,
+          "y2": 682.4999
+        },
+        {
+          "x1": 96,
+          "y1": 22.56,
+          "x2": 120.72,
+          "y2": 41.76
+        },
+        {
+          "x1": 140.64,
+          "y1": 35.519999999999996,
+          "x2": 186.95999999999998,
+          "y2": 49.44
+        },
+        {
+          "x1": 141.12,
+          "y1": 67.92,
+          "x2": 170.88,
+          "y2": 83.28
+        },
+        {
+          "x1": 172.07999999999998,
+          "y1": 73.92,
+          "x2": 185.51999999999998,
+          "y2": 82.08
+        },
+        {
+          "x1": 200.4,
+          "y1": 448.32,
+          "x2": 211.20000000000002,
+          "y2": 450.24
+        },
+        {
+          "x1": 383.03999999999996,
+          "y1": 448.32,
+          "x2": 388.55999999999995,
+          "y2": 452.64
+        },
+        {
+          "x1": 400.8,
+          "y1": 455.28,
+          "x2": 402,
+          "y2": 456.96
+        },
+        {
+          "x1": 406.08,
+          "y1": 450.71999999999997,
+          "x2": 418.32,
+          "y2": 455.99999999999994
+        },
+        {
+          "x1": 421.68,
+          "y1": 448.32,
+          "x2": 447.6,
+          "y2": 456.71999999999997
+        },
+        {
+          "x1": 455.28,
+          "y1": 455.28,
+          "x2": 456.23999999999995,
+          "y2": 456.96
+        },
+        {
+          "x1": 513.36,
+          "y1": 453.12,
+          "x2": 517.6800000000001,
+          "y2": 455.04
+        },
+        {
+          "x1": 229.67999999999998,
+          "y1": 483.84,
+          "x2": 230.15999999999997,
+          "y2": 484.32
+        },
+        {
+          "x1": 373.44,
+          "y1": 485.03999999999996,
+          "x2": 373.68,
+          "y2": 485.76
+        },
+        {
+          "x1": 479.03999999999996,
+          "y1": 468.96,
+          "x2": 503.99999999999994,
+          "y2": 489.84
+        },
+        {
+          "x1": 259.68,
+          "y1": 493.91999999999996,
+          "x2": 266.88,
+          "y2": 497.28
+        },
+        {
+          "x1": 413.28,
+          "y1": 486,
+          "x2": 441.59999999999997,
+          "y2": 499.44
+        },
+        {
+          "x1": 104.88,
+          "y1": 531.84,
+          "x2": 105.36,
+          "y2": 532.32
+        },
+        {
+          "x1": 175.68,
+          "y1": 532.3199999999999,
+          "x2": 212.16,
+          "y2": 544.56
+        },
+        {
+          "x1": 220.79999999999998,
+          "y1": 537.12,
+          "x2": 221.51999999999998,
+          "y2": 537.36
+        },
+        {
+          "x1": 270.48,
+          "y1": 543.6,
+          "x2": 270.96000000000004,
+          "y2": 544.08
+        },
+        {
+          "x1": 349.44,
+          "y1": 536.4,
+          "x2": 349.92,
+          "y2": 536.88
+        },
+        {
+          "x1": 355.68,
+          "y1": 530.4,
+          "x2": 359.76,
+          "y2": 544.3199999999999
+        },
+        {
+          "x1": 432,
+          "y1": 527.28,
+          "x2": 451.44,
+          "y2": 546.9599999999999
+        },
+        {
+          "x1": 478.56,
+          "y1": 530.16,
+          "x2": 491.52,
+          "y2": 540
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "width": 612,
+      "height": 792,
+      "text": "DERMATOPATHOLOGY     3301 C Street, Ste 200E\n                     Sacramento,CA 95816\n     REPORT          (916) 446-0424\n                     Fax: (916) 446-9330\n                     www.dpmginc.com\n\n\n    Patient:   TEST, PATIENT                              Age:   14 (01/01/00)  Pathology #:   DDS-14-10962\n    Acct#:                                                Sex:   MALE         DPMG use only:   0730&0230/#11/P\n    Doctor:    DPMG                                                           Date Obtained:   04/30/2014\n               3301 C st Suite 200E                                           Date Received:   05/01/2014\n               Sacramento CA, 95816\n\n    GROSS DESCRIPTION: TMA:kg\n\n    A.   Received in formalin in a container labeled with the patient's name and \"R arm\" is a single 0.5 x 0.4 x 0.1 cm irregular light\n         grey-tan rough portion of tissue. The specimen is inked, bisected, wrapped in biopsy paper and submitted entirely in cassette A.\n\n    B.   Received in formalin in a container labeled with the patient's name and \"L neck\" is a single 0.5 x 0.4 x 0.1 cm irregular tan\n         smooth portion of tissue. The specimen is inked, bisected, wrapped in biopsy paper and submitted entirely in cassette B.\n\n    MICROSCOPIC DESCRIPTION:\n\n    The sections show a hyperplastic epidermis with channels containing brightly eosinophilic elastic fibers and basophilic debris. The\n         adjacent dermis contains foci of foreign-body giant cells. Special stains for micro-organisms (PAS and GMS on both parts A\n         and B, Gram on part A) are negative.\n    DKM:kg; 709.8\n    This report may include a photomicrograph of the slide under examination. For a variety of reasons, including the limitations of some electronic interfaces, the photomicrograph may not appear on the version of this report\n    that you view. The photomicrograph is not of diagnostic quality and should not be relied upon by any professional. Health care professionals should rely only upon the pathologist\u2019s written interpretation.\n\n    Final Diagnosis performed by Derek K Marsee M.D., Ph.D\n    Electronically signed 05/07/2014\n    Diagnostic Pathology Medical Group,\n    3301 C Street, Suite 200E SACRAMENTO, CA 95816\n\n\n\n\n\n\n\n\n\n\n                                                                                                                    Page 2 of 2\n      Robert W. Ghiselli, M.D.              David R. Guill\u00e9n, M.D.              Derek Marsee, M.D., PhD.        Shayesteh Pashaei, M.D.                         Limin Yu, M.D.\nBoard Certified in Dermatopathology  Board Certified in Dermatopathology  Board Certified in Dermatopathology   Board Certified in Dermatopathology  Board Certified in Dermatopathology\n    Laboratory Medical Director",
+      "textItems": [
+        {
+          "text": "DERMATOPATHOLOGY",
+          "x": 236.700336,
+          "y": 33.179796000000024,
+          "width": 164.0734739999998,
+          "height": 13.980000000000004,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.98,
+          "confidence": 1
+        },
+        {
+          "text": "REPORT",
+          "x": 290.700882,
+          "y": 49.31970600000001,
+          "width": 58.26863999999995,
+          "height": 13.980000000000004,
+          "fontName": "g_d0_f1",
+          "fontSize": 13.98,
+          "confidence": 1
+        },
+        {
+          "text": "3301 C Street, Ste 200E",
+          "x": 476.1,
+          "y": 27.47969999999998,
+          "width": 86.3982000000002,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Sacramento,CA 95816",
+          "x": 476.1,
+          "y": 37.85939999999994,
+          "width": 81.44999999999993,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "(916) 446-0424",
+          "x": 476.1,
+          "y": 48.17969999999991,
+          "width": 56.21760000000006,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Fax: (916) 446-9330",
+          "x": 476.1,
+          "y": 58.55939999999987,
+          "width": 75.51720000000023,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "www.dpmginc.com",
+          "x": 476.1,
+          "y": 68.87969999999984,
+          "width": 68.4864,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Patient:",
+          "x": 43.2,
+          "y": 104.94000000000004,
+          "width": 30.554987999999994,
+          "height": 10.019999999999996,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "TEST, PATIENT",
+          "x": 89.1,
+          "y": 104.88000000000001,
+          "width": 84.77332200000004,
+          "height": 13.980000000000004,
+          "fontName": "g_d0_f6",
+          "fontSize": 13.98,
+          "confidence": 1
+        },
+        {
+          "text": "Age:",
+          "x": 287.1,
+          "y": 104.94000000000004,
+          "width": 19.496916,
+          "height": 10.019999999999996,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "14 (01/01/00)",
+          "x": 323.09985600000005,
+          "y": 105.12035999999999,
+          "width": 51.108011999999974,
+          "height": 10.019999999999996,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Pathology #:",
+          "x": 423.42009600000006,
+          "y": 104.94000000000004,
+          "width": 50.926649999999995,
+          "height": 10.019999999999996,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "DDS-14-10962",
+          "x": 485.1,
+          "y": 104.88000000000001,
+          "width": 76.48737599999993,
+          "height": 13.980000000000004,
+          "fontName": "g_d0_f6",
+          "fontSize": 13.98,
+          "confidence": 1
+        },
+        {
+          "text": "Acct#:",
+          "x": 43.2,
+          "y": 129.06000000000003,
+          "width": 26.753399999999985,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Sex:",
+          "x": 287.100828,
+          "y": 129.06000000000003,
+          "width": 17.821572000000003,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "MALE",
+          "x": 323.100684,
+          "y": 129.24035999999998,
+          "width": 22.332576000000017,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "DPMG use only:",
+          "x": 413.28,
+          "y": 129.05989999999997,
+          "width": 61.11809999999991,
+          "height": 9,
+          "fontName": "g_d0_f4",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "0730&0230/#11/P",
+          "x": 485.09999999999997,
+          "y": 129.17959999999994,
+          "width": 59.03190000000012,
+          "height": 9,
+          "fontName": "g_d0_f5",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Doctor:",
+          "x": 43.2,
+          "y": 148.61999999999998,
+          "width": 30.556991999999994,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Date Obtained:",
+          "x": 413.52016199999997,
+          "y": 148.61999999999998,
+          "width": 60.84845400000006,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "04/30/2014",
+          "x": 485.1,
+          "y": 148.62000000000003,
+          "width": 50.13687600000003,
+          "height": 10.97999999999999,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.98,
+          "confidence": 1
+        },
+        {
+          "text": "Date Received",
+          "x": 413.460042,
+          "y": 161.27975999999998,
+          "width": 58.64505599999973,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": ":",
+          "x": 472.080048,
+          "y": 161.27975999999998,
+          "width": 2.284559999999999,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "05/01/2014",
+          "x": 485.1,
+          "y": 161.22000000000006,
+          "width": 50.13687600000003,
+          "height": 10.97999999999999,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.98,
+          "confidence": 1
+        },
+        {
+          "text": "DPMG",
+          "x": 89.1,
+          "y": 148.79989999999995,
+          "width": 24.658218000000005,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "3301 C st Suite 200E",
+          "x": 89.1,
+          "y": 160.25977399999996,
+          "width": 77.54478000000009,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Sacramento CA, 95816",
+          "x": 89.1,
+          "y": 171.71964799999998,
+          "width": 85.26418800000002,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f5",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Page 2 of 2",
+          "x": 520.3199999999999,
+          "y": 728.46,
+          "width": 55.672799999999825,
+          "height": 12,
+          "fontName": "g_d0_f1",
+          "fontSize": 12,
+          "confidence": 1
+        },
+        {
+          "text": "Robert W. Ghiselli, M.D.",
+          "x": 49.32,
+          "y": 746.8799,
+          "width": 90.32760000000002,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 49.08,
+          "y": 757.4399,
+          "width": 90.87119999999997,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "Laboratory Medical Director",
+          "x": 53.22,
+          "y": 764.28,
+          "width": 82.50044399999999,
+          "height": 7.019999999999982,
+          "fontName": "g_d0_f3",
+          "fontSize": 7.02,
+          "confidence": 1
+        },
+        {
+          "text": "David R. Guill\u00e9n, M.D.",
+          "x": 160.8,
+          "y": 746.8799,
+          "width": 84.17520000000002,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 157.5,
+          "y": 757.4399,
+          "width": 90.87120000000033,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "Derek Marsee, M.D., PhD.",
+          "x": 264.4203,
+          "y": 746.8799,
+          "width": 97.46639999999974,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 267.78,
+          "y": 757.4399,
+          "width": 90.87119999999953,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "Shayesteh Pashaei, M.D.",
+          "x": 378.3003,
+          "y": 746.8799,
+          "width": 90.27449999999988,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 378,
+          "y": 757.4399,
+          "width": 90.87119999999953,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "Limin Yu, M.D.",
+          "x": 499.0197,
+          "y": 746.8799,
+          "width": 55.73520000000002,
+          "height": 9,
+          "fontName": "g_d0_f3",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Board Certified in Dermatopathology",
+          "x": 481.5,
+          "y": 757.4399,
+          "width": 90.87120000000073,
+          "height": 6,
+          "fontName": "g_d0_f3",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "GROSS DESCRIPTION:",
+          "x": 43.2,
+          "y": 199.14000000000001,
+          "width": 120.14096400000012,
+          "height": 10.97999999999999,
+          "fontName": "g_d0_f1",
+          "fontSize": 10.98,
+          "confidence": 1
+        },
+        {
+          "text": "TMA:kg",
+          "x": 165.84002999999998,
+          "y": 200.1,
+          "width": 35.059979999999996,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "A.",
+          "x": 43.2,
+          "y": 223.25999399999998,
+          "width": 9.735432000000003,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Received in formalin in a container labeled with the patient's name and \"R arm\" is a single 0.5 x 0.4 x 0.1 cm irregular light",
+          "x": 61.21095000000001,
+          "y": 223.25999399999998,
+          "width": 514.7584619999999,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "grey-tan rough portion of tissue. The specimen is inked, bisected, wrapped in biopsy paper and submitted entirely in cassette A.",
+          "x": 61.20092999999997,
+          "y": 234.719868,
+          "width": 510.76549200000034,
+          "height": 10.02000000000001,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "B.",
+          "x": 43.20100200000002,
+          "y": 257.759856,
+          "width": 9.191345999999996,
+          "height": 10.019999999999982,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "Received in formalin in a container labeled with the patient's name and \"L neck\" is a single 0.5 x 0.4 x 0.1 cm irregular tan",
+          "x": 61.21495800000002,
+          "y": 257.759856,
+          "width": 514.8165780000002,
+          "height": 10.019999999999982,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "smooth portion of tissue. The specimen is inked, bisected, wrapped in biopsy paper and submitted entirely in cassette B.",
+          "x": 61.201932000000056,
+          "y": 269.21973,
+          "width": 480.3728279999997,
+          "height": 10.019999999999982,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "MICROSCOPIC DESCRIPTION:",
+          "x": 43.2,
+          "y": 292.32,
+          "width": 163.35275399999995,
+          "height": 10.980000000000018,
+          "fontName": "g_d0_f1",
+          "fontSize": 10.98,
+          "confidence": 1
+        },
+        {
+          "text": "The sections show a hyperplastic epidermis with channels containing brightly eosinophilic elastic fibers and basophilic debris. The",
+          "x": 43.199892000000034,
+          "y": 316.380108,
+          "width": 532.8104940000001,
+          "height": 10.019999999999982,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "adjacent dermis contains foci of foreign-body giant cells. Special stains for micro-organisms (PAS and GMS on both parts A",
+          "x": 61.19981999999999,
+          "y": 327.900102,
+          "width": 514.8937319999995,
+          "height": 10.019999999999982,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "and B, Gram on part A) are negative.",
+          "x": 61.19981999999999,
+          "y": 339.359976,
+          "width": 148.5324720000001,
+          "height": 10.019999999999982,
+          "fontName": "g_d0_f4",
+          "fontSize": 10.02,
+          "confidence": 1
+        },
+        {
+          "text": "DKM:kg; 709.8",
+          "x": 43.2,
+          "y": 356.64,
+          "width": 57.56040000000003,
+          "height": 9,
+          "fontName": "g_d0_f4",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "This report may include a photomicrograph of the slide under examination. For a variety of reasons, including the limitations of some electronic interfaces, the photomicrograph may not appear on the version of this report",
+          "x": 43.2,
+          "y": 370.68,
+          "width": 532.8312000000004,
+          "height": 6,
+          "fontName": "g_d0_f4",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "that you view. The photomicrograph is not of diagnostic quality and should not be relied upon by any professional. Health care professionals should rely only upon the pathologist\u2019s written interpretation.",
+          "x": 43.19999999999999,
+          "y": 377.58,
+          "width": 490.3254000000007,
+          "height": 6,
+          "fontName": "g_d0_f4",
+          "fontSize": 6,
+          "confidence": 1
+        },
+        {
+          "text": "Final Diagnosis performed by",
+          "x": 43.2,
+          "y": 395.7,
+          "width": 107.72909999999995,
+          "height": 9,
+          "fontName": "g_d0_f4",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Derek K Marsee M.D., Ph.D",
+          "x": 153.2403,
+          "y": 395.7,
+          "width": 108.91890000000006,
+          "height": 9,
+          "fontName": "g_d0_f1",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Electronically signed 05/07/2014",
+          "x": 43.19999999999999,
+          "y": 406.0797,
+          "width": 119.52810000000002,
+          "height": 9,
+          "fontName": "g_d0_f4",
+          "fontSize": 9,
+          "confidence": 1
+        },
+        {
+          "text": "Diagnostic Pathology Medical Group,",
+          "x": 43.2,
+          "y": 416.58000000000004,
+          "width": 106.59729600000004,
+          "height": 7.019999999999982,
+          "fontName": "g_d0_f4",
+          "fontSize": 7.02,
+          "confidence": 1
+        },
+        {
+          "text": "3301 C Street, Suite 200E SACRAMENTO, CA 95816",
+          "x": 43.2,
+          "y": 424.67967600000003,
+          "width": 158.90963400000004,
+          "height": 7.019999999999982,
+          "fontName": "g_d0_f4",
+          "fontSize": 7.02,
+          "confidence": 1
+        }
+      ],
+      "boundingBoxes": [
+        {
+          "x1": 236.700336,
+          "y1": 33.179796000000024,
+          "x2": 400.7738099999998,
+          "y2": 47.15979600000003
+        },
+        {
+          "x1": 290.700882,
+          "y1": 49.31970600000001,
+          "x2": 348.9695219999999,
+          "y2": 63.299706000000015
+        },
+        {
+          "x1": 476.1,
+          "y1": 27.47969999999998,
+          "x2": 562.4982000000002,
+          "y2": 36.47969999999998
+        },
+        {
+          "x1": 476.1,
+          "y1": 37.85939999999994,
+          "x2": 557.55,
+          "y2": 46.85939999999994
+        },
+        {
+          "x1": 476.1,
+          "y1": 48.17969999999991,
+          "x2": 532.3176000000001,
+          "y2": 57.17969999999991
+        },
+        {
+          "x1": 476.1,
+          "y1": 58.55939999999987,
+          "x2": 551.6172000000003,
+          "y2": 67.55939999999987
+        },
+        {
+          "x1": 476.1,
+          "y1": 68.87969999999984,
+          "x2": 544.5864,
+          "y2": 77.87969999999984
+        },
+        {
+          "x1": 43.2,
+          "y1": 104.94000000000004,
+          "x2": 73.754988,
+          "y2": 114.96000000000004
+        },
+        {
+          "x1": 89.1,
+          "y1": 104.88000000000001,
+          "x2": 173.87332200000003,
+          "y2": 118.86000000000001
+        },
+        {
+          "x1": 287.1,
+          "y1": 104.94000000000004,
+          "x2": 306.596916,
+          "y2": 114.96000000000004
+        },
+        {
+          "x1": 323.09985600000005,
+          "y1": 105.12035999999999,
+          "x2": 374.207868,
+          "y2": 115.14035999999999
+        },
+        {
+          "x1": 423.42009600000006,
+          "y1": 104.94000000000004,
+          "x2": 474.34674600000005,
+          "y2": 114.96000000000004
+        },
+        {
+          "x1": 485.1,
+          "y1": 104.88000000000001,
+          "x2": 561.587376,
+          "y2": 118.86000000000001
+        },
+        {
+          "x1": 43.2,
+          "y1": 129.06000000000003,
+          "x2": 69.95339999999999,
+          "y2": 139.08000000000004
+        },
+        {
+          "x1": 287.100828,
+          "y1": 129.06000000000003,
+          "x2": 304.9224,
+          "y2": 139.08000000000004
+        },
+        {
+          "x1": 323.100684,
+          "y1": 129.24035999999998,
+          "x2": 345.43326,
+          "y2": 139.26036
+        },
+        {
+          "x1": 413.28,
+          "y1": 129.05989999999997,
+          "x2": 474.3980999999999,
+          "y2": 138.05989999999997
+        },
+        {
+          "x1": 485.09999999999997,
+          "y1": 129.17959999999994,
+          "x2": 544.1319000000001,
+          "y2": 138.17959999999994
+        },
+        {
+          "x1": 43.2,
+          "y1": 148.61999999999998,
+          "x2": 73.756992,
+          "y2": 158.64
+        },
+        {
+          "x1": 413.52016199999997,
+          "y1": 148.61999999999998,
+          "x2": 474.36861600000003,
+          "y2": 158.64
+        },
+        {
+          "x1": 485.1,
+          "y1": 148.62000000000003,
+          "x2": 535.236876,
+          "y2": 159.60000000000002
+        },
+        {
+          "x1": 413.460042,
+          "y1": 161.27975999999998,
+          "x2": 472.1050979999997,
+          "y2": 171.29976
+        },
+        {
+          "x1": 472.080048,
+          "y1": 161.27975999999998,
+          "x2": 474.364608,
+          "y2": 171.29976
+        },
+        {
+          "x1": 485.1,
+          "y1": 161.22000000000006,
+          "x2": 535.236876,
+          "y2": 172.20000000000005
+        },
+        {
+          "x1": 89.1,
+          "y1": 148.79989999999995,
+          "x2": 113.758218,
+          "y2": 158.81989999999996
+        },
+        {
+          "x1": 89.1,
+          "y1": 160.25977399999996,
+          "x2": 166.64478000000008,
+          "y2": 170.27977399999997
+        },
+        {
+          "x1": 89.1,
+          "y1": 171.71964799999998,
+          "x2": 174.364188,
+          "y2": 181.739648
+        },
+        {
+          "x1": 520.3199999999999,
+          "y1": 728.46,
+          "x2": 575.9927999999998,
+          "y2": 740.46
+        },
+        {
+          "x1": 49.32,
+          "y1": 746.8799,
+          "x2": 139.6476,
+          "y2": 755.8799
+        },
+        {
+          "x1": 49.08,
+          "y1": 757.4399,
+          "x2": 139.95119999999997,
+          "y2": 763.4399
+        },
+        {
+          "x1": 53.22,
+          "y1": 764.28,
+          "x2": 135.720444,
+          "y2": 771.3
+        },
+        {
+          "x1": 160.8,
+          "y1": 746.8799,
+          "x2": 244.97520000000003,
+          "y2": 755.8799
+        },
+        {
+          "x1": 157.5,
+          "y1": 757.4399,
+          "x2": 248.37120000000033,
+          "y2": 763.4399
+        },
+        {
+          "x1": 264.4203,
+          "y1": 746.8799,
+          "x2": 361.88669999999973,
+          "y2": 755.8799
+        },
+        {
+          "x1": 267.78,
+          "y1": 757.4399,
+          "x2": 358.6511999999995,
+          "y2": 763.4399
+        },
+        {
+          "x1": 378.3003,
+          "y1": 746.8799,
+          "x2": 468.57479999999987,
+          "y2": 755.8799
+        },
+        {
+          "x1": 378,
+          "y1": 757.4399,
+          "x2": 468.87119999999953,
+          "y2": 763.4399
+        },
+        {
+          "x1": 499.0197,
+          "y1": 746.8799,
+          "x2": 554.7549,
+          "y2": 755.8799
+        },
+        {
+          "x1": 481.5,
+          "y1": 757.4399,
+          "x2": 572.3712000000007,
+          "y2": 763.4399
+        },
+        {
+          "x1": 43.2,
+          "y1": 199.14000000000001,
+          "x2": 163.34096400000013,
+          "y2": 210.12
+        },
+        {
+          "x1": 165.84002999999998,
+          "y1": 200.1,
+          "x2": 200.90000999999998,
+          "y2": 210.12
+        },
+        {
+          "x1": 43.2,
+          "y1": 223.25999399999998,
+          "x2": 52.935432000000006,
+          "y2": 233.279994
+        },
+        {
+          "x1": 61.21095000000001,
+          "y1": 223.25999399999998,
+          "x2": 575.9694119999999,
+          "y2": 233.279994
+        },
+        {
+          "x1": 61.20092999999997,
+          "y1": 234.719868,
+          "x2": 571.9664220000003,
+          "y2": 244.739868
+        },
+        {
+          "x1": 43.20100200000002,
+          "y1": 257.759856,
+          "x2": 52.39234800000001,
+          "y2": 267.779856
+        },
+        {
+          "x1": 61.21495800000002,
+          "y1": 257.759856,
+          "x2": 576.0315360000002,
+          "y2": 267.779856
+        },
+        {
+          "x1": 61.201932000000056,
+          "y1": 269.21973,
+          "x2": 541.5747599999997,
+          "y2": 279.23973
+        },
+        {
+          "x1": 43.2,
+          "y1": 292.32,
+          "x2": 206.55275399999994,
+          "y2": 303.3
+        },
+        {
+          "x1": 43.199892000000034,
+          "y1": 316.380108,
+          "x2": 576.0103860000002,
+          "y2": 326.400108
+        },
+        {
+          "x1": 61.19981999999999,
+          "y1": 327.900102,
+          "x2": 576.0935519999996,
+          "y2": 337.920102
+        },
+        {
+          "x1": 61.19981999999999,
+          "y1": 339.359976,
+          "x2": 209.7322920000001,
+          "y2": 349.379976
+        },
+        {
+          "x1": 43.2,
+          "y1": 356.64,
+          "x2": 100.76040000000003,
+          "y2": 365.64
+        },
+        {
+          "x1": 43.2,
+          "y1": 370.68,
+          "x2": 576.0312000000005,
+          "y2": 376.68
+        },
+        {
+          "x1": 43.19999999999999,
+          "y1": 377.58,
+          "x2": 533.5254000000007,
+          "y2": 383.58
+        },
+        {
+          "x1": 43.2,
+          "y1": 395.7,
+          "x2": 150.92909999999995,
+          "y2": 404.7
+        },
+        {
+          "x1": 153.2403,
+          "y1": 395.7,
+          "x2": 262.15920000000006,
+          "y2": 404.7
+        },
+        {
+          "x1": 43.19999999999999,
+          "y1": 406.0797,
+          "x2": 162.7281,
+          "y2": 415.0797
+        },
+        {
+          "x1": 43.2,
+          "y1": 416.58000000000004,
+          "x2": 149.79729600000005,
+          "y2": 423.6
+        },
+        {
+          "x1": 43.2,
+          "y1": 424.67967600000003,
+          "x2": 202.10963400000003,
+          "y2": 431.699676
+        }
+      ]
+    }
+  ]
+}

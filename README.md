@@ -1,11 +1,10 @@
 # Document Parser
 
-Benchmarks four document extraction methods against the same set of test files, writing Markdown output for each.
+Benchmarks three document extraction methods against the same set of test files, writing Markdown output for each.
 
 | Method | What it uses |
 |---|---|
-| `pdfminer` | [pdfminer.six](https://github.com/pdfminer/pdfminer.six) — local, no API needed |
-| `claude` | Anthropic Claude API (vision + text) |
+| `claude` | Anthropic Claude API — converts any document type to PDF via HTML, then extracts |
 | `landing_ai` | [agentic-doc](https://github.com/landing-ai/agentic-doc) SDK |
 | `databricks` | Databricks `ai_parse_document` SQL function |
 
@@ -23,7 +22,11 @@ source .venv/bin/activate      # Windows: .venv\Scripts\activate
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Configure credentials
+# 4. Generate sample test files
+python create_sample_pptx.py
+python create_sample_docx.py
+
+# 5. Configure credentials
 cp .env.example .env
 # Edit .env and fill in your API keys
 ```
@@ -55,12 +58,13 @@ Results are written to `output/<method>/<filename>.md`.
 
 ```
 .
-├── run_tests.py             # Orchestrator — runs all extractors and prints a summary table
-├── claude_extractor.py      # Anthropic Claude extractor
-├── databricks_extractor.py  # Databricks ai_parse_document extractor
-├── landing_ai_extractor.py  # Landing AI agentic-doc extractor
-├── pdfminer_extractor.py    # Local pdfminer.six extractor
+├── run_tests.py                # Orchestrator — runs all extractors and prints a summary table
+├── claude_extractor.py         # Anthropic Claude extractor (universal document → PDF → extract)
+├── databricks_extractor.py     # Databricks ai_parse_document extractor
+├── landing_ai_extractor.py     # Landing AI agentic-doc extractor
+├── create_sample_pptx.py       # Generator for sample PPTX test file
+├── create_sample_docx.py       # Generator for sample DOCX test file
 ├── requirements.txt
-├── .env.example             # Credential template — copy to .env and fill in
-└── output/                  # Generated (git-ignored) — one subfolder per method
+├── .env.example                # Credential template — copy to .env and fill in
+└── output/                     # Generated (git-ignored) — one subfolder per method
 ```

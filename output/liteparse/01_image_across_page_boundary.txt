@@ -1,0 +1,84 @@
+Test 01 - Image Across Page Boundary
+Purpose: same tall figure intentionally cut across two PDF pages.
+
+
+
+
+
+
+
+
+
+
+1D: SVC-100    ID:SVC-101    1D:SVC-102
+
+
+
+
+
+
+
+
+
+
+-      ID: SVC-104        ID:SVC-105
+
+
+
+
+=1D:    =
+    SVC-1068    ID: SVC-107    ID:SVC-108
+
+
+
+
+
+
+
+
+
+
+    line                      must reconcile
+IMPORTANT: THIS FIGURECONTINUESON  -ᵇᵒᵘⁿᵈᵃʳʸ
+ee)     i     GS      (J
+SD
+
+
+
+
+
+
+
+
+
+
+Figure 1a. Top half of architecture diagram. Continuation marker at bottom.
+
+Test 01 - Image Across Page Boundary, continued
+
+
+
+
+
+
+    line must reconcile
+IMPORTANT: THIS FIGURECONTINUESON AGE  -boundary
+
+    (        (
+ED
+
+
+ID:    SVC-113    =ID:SVC-114
+
+=~ ID: SVC-116    ID SVC-117
+
+
+
+
+
+
+
+
+
+
+Figure 1b. Bottom half of same architecture diagram. Parser should merge with previous page.

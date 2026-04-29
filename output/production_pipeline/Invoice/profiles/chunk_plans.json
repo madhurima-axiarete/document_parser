@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_index": 0,
+    "chunk_id": "Invoice_chunk000",
+    "target_pages": [
+      1
+    ],
+    "context_before": [],
+    "context_after": [],
+    "estimated_input_tokens": 1615,
+    "uses_vision": true,
+    "has_boundary_risk": false
+  }
+]
