@@ -108,7 +108,10 @@ def run(
                   f"{cost_estimate['output_tokens']:,} output tokens)")
 
         all_blocks: list[Block] = []
-        for i, chunk_plan in enumerate(chunk_plans):
+        chunks_to_extract = list(enumerate(chunk_plans))
+
+        while chunks_to_extract:
+            i, chunk_plan = chunks_to_extract.pop(0)
             if verbose:
                 print(f"  Extracting chunk {i + 1}/{len(chunk_plans)} (pages {chunk_plan.target_pages})...")
 
@@ -139,6 +142,45 @@ def run(
                     continue
 
             if not blocks:
+                # Check if chunk size is large (heuristic: >25 pages suggests token overflow)
+                chunk_size = len(chunk_plan.target_pages)
+                if chunk_size > 25 and "JSON" in error_msg:
+                    if verbose:
+                        print(f"    Chunk too large ({chunk_size} pages), halving and retrying...")
+
+                    # Dynamically halve the chunk
+                    mid = chunk_size // 2
+                    first_half_pages = chunk_plan.target_pages[:mid]
+                    second_half_pages = chunk_plan.target_pages[mid:]
+
+                    # Create smaller chunk plans
+                    first_plan = chunker.ChunkPlan(
+                        chunk_index=chunk_plan.chunk_index,
+                        chunk_id=f"{chunk_plan.chunk_id}_a",
+                        target_pages=first_half_pages,
+                        context_before=chunk_plan.context_before,
+                        context_after=[first_half_pages[-1] + 1] if first_half_pages[-1] < len(doc) else [],
+                        estimated_input_tokens=chunk_plan.estimated_input_tokens // 2,
+                        uses_vision=chunk_plan.uses_vision,
+                        has_boundary_risk=chunk_plan.has_boundary_risk,
+                    )
+
+                    second_plan = chunker.ChunkPlan(
+                        chunk_index=chunk_plan.chunk_index,
+                        chunk_id=f"{chunk_plan.chunk_id}_b",
+                        target_pages=second_half_pages,
+                        context_before=[second_half_pages[0] - 1] if second_half_pages[0] > 1 else [],
+                        context_after=chunk_plan.context_after,
+                        estimated_input_tokens=chunk_plan.estimated_input_tokens // 2,
+                        uses_vision=chunk_plan.uses_vision,
+                        has_boundary_risk=chunk_plan.has_boundary_risk,
+                    )
+
+                    # Re-queue smaller chunks at front
+                    chunks_to_extract.insert(0, (i, second_plan))
+                    chunks_to_extract.insert(0, (i, first_plan))
+                    continue
+
                 msg = f"Chunk {i}: {error_msg or 'unknown error'}"
                 warnings.append(msg)
                 if verbose:

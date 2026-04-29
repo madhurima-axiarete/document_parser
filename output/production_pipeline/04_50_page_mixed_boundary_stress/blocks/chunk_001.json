@@ -19,7 +19,7 @@
       "sequence": 0,
       "confidence": 1.0,
       "extraction_method": "native",
-      "heading_level": 2,
+      "heading_level": 1,
       "is_truncated": false,
       "is_continuation": false,
       "bbox": null,
@@ -44,7 +44,7 @@
     {
       "block_id": "04_50_page_mixed_boundary_stress_p51_b0002",
       "block_type": "paragraph",
-      "content": "Paragraph 50.0: The recovery owner checks service health, validates dependencies, confirms escalation path,\nand records evidence ID EVID-50-0. This paragraph may continue across chunk boundaries.",
+      "content": "Paragraph 50.0: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-50-0. This paragraph may continue across chunk boundaries.",
       "page_number": 51,
       "source_file": "04_50_page_mixed_boundary_stress.pdf",
       "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
@@ -60,7 +60,7 @@
     {
       "block_id": "04_50_page_mixed_boundary_stress_p51_b0003",
       "block_type": "paragraph",
-      "content": "Paragraph 50.1: The recovery owner checks service health, validates dependencies, confirms escalation path,\nand records evidence ID EVID-50-1. This paragraph may continue across chunk boundaries.",
+      "content": "Paragraph 50.1: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-50-1. This paragraph may continue across chunk boundaries.",
       "page_number": 51,
       "source_file": "04_50_page_mixed_boundary_stress.pdf",
       "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
@@ -76,7 +76,7 @@
     {
       "block_id": "04_50_page_mixed_boundary_stress_p51_b0004",
       "block_type": "paragraph",
-      "content": "Paragraph 50.2: The recovery owner checks service health, validates dependencies, confirms escalation path,\nand records evidence ID EVID-50-2. This paragraph may continue across chunk boundaries.",
+      "content": "Paragraph 50.2: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-50-2. This paragraph may continue across chunk boundaries.",
       "page_number": 51,
       "source_file": "04_50_page_mixed_boundary_stress.pdf",
       "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
@@ -92,7 +92,7 @@
     {
       "block_id": "04_50_page_mixed_boundary_stress_p51_b0005",
       "block_type": "paragraph",
-      "content": "Paragraph 50.3: The recovery owner checks service health, validates dependencies, confirms escalation path,\nand records evidence ID EVID-50-3. This paragraph may continue across chunk boundaries.",
+      "content": "Paragraph 50.3: The recovery owner checks service health, validates dependencies, confirms escalation path, and records evidence ID EVID-50-3. This paragraph may continue across chunk boundaries.",
       "page_number": 51,
       "source_file": "04_50_page_mixed_boundary_stress.pdf",
       "chunk_id": "04_50_page_mixed_boundary_stress_chunk001",
