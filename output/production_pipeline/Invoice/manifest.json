@@ -1,0 +1,51 @@
+{
+  "source_file": "Invoice.jpg",
+  "total_pages": 1,
+  "file_size_bytes": 103772,
+  "extraction_date": "2026-05-05",
+  "toc": [],
+  "doc_stats": {
+    "scanned_page_count": 1,
+    "image_heavy_page_count": 0,
+    "table_heavy_page_count": 0,
+    "avg_input_tokens_per_page": 1615.0
+  },
+  "header_footer_policy": {
+    "suppressed_texts": [],
+    "reason": "repeated on 3+ pages verbatim"
+  },
+  "page_numbering_audit": {
+    "gaps": [],
+    "misalignments": []
+  },
+  "retrieval_level": 1,
+  "sections": [
+    {
+      "filename": "sections/001_insurance_company.md",
+      "title": "INSURANCE COMPANY",
+      "page_start": 1,
+      "page_end": 1,
+      "pages": "p1",
+      "heading_level": 1,
+      "retrieval_level": 1,
+      "parent_path": "",
+      "block_ids": [
+        "Invoice_p1_b0001",
+        "Invoice_p1_b0006",
+        "Invoice_p1_b0002",
+        "Invoice_p1_b0003",
+        "Invoice_p1_b0004",
+        "Invoice_p1_b0005",
+        "Invoice_p1_b0007",
+        "Invoice_p1_b0009",
+        "Invoice_p1_b0000",
+        "Invoice_p1_b0008",
+        "Invoice_p1_b0010"
+      ],
+      "context_block_ids": {
+        "before": [],
+        "after": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "source_file": "LabReport.pdf",
+  "total_pages": 2,
+  "file_size_bytes": 229969,
+  "extraction_date": "2026-05-06",
+  "toc": [],
+  "doc_stats": {
+    "scanned_page_count": 0,
+    "image_heavy_page_count": 0,
+    "table_heavy_page_count": 0,
+    "avg_input_tokens_per_page": 1105.0
+  },
+  "header_footer_policy": {
+    "suppressed_texts": [],
+    "reason": "repeated on 3+ pages verbatim"
+  },
+  "page_numbering_audit": {
+    "gaps": [],
+    "misalignments": []
+  },
+  "max_heading_level": 2,
+  "sections": [
+    {
+      "filename": "sections/001_diagnosis.md",
+      "title": "DIAGNOSIS:",
+      "page_start": 1,
+      "page_end": 1,
+      "pages": "p1",
+      "heading_level": 2,
+      "parent_path": "",
+      "block_ids": [
+        "LabReport_p1_b0004",
+        "LabReport_p1_b0002",
+        "LabReport_p1_b0003",
+        "LabReport_p1_b0008",
+        "LabReport_p1_b0009",
+        "LabReport_p1_b0005",
+        "LabReport_p1_b0006",
+        "LabReport_p1_b0000",
+        "LabReport_p1_b0007",
+        "LabReport_p1_b0001",
+        "LabReport_p1_b0010"
+      ],
+      "context_block_ids": {
+        "before": [],
+        "after": [
+          "LabReport_p2_b0016",
+          "LabReport_p2_b0013",
+          "LabReport_p2_b0017",
+          "LabReport_p2_b0018",
+          "LabReport_p2_b0019",
+          "LabReport_p2_b0020",
+          "LabReport_p2_b0014",
+          "LabReport_p2_b0015",
+          "LabReport_p2_b0011",
+          "LabReport_p2_b0012",
+          "LabReport_p2_b0021"
+        ]
+      }
+    },
+    {
+      "filename": "sections/002_microscopic_description.md",
+      "title": "MICROSCOPIC DESCRIPTION:",
+      "page_start": 2,
+      "page_end": 2,
+      "pages": "p2",
+      "heading_level": 2,
+      "parent_path": "",
+      "block_ids": [
+        "LabReport_p2_b0016",
+        "LabReport_p2_b0013",
+        "LabReport_p2_b0017",
+        "LabReport_p2_b0018",
+        "LabReport_p2_b0019",
+        "LabReport_p2_b0020",
+        "LabReport_p2_b0014",
+        "LabReport_p2_b0015",
+        "LabReport_p2_b0011",
+        "LabReport_p2_b0012",
+        "LabReport_p2_b0021"
+      ],
+      "context_block_ids": {
+        "before": [
+          "LabReport_p1_b0004",
+          "LabReport_p1_b0002",
+          "LabReport_p1_b0003",
+          "LabReport_p1_b0008",
+          "LabReport_p1_b0009",
+          "LabReport_p1_b0005",
+          "LabReport_p1_b0006",
+          "LabReport_p1_b0000",
+          "LabReport_p1_b0007",
+          "LabReport_p1_b0001",
+          "LabReport_p1_b0010"
+        ],
+        "after": []
+      }
+    }
+  ]
+}

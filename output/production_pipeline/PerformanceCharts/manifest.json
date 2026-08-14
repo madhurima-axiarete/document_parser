@@ -1,0 +1,50 @@
+{
+  "source_file": "PerformanceCharts.pdf",
+  "total_pages": 1,
+  "file_size_bytes": 514162,
+  "extraction_date": "2026-05-05",
+  "toc": [],
+  "doc_stats": {
+    "scanned_page_count": 1,
+    "image_heavy_page_count": 1,
+    "table_heavy_page_count": 0,
+    "avg_input_tokens_per_page": 1105.0
+  },
+  "header_footer_policy": {
+    "suppressed_texts": [],
+    "reason": "repeated on 3+ pages verbatim"
+  },
+  "page_numbering_audit": {
+    "gaps": [],
+    "misalignments": []
+  },
+  "retrieval_level": 1,
+  "sections": [
+    {
+      "filename": "sections/001_exhibit_7_bcg_s_greenhouse_gas_emissions.md",
+      "title": "Exhibit 7 - BCG's Greenhouse Gas Emissions",
+      "page_start": 1,
+      "page_end": 1,
+      "pages": "p1",
+      "heading_level": 1,
+      "retrieval_level": 1,
+      "parent_path": "",
+      "block_ids": [
+        "PerformanceCharts_p1_b0004",
+        "PerformanceCharts_p1_b0001",
+        "PerformanceCharts_p1_b0002",
+        "PerformanceCharts_p1_b0003",
+        "PerformanceCharts_p1_b0006",
+        "PerformanceCharts_p1_b0007",
+        "PerformanceCharts_p1_b0005",
+        "PerformanceCharts_p1_b0008"
+      ],
+      "context_block_ids": {
+        "before": [
+          "PerformanceCharts_p1_b0000"
+        ],
+        "after": []
+      }
+    }
+  ]
+}

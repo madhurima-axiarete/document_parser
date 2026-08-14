@@ -53,8 +53,8 @@ def main():
                       f"{result['cost_estimate']['output_tokens']:,} output tokens)")
 
             if result["warnings"]:
-                print(f"  Warnings: {len(result['warnings'])}")
-                for w in result["warnings"][:2]:
+                print(f"  ⚠️  Unrecoverable Issues: {len(result['warnings'])}")
+                for w in result["warnings"][:3]:
                     print(f"    - {w}")
 
             if success:

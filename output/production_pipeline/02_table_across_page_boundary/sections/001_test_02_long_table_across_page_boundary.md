@@ -1,0 +1,88 @@
+---
+title: Test 02 - Long Table Across Page Boundary
+heading_level: 1
+pages: p1–2
+---
+
+Purpose: a multi-page table with repeating headers and row IDs. The parser should preserve one logical table.
+
+| Row ID | Service | RTO | RPO | Dependency | Recovery Note |
+| --- | --- | --- | --- | --- | --- |
+| DR-001 | Application Service 1 | 30 min | 10 min | DB-1 / Queue-1 | Validation marker TBL-CONT-001. |
+| DR-002 | Application Service 2 | 45 min | 15 min | DB-2 / Queue-2 | Validation marker TBL-CONT-002. |
+| DR-003 | Application Service 3 | 60 min | 20 min | DB-3 / Queue-3 | Validation marker TBL-CONT-003. |
+| DR-004 | Application Service 4 | 75 min | 5 min | DB-4 / Queue-4 | Validation marker TBL-CONT-004. |
+| DR-005 | Application Service 5 | 15 min | 10 min | DB-5 / Queue-0 | Validation marker TBL-CONT-005. |
+| DR-006 | Application Service 6 | 30 min | 15 min | DB-6 / Queue-1 | Validation marker TBL-CONT-006. |
+| DR-007 | Application Service 7 | 45 min | 20 min | DB-0 / Queue-2 | Validation marker TBL-CONT-007. |
+| DR-008 | Application Service 8 | 60 min | 5 min | DB-1 / Queue-3 | Validation marker TBL-CONT-008. |
+| DR-009 | Application Service 9 | 75 min | 10 min | DB-2 / Queue-4 | Validation marker TBL-CONT-009. |
+| DR-010 | Application Service 10 | 15 min | 15 min | DB-3 / Queue-0 | Validation marker TBL-CONT-010. |
+| DR-011 | Application Service 11 | 30 min | 20 min | DB-4 / Queue-1 | Validation marker TBL-CONT-011. |
+| DR-012 | Application Service 12 | 45 min | 5 min | DB-5 / Queue-2 | Validation marker TBL-CONT-012. |
+| DR-013 | Application Service 13 | 60 min | 10 min | DB-6 / Queue-3 | Validation marker TBL-CONT-013. |
+| DR-014 | Application Service 14 | 75 min | 15 min | DB-0 / Queue-4 | Validation marker TBL-CONT-014. |
+| DR-015 | Application Service 15 | 15 min | 20 min | DB-1 / Queue-0 | Validation marker TBL-CONT-015. |
+| DR-016 | Application Service 16 | 30 min | 5 min | DB-2 / Queue-1 | Validation marker TBL-CONT-016. |
+| DR-017 | Application Service 17 | 45 min | 10 min | DB-3 / Queue-2 | Validation marker TBL-CONT-017. |
+| DR-018 | Application Service 18 | 60 min | 15 min | DB-4 / Queue-3 | Validation marker TBL-CONT-018. |
+| DR-019 | Application Service 19 | 75 min | 20 min | DB-5 / Queue-4 | Validation marker TBL-CONT-019. |
+| DR-020 | Application Service 20 | 15 min | 5 min | DB-6 / Queue-0 | Validation marker TBL-CONT-020. |
+| DR-021 | Application Service 21 | 30 min | 10 min | DB-0 / Queue-1 | Validation marker TBL-CONT-021. |
+| DR-022 | Application Service 22 | 45 min | 15 min | DB-1 / Queue-2 | Validation marker TBL-CONT-022. |
+| DR-023 | Application Service 23 | 60 min | 20 min | DB-2 / Queue-3 | Validation marker TBL-CONT-023. |
+| DR-024 | Application Service 24 | 75 min | 5 min | DB-3 / Queue-4 | Validation marker TBL-CONT-024. |
+| DR-025 | Application Service 25 | 15 min | 10 min | DB-4 / Queue-0 | Validation marker TBL-CONT-025. |
+| DR-026 | Application Service 26 | 30 min | 15 min | DB-5 / Queue-1 | Validation marker TBL-CONT-026. |
+| DR-027 | Application Service 27 | 45 min | 20 min | DB-6 / Queue-2 | Validation marker TBL-CONT-027. |
+| DR-028 | Application Service 28 | 60 min | 5 min | DB-0 / Queue-3 | Validation marker TBL-CONT-028. |
+| DR-029 | Application Service 29 | 75 min | 10 min | DB-1 / Queue-4 | Validation marker TBL-CONT-029. |
+| DR-030 | Application Service 30 | 15 min | 15 min | DB-2 / Queue-0 | Validation marker TBL-CONT-030. |
+| DR-031 | Application Service 31 | 30 min | 20 min | DB-3 / Queue-1 | Validation marker TBL-CONT-031. |
+| DR-032 | Application Service 32 | 45 min | 5 min | DB-4 / Queue-2 | Validation marker TBL-CONT-032. |
+| DR-033 | Application Service 33 | 60 min | 10 min | DB-5 / Queue-3 | Validation marker TBL-CONT-033. |
+| DR-034 | Application Service 34 | 75 min | 15 min | DB-6 / Queue-4 | Validation marker TBL-CONT-034. |
+| DR-035 | Application Service 35 | 15 min | 20 min | DB-0 / Queue-0 | Validation marker TBL-CONT-035. |
+| DR-036 | Application Service 36 | 30 min | 5 min | DB-1 / Queue-1 | Validation marker TBL-CONT-036. |
+| DR-037 | Application Service 37 | 45 min | 10 min | DB-2 / Queue-2 | Validation marker TBL-CONT-037. |
+| DR-038 | Application Service 38 | 60 min | 15 min | DB-3 / Queue-3 | Validation marker TBL-CONT-038. |
+| DR-039 | Application Service 39 | 75 min | 20 min | DB-4 / Queue-4 | Validation marker TBL-CONT-039. |
+| DR-040 | Application Service 40 | 15 min | 5 min | DB-5 / Queue-0 | Validation marker TBL-CONT-040. |
+| DR-041 | Application Service 41 | 30 min | 10 min | DB-6 / Queue-1 | Validation marker TBL-CONT-041. |
+| DR-042 | Application Service 42 | 45 min | 15 min | DB-0 / Queue-2 | Validation marker TBL-CONT-042. |
+
+---
+
+| DR-043 | Application Service 43 | 60 min | 20 min | DB-1 / Queue-3 | Validation marker TBL-CONT-043. |
+| --- | --- | --- | --- | --- | --- |
+| DR-044 | Application Service 44 | 75 min | 5 min | DB-2 / Queue-4 | Validation marker TBL-CONT-044. |
+| DR-045 | Application Service 45 | 15 min | 10 min | DB-3 / Queue-0 | Validation marker TBL-CONT-045. |
+| DR-046 | Application Service 46 | 30 min | 15 min | DB-4 / Queue-1 | Validation marker TBL-CONT-046. |
+| DR-047 | Application Service 47 | 45 min | 20 min | DB-5 / Queue-2 | Validation marker TBL-CONT-047. |
+| DR-048 | Application Service 48 | 60 min | 5 min | DB-6 / Queue-3 | Validation marker TBL-CONT-048. |
+| DR-049 | Application Service 49 | 75 min | 10 min | DB-0 / Queue-4 | Validation marker TBL-CONT-049. |
+| DR-050 | Application Service 50 | 15 min | 15 min | DB-1 / Queue-0 | Validation marker TBL-CONT-050. |
+| DR-051 | Application Service 51 | 30 min | 20 min | DB-2 / Queue-1 | Validation marker TBL-CONT-051. |
+| DR-052 | Application Service 52 | 45 min | 5 min | DB-3 / Queue-2 | Validation marker TBL-CONT-052. |
+| DR-053 | Application Service 53 | 60 min | 10 min | DB-4 / Queue-3 | Validation marker TBL-CONT-053. |
+| DR-054 | Application Service 54 | 75 min | 15 min | DB-5 / Queue-4 | Validation marker TBL-CONT-054. |
+| DR-055 | Application Service 55 | 15 min | 20 min | DB-6 / Queue-0 | Validation marker TBL-CONT-055. |
+| DR-056 | Application Service 56 | 30 min | 5 min | DB-0 / Queue-1 | Validation marker TBL-CONT-056. |
+| DR-057 | Application Service 57 | 45 min | 10 min | DB-1 / Queue-2 | Validation marker TBL-CONT-057. |
+| DR-058 | Application Service 58 | 60 min | 15 min | DB-2 / Queue-3 | Validation marker TBL-CONT-058. |
+| DR-059 | Application Service 59 | 75 min | 20 min | DB-3 / Queue-4 | Validation marker TBL-CONT-059. |
+| DR-060 | Application Service 60 | 15 min | 5 min | DB-4 / Queue-0 | Validation marker TBL-CONT-060. |
+| DR-061 | Application Service 61 | 30 min | 10 min | DB-5 / Queue-1 | Validation marker TBL-CONT-061. |
+| DR-062 | Application Service 62 | 45 min | 15 min | DB-6 / Queue-2 | Validation marker TBL-CONT-062. |
+| DR-063 | Application Service 63 | 60 min | 20 min | DB-0 / Queue-3 | Validation marker TBL-CONT-063. |
+| DR-064 | Application Service 64 | 75 min | 5 min | DB-1 / Queue-4 | Validation marker TBL-CONT-064. |
+| DR-065 | Application Service 65 | 15 min | 10 min | DB-2 / Queue-0 | Validation marker TBL-CONT-065. |
+| DR-066 | Application Service 66 | 30 min | 15 min | DB-3 / Queue-1 | Validation marker TBL-CONT-066. |
+| DR-067 | Application Service 67 | 45 min | 20 min | DB-4 / Queue-2 | Validation marker TBL-CONT-067. |
+| DR-068 | Application Service 68 | 60 min | 5 min | DB-5 / Queue-3 | Validation marker TBL-CONT-068. |
+| DR-069 | Application Service 69 | 75 min | 10 min | DB-6 / Queue-4 | Validation marker TBL-CONT-069. |
+| DR-070 | Application Service 70 | 15 min | 15 min | DB-0 / Queue-0 | Validation marker TBL-CONT-070. |
+| DR-071 | Application Service 71 | 30 min | 20 min | DB-1 / Queue-1 | Validation marker TBL-CONT-071. |
+| DR-072 | Application Service 72 | 45 min | 5 min | DB-2 / Queue-2 | Validation marker TBL-CONT-072. |
+| DR-073 | Application Service 73 | 60 min | 10 min | DB-3 / Queue-3 | Validation marker TBL-CONT-073. |
+| DR-074 | Application Service 74 | 75 min | 15 min | DB-4 / Queue-4 | Validation marker TBL-CONT-074. |

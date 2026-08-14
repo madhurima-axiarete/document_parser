@@ -1,11 +1,47 @@
 from __future__ import annotations
 
 import math
-from .models import PageProfile, DocProfile
+import re
+from pathlib import Path
+from .models import PageProfile, DocProfile, Chapter
 
 
 _MAX_GARBLE_RATE = 0.05
 _MIN_TEXT_LEN = 150
+
+
+def _extract_font_sizes(page) -> tuple[float, float, list[float]]:
+    """Extract font size statistics from page.
+
+    Returns (max_font_size, min_font_size, common_sizes).
+    Uses page.get_text("dict") to inspect text span properties.
+    """
+    font_sizes = []
+    try:
+        text_dict = page.get_text("dict")
+        for block in text_dict.get("blocks", []):
+            if block.get("type") == 0:  # Text block
+                for line in block.get("lines", []):
+                    for span in line.get("spans", []):
+                        size = span.get("size", 0)
+                        if size > 0:
+                            font_sizes.append(size)
+    except Exception:
+        pass
+
+    if not font_sizes:
+        return 12.0, 10.0, [12.0]
+
+    font_sizes_sorted = sorted(font_sizes)
+    max_size = max(font_sizes_sorted)
+    min_size = min(font_sizes_sorted)
+
+    # Find common sizes (sizes that appear frequently)
+    from collections import Counter
+    size_counts = Counter([round(s, 1) for s in font_sizes_sorted])
+    common = sorted([size for size, count in size_counts.most_common(3)], reverse=True)
+
+    return max_size, min_size, common if common else [12.0]
 
 
 def _is_garbled(text: str) -> bool:
@@ -25,6 +61,20 @@ def _estimate_vision_tokens(width_pts: float, height_pts: float, dpi: int = 100)
     tiles_w = math.ceil(w_px / 512)
     tiles_h = math.ceil(h_px / 512)
     return 85 + 170 * tiles_w * tiles_h
+
+
+def extract_toc(doc) -> list[Chapter]:
+    """Extract native PDF table of contents.
+
+    Returns list of Chapter objects from fitz_doc.get_toc().
+    """
+    try:
+        toc = doc.get_toc()
+        if not toc:
+            return []
+        return [Chapter(level=level, title=title, page_number=page) for level, title, page in toc]
+    except Exception:
+        return []
 
 
 def profile_page(page, page_number: int) -> PageProfile:
@@ -73,10 +123,10 @@ def profile_page(page, page_number: int) -> PageProfile:
     is_image_heavy = image_area_fraction > 0.30 or (image_count > 0 and is_scanned)
     is_table_heavy = table_count >= 2
 
-    if is_scanned or is_image_heavy:
-        estimated_input_tokens = _estimate_vision_tokens(page.rect.width, page.rect.height)
-    else:
-        estimated_input_tokens = max(200, text_char_count // 4 + 150)
+    estimated_input_tokens = _estimate_vision_tokens(page.rect.width, page.rect.height)
+
+    # Extract font statistics for layout-based heading detection
+    max_font, min_font, _ = _extract_font_sizes(page)
 
     return PageProfile(
         page_number=page_number,
@@ -91,11 +141,16 @@ def profile_page(page, page_number: int) -> PageProfile:
         estimated_input_tokens=estimated_input_tokens,
         page_width_pts=page.rect.width,
         page_height_pts=page.rect.height,
+        max_font_size=max_font,
+        min_font_size=min_font,
     )
 
 
 def profile_document(doc, source_file: str, file_size_bytes: int) -> DocProfile:
-    """Profile entire document, returning page-level and document-level metrics."""
+    """Profile entire document, returning page-level and document-level metrics.
+
+    Also extracts native PDF table of contents.
+    """
     page_profiles: list[PageProfile] = []
 
     for page_num, page in enumerate(doc, start=1):
@@ -118,6 +173,25 @@ def profile_document(doc, source_file: str, file_size_bytes: int) -> DocProfile:
 
     estimated_total_output_chars = int(avg_text_chars * total_pages * 1.2)
 
+    toc = extract_toc(doc)
+
+    # Compute document-level font statistics for heading detection
+    all_font_sizes = []
+    for profile in page_profiles:
+        all_font_sizes.append(profile.max_font_size)
+    max_font_in_doc = max(all_font_sizes) if all_font_sizes else 12.0
+
+    # Find common font sizes across document (heading indicators)
+    if page_profiles and len(page_profiles) > 1:
+        # Get max sizes from each page and find outliers (likely headings)
+        font_maxes = sorted([p.max_font_size for p in page_profiles], reverse=True)
+        # Top font sizes that appear in multiple pages
+        from collections import Counter
+        common_tops = Counter([round(f, 1) for f in font_maxes[:max(1, total_pages // 3)]])
+        common_font_sizes = sorted([size for size, _ in common_tops.most_common(2)], reverse=True)
+    else:
+        common_font_sizes = [max_font_in_doc]
+
     return DocProfile(
         source_file=source_file,
         total_pages=total_pages,
@@ -129,4 +203,7 @@ def profile_document(doc, source_file: str, file_size_bytes: int) -> DocProfile:
         table_heavy_page_count=table_heavy_page_count,
         estimated_total_output_chars=estimated_total_output_chars,
         page_profiles=page_profiles,
+        toc=toc,
+        max_font_size_in_doc=max_font_in_doc,
+        common_font_sizes=common_font_sizes,
     )

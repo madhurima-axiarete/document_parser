@@ -1,89 +1,126 @@
 from __future__ import annotations
 
 import json
+from datetime import date
 from pathlib import Path
 
-from .models import Block, ChunkPlan, DocProfile, BoundaryRisk
+from .models import Block, DocProfile
 
 
 def _ensure_dir(path: Path) -> None:
-    """Ensure directory exists."""
     path.mkdir(parents=True, exist_ok=True)
 
 
-def save_chunk(
-    chunk_plan: ChunkPlan,
-    blocks: list[Block],
-    output_dir: Path,
-) -> Path:
-    """Save raw blocks for a single chunk to JSON.
-
-    Returns path to saved file.
-    """
-    chunk_dir = output_dir / "blocks"
-    _ensure_dir(chunk_dir)
-
-    chunk_file = chunk_dir / f"chunk_{chunk_plan.chunk_index:03d}.json"
-
-    chunk_data = {
-        "chunk_id": chunk_plan.chunk_id,
-        "chunk_index": chunk_plan.chunk_index,
-        "target_pages": chunk_plan.target_pages,
-        "context_before": chunk_plan.context_before,
-        "context_after": chunk_plan.context_after,
-        "blocks": [b.to_dict() for b in blocks],
-    }
-
-    chunk_file.write_text(json.dumps(chunk_data, indent=2), encoding="utf-8")
-    return chunk_file
-
-
-def save_profiles(
+def save_manifest(
     doc_profile: DocProfile,
-    chunk_plans: list[ChunkPlan],
+    sections_meta: list[dict],
     output_dir: Path,
-) -> None:
-    """Save document and chunk profiles to JSON."""
-    profiles_dir = output_dir / "profiles"
-    _ensure_dir(profiles_dir)
+    suppressed_headers: list[str] | None = None,
+    page_numbering_audit: dict | None = None,
+) -> Path:
+    """Write manifest.json (authoritative metadata) and derive index.md from it.
 
-    doc_file = profiles_dir / "doc_profile.json"
-    doc_file.write_text(json.dumps(doc_profile.to_dict(), indent=2), encoding="utf-8")
+    manifest.json is the single source of truth for document structure, section
+    locations, block IDs, and extraction metadata. index.md is a human/LLM-readable
+    navigation view generated from manifest — never hand-built separately.
 
-    chunks_file = profiles_dir / "chunk_plans.json"
-    chunks_data = [c.to_dict() for c in chunk_plans]
-    chunks_file.write_text(json.dumps(chunks_data, indent=2), encoding="utf-8")
-
-
-def save_boundaries(
-    risks: list[BoundaryRisk],
-    output_dir: Path,
-) -> None:
-    """Save boundary risks to JSON."""
-    boundaries_dir = output_dir / "boundaries"
-    _ensure_dir(boundaries_dir)
-
-    risks_file = boundaries_dir / "boundary_risks.json"
-    risks_data = [r.to_dict() for r in risks]
-    risks_file.write_text(json.dumps(risks_data, indent=2), encoding="utf-8")
-
-
-def save_final(
-    all_blocks: list[Block],
-    markdown: str,
-    output_dir: Path,
-) -> tuple[Path, Path]:
-    """Save final raw blocks and rendered Markdown.
-
-    Returns (raw_blocks_path, markdown_path).
+    Returns path to manifest.json.
     """
     _ensure_dir(output_dir)
 
+    manifest = {
+        "source_file": doc_profile.source_file,
+        "total_pages": doc_profile.total_pages,
+        "file_size_bytes": doc_profile.file_size_bytes,
+        "extraction_date": date.today().isoformat(),
+        "toc": [c.to_dict() for c in doc_profile.toc],
+        "doc_stats": {
+            "scanned_page_count": doc_profile.scanned_page_count,
+            "image_heavy_page_count": doc_profile.image_heavy_page_count,
+            "table_heavy_page_count": doc_profile.table_heavy_page_count,
+            "avg_input_tokens_per_page": doc_profile.avg_input_tokens_per_page,
+        },
+        "header_footer_policy": {
+            "suppressed_texts": suppressed_headers or [],
+            "reason": "repeated on 3+ pages verbatim",
+        },
+        "page_numbering_audit": page_numbering_audit or {"gaps": [], "misalignments": []},
+        "max_heading_level": max((s["heading_level"] for s in sections_meta), default=1),
+        "sections": sections_meta,
+    }
+
+    manifest_path = output_dir / "manifest.json"
+    manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+
+    _write_index_from_manifest(manifest, output_dir)
+
+    return manifest_path
+
+
+def _write_index_from_manifest(manifest: dict, output_dir: Path) -> None:
+    """Generate index.md from manifest — hierarchical, indented by heading level."""
+    doc_title = Path(manifest["source_file"]).stem.replace("_", " ").replace("-", " ").title()
+    lines = [f"# {doc_title}\n"]
+
+    if manifest.get("toc"):
+        lines.append("## Table of Contents\n")
+        for entry in manifest["toc"]:
+            indent = "  " * (entry["level"] - 1)
+            lines.append(f"{indent}- {entry['title']} — p{entry['page_number']}")
+        lines.append("")
+
+    lines.append("## Sections\n")
+    for s in manifest["sections"]:
+        level = s.get("heading_level", 1)
+        indent = "  " * (level - 1)
+        pr = f" — {s['pages']}" if s.get("pages") else ""
+        lines.append(f"{indent}- [{s['title']}]({s['filename']}){pr}")
+
+    index_path = output_dir / "index.md"
+    index_path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def save_sections(sections: dict[str, str], output_dir: Path) -> Path:
+    """Save per-section markdown files, removing stale files first.
+
+    Returns path to sections/ directory.
+    """
+    sections_dir = output_dir / "sections"
+    _ensure_dir(sections_dir)
+
+    for old_file in sections_dir.rglob("*.md"):
+        old_file.unlink()
+    for d in sorted(sections_dir.rglob("*"), reverse=True):
+        if d.is_dir() and not list(d.iterdir()):
+            d.rmdir()
+
+    for filename, content in sections.items():
+        section_file = sections_dir / filename
+        _ensure_dir(section_file.parent)
+        section_file.write_text(content, encoding="utf-8")
+
+    return sections_dir
+
+
+def save_output(output_md: str, output_dir: Path) -> Path:
+    """Save output.md (full document, lossless reconstruction).
+
+    Returns path to output.md.
+    """
+    _ensure_dir(output_dir)
+    path = output_dir / "output.md"
+    path.write_text(output_md, encoding="utf-8")
+    return path
+
+
+def save_final(all_blocks: list[Block], output_dir: Path) -> Path:
+    """Save raw_blocks.json (structured extraction data for reprocessing/debugging).
+
+    Returns path to raw_blocks.json.
+    """
+    _ensure_dir(output_dir)
     raw_blocks_file = output_dir / "raw_blocks.json"
-    blocks_data = [b.to_dict() for b in all_blocks]
-    raw_blocks_file.write_text(json.dumps(blocks_data, indent=2), encoding="utf-8")
-
-    markdown_file = output_dir / "output.md"
-    markdown_file.write_text(markdown, encoding="utf-8")
-
-    return raw_blocks_file, markdown_file
+    raw_blocks_file.write_text(
+        json.dumps([b.to_dict() for b in all_blocks], indent=2), encoding="utf-8"
+    )
+    return raw_blocks_file

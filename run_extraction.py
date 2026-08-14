@@ -54,14 +54,14 @@ _try_import("gemma4", "gemma4_extractor")
 
 BASE_DIR = Path(__file__).parent
 OUTPUT_DIR = BASE_DIR / "output"
+TEST_DOCS_DIR = BASE_DIR / "test_docs"
 
-TEST_FILES = {
-    "PerformanceCharts.pdf": BASE_DIR / "test_docs" / "PerformanceCharts.pdf",
-    "LabReport.pdf": BASE_DIR / "test_docs" / "LabReport.pdf",
-    "Invoice.jpg": BASE_DIR / "test_docs" / "Invoice.jpg",
-    "AccidentStatement.pdf": BASE_DIR / "test_docs" / "AccidentStatement.pdf",
-    "Salesforce (large)": BASE_DIR / "test_docs" / "salesforce_release_notes_3-25-2026.pdf",
-}
+# Automatically discover all files in test_docs
+TEST_FILES = {}
+if TEST_DOCS_DIR.exists():
+    for file_path in sorted(TEST_DOCS_DIR.glob("*")):
+        if file_path.is_file():
+            TEST_FILES[file_path.name] = file_path
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────

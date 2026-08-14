@@ -7,8 +7,9 @@ from typing import Optional
 
 from .models import Block, ChunkPlan
 
-_MODEL = "claude-sonnet-4-6"  # Higher 1M token rate limit than Haiku, prevents overloaded errors
-_MAX_OUTPUT_TOKENS = 64000  # Model maximum, prevents truncation on large chunks
+_MODEL = "claude-sonnet-4-6"
+_MAX_OUTPUT_TOKENS = 64000
+_TAIL_PAGES = 3  # Pages of previous chunk output passed as context
 
 
 def _render_page_png(page, dpi: int = 100) -> bytes:
@@ -16,41 +17,34 @@ def _render_page_png(page, dpi: int = 100) -> bytes:
     import fitz
 
     _MAX_IMAGE_BYTES = 4 * 1024 * 1024
-
     for d in (dpi, 72, 50):
         mat = fitz.Matrix(d / 72, d / 72)
         pix = page.get_pixmap(matrix=mat)
         data = pix.tobytes("png")
         if len(data) <= _MAX_IMAGE_BYTES:
             return data
-
     return data
-
-
-def _extract_page_native(page) -> str:
-    """Extract page as Markdown using native PyMuPDF."""
-    try:
-        return page.get_text("markdown")
-    except Exception:
-        return page.get_text("text")
 
 
 _EXTRACTION_JSON_PROMPT = """You are a precise document content extractor. Extract content from the provided document pages and return ONLY a valid JSON object.
 
 CRITICAL RULES:
 1. Return ONLY valid JSON matching this schema. No markdown fences, no preamble, no explanation.
-2. Process EVERY TARGET page (marked with [TARGET]). Context pages marked [CONTEXT ONLY] are for continuity awareness — DO NOT output blocks for them.
-3. IMPORTANT: Extract content from ALL TARGET pages, even if some pages are mostly blank. Pages that appear empty should still be processed and result in appropriate blocks or be noted as empty.
-4. For each content block, determine block_type from: heading, paragraph, table, figure, header, footer, list_item, code.
-5. For tables: encode content as a JSON array of string arrays (rows × columns). Include header row first.
-6. Set is_truncated=true if the block appears cut off at the end of your visible page range.
-7. Set is_continuation=true if the block appears to begin mid-content (no visible start).
-8. For FIGURES/IMAGES/CHARTS: write a COMPLETE DESCRIPTION as content.
-   - For charts/graphs with legible numeric or categorical data: include data as table in metadata.chart_data AND describe in content (chart type, title, axis labels, color encoding, key annotations, data summary).
-   - For photographs, diagrams, sketches, signatures, illustrations, logos, stamps: describe EVERYTHING visible: shape, colors, symbols, text, spatial layout, visual meaning. Describe as if explaining to someone who cannot see it. Do not just name it.
-   - NEVER output just a name or generic description—always include specific visual details.
-9. Preserve exact text — do not rephrase, summarize, or infer.
-10. confidence: 1.0 for clearly legible text, 0.7-0.9 for partially legible, 0.5 for guessed.
+2. Extract content from EVERY page shown. Even blank-looking pages must produce blocks (e.g. a paragraph noting the page is blank).
+3. ONE BLOCK PER PAGE PER CONTENT ELEMENT. If a table spans pages 5, 6, and 7, output THREE separate table blocks — one per page — each with the rows visible on that exact page. Never merge content from multiple pages into one block.
+4. If PREVIOUSLY EXTRACTED CONTEXT is provided above, use it to understand what content was already extracted. Do NOT re-output those blocks. If a table or list was open at the end of the context, treat the first page here as a continuation (is_continuation=true).
+5. For each content block, determine block_type from: heading, paragraph, table, figure, header, footer, list_item, code.
+   - header: repeated text at the top of a page (document title, section name).
+   - footer: text at the bottom of a page. Set content to the page number if visible (e.g. "42"). Put any other footer text in metadata.footer_text.
+6. For tables: encode as a JSON array of string arrays (rows × columns). Include the header row only on the FIRST page of the table. Continuation pages contain only data rows.
+7. Set is_truncated=true if a block is cut off at the bottom of the page (continues on next page).
+8. Set is_continuation=true if a block begins mid-content (started on a previous page).
+9. For FIGURES/IMAGES/CHARTS: write a complete description as content.
+   - Data charts: include data as a table in metadata.chart_data AND describe in content.
+   - Photos/diagrams/logos: describe everything visible — shape, colors, text, spatial layout.
+   - Never use a generic name; always include specific visual details.
+10. Preserve exact text. Do not rephrase, summarize, or infer.
+11. confidence: 1.0 for clearly legible text, 0.7–0.9 for partially legible, 0.5 for guessed.
 
 JSON SCHEMA:
 {
@@ -68,6 +62,41 @@ JSON SCHEMA:
   ]
 }
 """
+
+
+def _build_tail_context_text(tail_blocks: list[Block]) -> str:
+    """Render the tail of the previous chunk as a compact JSON context string."""
+    if not tail_blocks:
+        return ""
+
+    pages = sorted(set(b.page_number for b in tail_blocks))
+    compact = []
+    for b in tail_blocks:
+        row: dict = {
+            "page_number": b.page_number,
+            "block_type": b.block_type,
+            "is_truncated": b.is_truncated,
+        }
+        if b.block_type == "heading":
+            row["heading_level"] = b.heading_level
+            row["content"] = b.content
+        elif b.block_type == "table":
+            try:
+                rows = json.loads(b.content) if isinstance(b.content, str) else b.content
+                row["content_preview"] = f"table with {len(rows)} rows; last row: {rows[-1] if rows else []}"
+            except Exception:
+                row["content_preview"] = str(b.content)[:120]
+        else:
+            row["content"] = b.content[:200] if b.content else ""
+        compact.append(row)
+
+    return (
+        f"== PREVIOUSLY EXTRACTED CONTEXT (pages {pages[0]}–{pages[-1]}) ==\n"
+        "The following blocks were already extracted from the pages immediately before this chunk.\n"
+        "Use them to understand continuation context. Do NOT re-output them.\n\n"
+        + json.dumps(compact, indent=2)
+        + "\n\n== END OF PREVIOUS CONTEXT ==\n\n"
+    )
 
 
 def _parse_json_response(raw_text: str) -> list[dict]:
@@ -105,99 +134,83 @@ def _parse_json_response(raw_text: str) -> list[dict]:
     return []
 
 
+def tail_blocks(blocks: list[Block], n_pages: int = _TAIL_PAGES) -> list[Block]:
+    """Return blocks from the last n_pages pages — passed as context to the next chunk."""
+    if not blocks:
+        return []
+    all_pages = sorted(set(b.page_number for b in blocks))
+    tail_page_set = set(all_pages[-n_pages:])
+    return [b for b in blocks if b.page_number in tail_page_set]
+
+
 def extract_chunk(
     fitz_doc,
     chunk_plan: ChunkPlan,
     client,
     source_file: str,
+    prev_tail_blocks: list[Block] | None = None,
     model: str = _MODEL,
     verbose: bool = False,
     doc_lock=None,
+    pages_output_dir: Optional["Path"] = None,
 ) -> tuple[list[Block], Optional[str], int, int]:
-    """Extract a single chunk from the document via Claude.
+    """Extract a single chunk via Claude, using previous chunk output as context.
+
+    Every page in target_pages is extracted as a full target (PNG image).
+    prev_tail_blocks provides structured continuation context as JSON text —
+    no duplicate PDF images are sent for context pages.
 
     Args:
-        fitz_doc: PyMuPDF document object
-        chunk_plan: Chunk plan with target pages
-        client: Anthropic client
-        source_file: Source filename
-        model: Model ID
-        verbose: Verbose output
-        doc_lock: threading.Lock to serialize PyMuPDF reads (fitz not thread-safe)
+        pages_output_dir: If set, each page PNG is saved to this directory as
+            p{page_num:04d}.png and the relative path is stored in each block's
+            metadata["page_image"]. Consumers (web UI, notebooks) use this path
+            to show the source image. CLI runs ignore it — the path is just metadata.
 
-    Returns (blocks, error_message). error_message is None on success.
+    Returns (blocks, error_message, input_tokens, output_tokens).
+    error_message is None on success.
     """
-    import fitz
+    from pathlib import Path as _Path
 
     target_pages = chunk_plan.target_pages
-    context_before = chunk_plan.context_before
-    context_after = chunk_plan.context_after
-
-    all_context_pages = context_before + target_pages + context_after
-
     content_parts: list[dict] = []
-    text_buffer = ""
+    page_png_cache: dict[int, bytes] = {}  # page_num → PNG bytes, reused for saving
 
-    for page_num in all_context_pages:
-        # Serialize PyMuPDF page access (fitz.Document is not thread-safe)
+    # 1. System prompt
+    content_parts.append({"type": "text", "text": _EXTRACTION_JSON_PROMPT})
+
+    # 2. Structured context from previous chunk (compact JSON, not images)
+    if prev_tail_blocks:
+        context_text = _build_tail_context_text(prev_tail_blocks)
+        content_parts.append({"type": "text", "text": context_text})
+
+    # 3. Page images — every page is a TARGET
+    for page_num in target_pages:
         if doc_lock:
             with doc_lock:
                 page = fitz_doc[page_num - 1]
+                png_bytes = _render_page_png(page)
         else:
             page = fitz_doc[page_num - 1]
+            png_bytes = _render_page_png(page)
 
-        is_target = page_num in target_pages
-        page_label_prefix = "[TARGET]" if is_target else "[CONTEXT ONLY]"
+        page_png_cache[page_num] = png_bytes
 
-        is_vision = page_num in target_pages
+        content_parts.append({
+            "type": "image",
+            "source": {
+                "type": "base64",
+                "media_type": "image/png",
+                "data": base64.standard_b64encode(png_bytes).decode(),
+            },
+        })
+        content_parts.append({"type": "text", "text": f"PAGE {page_num}"})
 
-        if is_vision:
-            if text_buffer:
-                content_parts.append({"type": "text", "text": text_buffer})
-                text_buffer = ""
-
-            # Render page to PNG (requires page object - keep page access in lock)
-            if doc_lock:
-                with doc_lock:
-                    png_bytes = _render_page_png(page)
-            else:
-                png_bytes = _render_page_png(page)
-
-            content_parts.append(
-                {
-                    "type": "image",
-                    "source": {
-                        "type": "base64",
-                        "media_type": "image/png",
-                        "data": base64.standard_b64encode(png_bytes).decode(),
-                    },
-                }
-            )
-            content_parts.append(
-                {
-                    "type": "text",
-                    "text": f"{page_label_prefix} PAGE {page_num}",
-                }
-            )
-        else:
-            try:
-                # Extract text (requires page object - keep page access in lock)
-                if doc_lock:
-                    with doc_lock:
-                        page_text = page.get_text("text")
-                else:
-                    page_text = page.get_text("text")
-                text_buffer += f"\n\n{page_label_prefix} PAGE {page_num}\n{page_text}"
-            except Exception:
-                text_buffer += f"\n\n{page_label_prefix} PAGE {page_num}\n[extraction failed]"
-
-    if text_buffer:
-        content_parts.append({"type": "text", "text": text_buffer})
-
-    if not content_parts:
-        return [], "No content to extract"
-
-    content_parts.insert(0, {"type": "text", "text": _EXTRACTION_JSON_PROMPT})
+    # Save PNGs to disk if visual provenance is enabled
+    if pages_output_dir is not None:
+        pages_output_dir = _Path(pages_output_dir)
+        pages_output_dir.mkdir(parents=True, exist_ok=True)
+        for page_num, png_bytes in page_png_cache.items():
+            (pages_output_dir / f"p{page_num:04d}.png").write_bytes(png_bytes)
 
     actual_input_tokens = 0
     actual_output_tokens = 0
@@ -206,12 +219,7 @@ def extract_chunk(
         with client.messages.stream(
             model=model,
             max_tokens=_MAX_OUTPUT_TOKENS,
-            messages=[
-                {
-                    "role": "user",
-                    "content": content_parts,
-                }
-            ],
+            messages=[{"role": "user", "content": content_parts}],
         ) as stream:
             final_message = stream.get_final_message()
             raw_text = final_message.content[0].text
@@ -220,52 +228,103 @@ def extract_chunk(
     except Exception as exc:
         return [], f"API error: {exc}", 0, 0
 
+    # Detect truncated response before attempting parse — no fallback can recover a cut-off JSON
+    if final_message.stop_reason == "max_tokens":
+        return [], f"Response truncated at token limit ({len(raw_text)} chars) — halving needed", actual_input_tokens, actual_output_tokens
+
     block_dicts = _parse_json_response(raw_text)
 
     if not block_dicts:
         return [], f"Failed to parse JSON response (length={len(raw_text)})", actual_input_tokens, actual_output_tokens
 
-    # Validate that all target pages were extracted
-    target_page_set = set(chunk_plan.target_pages)
+    # Validate coverage
+    target_page_set = set(target_pages)
     extracted_page_set = set(bd.get("page_number", 1) for bd in block_dicts)
+    missing = target_page_set - extracted_page_set
+    if len(missing) / max(len(target_page_set), 1) >= 0.25 and len(target_page_set) > 1:
+        return [], f"Extraction skipped {len(missing)}/{len(target_page_set)} pages {sorted(missing)}—needs halving", actual_input_tokens, actual_output_tokens
 
-    # Check if any target pages are missing (indicating extraction skipped pages)
-    # Only fail if we're missing a significant portion (more than 25%) or if extraction is empty
-    if extracted_page_set and target_page_set - extracted_page_set:
-        missing_count = len(target_page_set - extracted_page_set)
-        missing_ratio = missing_count / len(target_page_set)
-
-        # If we're missing 25%+ of pages, try halving the chunk
-        if missing_ratio >= 0.25 and len(target_page_set) > 1:
-            missing_pages = sorted(target_page_set - extracted_page_set)
-            return [], f"Extraction skipped {missing_count}/{len(target_page_set)} pages {missing_pages}—chunk too large, needs halving", actual_input_tokens, actual_output_tokens
-
+    chunk_id_str = str(chunk_plan.chunk_id)
+    source_stem = source_file.rsplit(".", 1)[0]
     blocks: list[Block] = []
-    # Ensure chunk_id is a string
-    chunk_id_str = str(chunk_plan.chunk_id) if not isinstance(chunk_plan.chunk_id, str) else chunk_plan.chunk_id
+    last_valid_page: int | None = None
 
-    for block_dict in block_dicts:
+    for bd in block_dicts:
         try:
-            # Ensure content is a string (defensive against JSON with arrays)
-            content = block_dict.get("content", "")
+            content = bd.get("content", "")
             if not isinstance(content, str):
                 content = str(content) if content else ""
 
+            metadata = dict(bd.get("metadata") or {})
+
+            # Resolve and validate page_number
+            raw_page = bd.get("page_number")
+            try:
+                raw_page = int(raw_page) if raw_page is not None else None
+            except (ValueError, TypeError):
+                raw_page = None
+
+            if raw_page is not None and raw_page in target_page_set:
+                page_num = raw_page
+                last_valid_page = page_num
+                block_type = bd.get("block_type", "paragraph")
+            elif raw_page is None and last_valid_page is not None:
+                # Missing field — infer from previous block (blocks are in page order)
+                page_num = last_valid_page
+                block_type = bd.get("block_type", "paragraph")
+                metadata["page_number_inferred"] = True
+            else:
+                # Wrong page number (out of target range) — unlocated, excluded from output
+                metadata["unlocated_reason"] = (
+                    f"page_number={raw_page!r} not in target_pages {sorted(target_page_set)}"
+                )
+                block = Block(
+                    block_id=f"{source_stem}_unlocated_b{len(blocks):04d}",
+                    block_type="unlocated",
+                    content=content,
+                    page_number=0,
+                    source_file=source_file,
+                    chunk_id=chunk_id_str,
+                    sequence=0,
+                    confidence=0.0,
+                    extraction_method="vision",
+                    heading_level=None,
+                    is_truncated=False,
+                    is_continuation=False,
+                    bbox=None,
+                    metadata=metadata,
+                )
+                blocks.append(block)
+                continue
+
+            # Visual provenance: record which page PNG this block came from
+            if pages_output_dir is not None:
+                metadata["page_image"] = f"pages/p{page_num:04d}.png"
+
+            # Capture bbox if Claude returned it (as [x0_pct, y0_pct, x1_pct, y1_pct])
+            raw_bbox = bd.get("bbox")
+            parsed_bbox = None
+            if isinstance(raw_bbox, (list, tuple)) and len(raw_bbox) == 4:
+                try:
+                    parsed_bbox = tuple(float(v) for v in raw_bbox)
+                except (ValueError, TypeError):
+                    pass
+
             block = Block(
-                block_id=f"{source_file.rsplit('.', 1)[0]}_p{block_dict.get('page_number', 1)}_b{len(blocks):04d}",
-                block_type=block_dict.get("block_type", "paragraph"),
+                block_id=f"{source_stem}_p{page_num}_b{len(blocks):04d}",
+                block_type=block_type,
                 content=content,
-                page_number=block_dict.get("page_number", 1),
+                page_number=page_num,
                 source_file=source_file,
                 chunk_id=chunk_id_str,
                 sequence=0,
-                confidence=float(block_dict.get("confidence", 1.0)),
-                extraction_method="vision" if chunk_plan.uses_vision else "native",
-                heading_level=block_dict.get("heading_level"),
-                is_truncated=block_dict.get("is_truncated", False),
-                is_continuation=block_dict.get("is_continuation", False),
-                bbox=None,
-                metadata=block_dict.get("metadata", {}),
+                confidence=float(bd.get("confidence", 1.0)),
+                extraction_method="vision",
+                heading_level=bd.get("heading_level"),
+                is_truncated=bd.get("is_truncated", False),
+                is_continuation=bd.get("is_continuation", False),
+                bbox=parsed_bbox,
+                metadata=metadata,
             )
             blocks.append(block)
         except Exception:

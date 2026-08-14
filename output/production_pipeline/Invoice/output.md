@@ -1,6 +1,8 @@
-> **[Figure]** Liberty Mutual logo featuring the Statue of Liberty torch and the text 'LIBERTY MUTUAL' with a registered trademark symbol.
+# Invoice
 
 # INSURANCE COMPANY
+
+## In Account with LIBERTY MUTUAL INSURANCE COMPANY
 
 Home Office: Boston
 
@@ -12,11 +14,16 @@ ATTN: MR. PAUL GOLDSCHMIDT, INS. MGR.
 100 PARK AVENUE
 NEW YORK, NY  10017
 
-## In Account with LIBERTY MUTUAL INSURANCE COMPANY
+Account   # 00 40 66
+Invoice   # 0125
 
 FOURTEENTH Retrospective Premium and Dividend  Adjustment
 
 Effective:   01-01-76  TO  01-01-77
+
+NRD 3
+
+> **[Figure]** Liberty Mutual logo: the Statue of Liberty torch and upper figure rendered in black line art to the right of the text 'LIBERTY MUTUAL.' in bold serif font, with a registered trademark symbol after 'MUTUAL'.
 
 |  | WC | GL | AUTO | TOTAL |
 | --- | --- | --- | --- | --- |
@@ -29,6 +36,4 @@ Effective:   01-01-76  TO  01-01-77
 | 7.  Dividend Offset (5 - 6) | 307 CR | - | - | 307 CR |
 | 8.  Balance Due Company (4 + 7) | 1739 DR | - | - | 1739 DR |
 
-NRD 3
-
-3
+*3*

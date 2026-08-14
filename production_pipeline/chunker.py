@@ -1,11 +1,25 @@
 from __future__ import annotations
 
-from .models import DocProfile, ChunkPlan
+from .models import DocProfile, ChunkPlan, PageProfile
 
-_TOKEN_BUDGET = 36_000
-_OVERLAP_PAGES = 1
-_MAX_CHUNK_PAGES = 50
+# Input-token budgets per chunk type.
+# Table-heavy pages produce large JSON output (each page → hundreds of output tokens),
+# so we keep those chunks small to stay well under the 64k output-token limit.
+# With the new tail-context architecture, context images are not sent, so
+# effective input is lower than before — we don't need to reduce budgets further.
+_TOKEN_BUDGET_TEXT   = 36_000   # ~10 text pages / chunk
+_TOKEN_BUDGET_VISION = 20_000   # ~3–5 image-heavy pages / chunk
+_TOKEN_BUDGET_TABLE  =  8_000   # ~3–5 table-heavy pages / chunk  (tight to avoid output overflow)
+
+_MAX_CHUNK_PAGES = 20  # hard cap: never send more than 20 pages in one call
 _MIN_CHUNK_PAGES = 1
+
+
+def _budget_for_page(profile: PageProfile) -> int:
+    """Return token budget based on page complexity."""
+    if profile.is_table_heavy:
+        return _TOKEN_BUDGET_TABLE
+    return _TOKEN_BUDGET_VISION
 
 
 def plan_chunks(doc_profile: DocProfile) -> list[ChunkPlan]:
@@ -28,20 +42,22 @@ def plan_chunks(doc_profile: DocProfile) -> list[ChunkPlan]:
         j = i
 
         while j < total_pages and len(chunk_pages) < _MAX_CHUNK_PAGES:
-            page_tokens = page_profiles[j].estimated_input_tokens
-            if accumulated_tokens + page_tokens > _TOKEN_BUDGET and chunk_pages:
+            page_profile = page_profiles[j]
+            page_tokens = page_profile.estimated_input_tokens
+            budget = _budget_for_page(page_profile)
+            if accumulated_tokens + page_tokens > budget and chunk_pages:
                 break
             chunk_pages.append(j + 1)
             accumulated_tokens += page_tokens
             j += 1
 
-        context_before = [i] if i > 0 else []
-        context_after = [j + 1] if j < total_pages else []
+        # context_before / context_after are no longer used for extraction
+        # (replaced by JSON tail blocks from the previous chunk's output).
+        # Kept in ChunkPlan for schema compatibility.
+        context_before: list[int] = []
+        context_after:  list[int] = []
 
-        uses_vision = any(
-            page_profiles[p - 1].is_scanned or page_profiles[p - 1].is_image_heavy
-            for p in chunk_pages
-        )
+        uses_vision = True
 
         stem = doc_profile.source_file.rsplit(".", 1)[0]
         chunk_id = f"{stem}_chunk{len(chunks):03d}"

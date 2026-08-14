@@ -57,6 +57,8 @@ class PageProfile:
     estimated_input_tokens: int
     page_width_pts: float = 612.0
     page_height_pts: float = 792.0
+    max_font_size: float = 12.0
+    min_font_size: float = 10.0
 
     def to_dict(self) -> dict:
         return {
@@ -72,11 +74,28 @@ class PageProfile:
             "estimated_input_tokens": self.estimated_input_tokens,
             "page_width_pts": self.page_width_pts,
             "page_height_pts": self.page_height_pts,
+            "max_font_size": self.max_font_size,
+            "min_font_size": self.min_font_size,
         }
 
     @staticmethod
     def from_dict(d: dict) -> PageProfile:
         return PageProfile(**d)
+
+
+@dataclass
+class Chapter:
+    """Native PDF table of contents entry."""
+    level: int
+    title: str
+    page_number: int
+
+    def to_dict(self) -> dict:
+        return {"level": self.level, "title": self.title, "page_number": self.page_number}
+
+    @staticmethod
+    def from_dict(d: dict) -> Chapter:
+        return Chapter(**d)
 
 
 @dataclass
@@ -91,6 +110,9 @@ class DocProfile:
     table_heavy_page_count: int
     estimated_total_output_chars: int
     page_profiles: list[PageProfile] = field(default_factory=list)
+    toc: list[Chapter] = field(default_factory=list)
+    max_font_size_in_doc: float = 12.0
+    common_font_sizes: list[float] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
@@ -104,13 +126,20 @@ class DocProfile:
             "table_heavy_page_count": self.table_heavy_page_count,
             "estimated_total_output_chars": self.estimated_total_output_chars,
             "page_profiles": [p.to_dict() for p in self.page_profiles],
+            "toc": [c.to_dict() for c in self.toc],
+            "max_font_size_in_doc": self.max_font_size_in_doc,
+            "common_font_sizes": self.common_font_sizes,
         }
 
     @staticmethod
     def from_dict(d: dict) -> DocProfile:
         page_profiles = [PageProfile.from_dict(p) for p in d.pop("page_profiles", [])]
+        toc = [Chapter.from_dict(c) for c in d.pop("toc", [])]
+        d.setdefault("max_font_size_in_doc", 12.0)
+        d.setdefault("common_font_sizes", [])
         doc = DocProfile(**d)
         doc.page_profiles = page_profiles
+        doc.toc = toc
         return doc
 
 

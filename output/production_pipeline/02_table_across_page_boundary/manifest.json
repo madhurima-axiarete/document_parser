@@ -1,0 +1,43 @@
+{
+  "source_file": "02_table_across_page_boundary.pdf",
+  "total_pages": 2,
+  "file_size_bytes": 6685,
+  "extraction_date": "2026-05-06",
+  "toc": [],
+  "doc_stats": {
+    "scanned_page_count": 0,
+    "image_heavy_page_count": 0,
+    "table_heavy_page_count": 0,
+    "avg_input_tokens_per_page": 1105.0
+  },
+  "header_footer_policy": {
+    "suppressed_texts": [],
+    "reason": "repeated on 3+ pages verbatim"
+  },
+  "page_numbering_audit": {
+    "gaps": [],
+    "misalignments": []
+  },
+  "max_heading_level": 1,
+  "sections": [
+    {
+      "filename": "sections/001_test_02_long_table_across_page_boundary.md",
+      "title": "Test 02 - Long Table Across Page Boundary",
+      "page_start": 1,
+      "page_end": 2,
+      "pages": "p1\u20132",
+      "heading_level": 1,
+      "parent_path": "",
+      "block_ids": [
+        "02_table_across_page_boundary_p1_b0000",
+        "02_table_across_page_boundary_p1_b0001",
+        "02_table_across_page_boundary_p1_b0002",
+        "02_table_across_page_boundary_p2_b0003"
+      ],
+      "context_block_ids": {
+        "before": [],
+        "after": []
+      }
+    }
+  ]
+}

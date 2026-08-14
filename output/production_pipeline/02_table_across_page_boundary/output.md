@@ -1,3 +1,5 @@
+# 02 Table Across Page Boundary
+
 # Test 02 - Long Table Across Page Boundary
 
 Purpose: a multi-page table with repeating headers and row IDs. The parser should preserve one logical table.
@@ -46,7 +48,11 @@ Purpose: a multi-page table with repeating headers and row IDs. The parser shoul
 | DR-040 | Application Service 40 | 15 min | 5 min | DB-5 / Queue-0 | Validation marker TBL-CONT-040. |
 | DR-041 | Application Service 41 | 30 min | 10 min | DB-6 / Queue-1 | Validation marker TBL-CONT-041. |
 | DR-042 | Application Service 42 | 45 min | 15 min | DB-0 / Queue-2 | Validation marker TBL-CONT-042. |
+
+---
+
 | DR-043 | Application Service 43 | 60 min | 20 min | DB-1 / Queue-3 | Validation marker TBL-CONT-043. |
+| --- | --- | --- | --- | --- | --- |
 | DR-044 | Application Service 44 | 75 min | 5 min | DB-2 / Queue-4 | Validation marker TBL-CONT-044. |
 | DR-045 | Application Service 45 | 15 min | 10 min | DB-3 / Queue-0 | Validation marker TBL-CONT-045. |
 | DR-046 | Application Service 46 | 30 min | 15 min | DB-4 / Queue-1 | Validation marker TBL-CONT-046. |

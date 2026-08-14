@@ -32,85 +32,6 @@
     "metadata": {}
   },
   {
-    "block_id": "01_image_across_page_boundary_p1_b0002",
-    "block_type": "figure",
-    "content": "Top half of an architecture diagram showing a service flow. The diagram contains four rows of connected service nodes, each row with three boxes linked by arrows from left to right. Row 1: Service 1 (ID SVC-100, blue) -> Service 2 (ID SVC-101, green) -> Service 3 (ID SVC-102, orange). Row 2: Service 4 (ID SVC-103, purple) -> Service 5 (ID SVC-104, blue) -> Service 6 (ID SVC-105, green). Row 3: Service 7 (ID SVC-106, orange) -> Service 8 (ID SVC-107, purple) -> Service 9 (ID SVC-108, blue). Row 4 (partially visible, cut by page boundary red line): Service 10 (ID SVC-109, green) -> Service 11 (ID SVC-110, orange) -> Service 12 (ID SVC-111, purple). Diagonal connector lines link rows sequentially. A red horizontal line marks the page boundary near the bottom. Red text reads: 'IMPORTANT: THIS FIGURE CONTINUES ON NEXT PAGE - boundary line must reconcile'.",
-    "page_number": 1,
-    "source_file": "01_image_across_page_boundary.pdf",
-    "chunk_id": "01_image_across_page_boundary_chunk000",
-    "sequence": 2,
-    "confidence": 0.85,
-    "extraction_method": "vision",
-    "heading_level": null,
-    "is_truncated": true,
-    "is_continuation": false,
-    "bbox": null,
-    "metadata": {
-      "services": [
-        {
-          "name": "Service 1",
-          "id": "SVC-100",
-          "color": "blue"
-        },
-        {
-          "name": "Service 2",
-          "id": "SVC-101",
-          "color": "green"
-        },
-        {
-          "name": "Service 3",
-          "id": "SVC-102",
-          "color": "orange"
-        },
-        {
-          "name": "Service 4",
-          "id": "SVC-103",
-          "color": "purple"
-        },
-        {
-          "name": "Service 5",
-          "id": "SVC-104",
-          "color": "blue"
-        },
-        {
-          "name": "Service 6",
-          "id": "SVC-105",
-          "color": "green"
-        },
-        {
-          "name": "Service 7",
-          "id": "SVC-106",
-          "color": "orange"
-        },
-        {
-          "name": "Service 8",
-          "id": "SVC-107",
-          "color": "purple"
-        },
-        {
-          "name": "Service 9",
-          "id": "SVC-108",
-          "color": "blue"
-        },
-        {
-          "name": "Service 10",
-          "id": "SVC-109",
-          "color": "green"
-        },
-        {
-          "name": "Service 11",
-          "id": "SVC-110",
-          "color": "orange"
-        },
-        {
-          "name": "Service 12",
-          "id": "SVC-111",
-          "color": "purple"
-        }
-      ]
-    }
-  },
-  {
     "block_id": "01_image_across_page_boundary_p1_b0003",
     "block_type": "paragraph",
     "content": "Figure 1a. Top half of architecture diagram. Continuation marker at bottom.",
@@ -126,6 +47,24 @@
     "bbox": null,
     "metadata": {
       "style": "italic"
+    }
+  },
+  {
+    "block_id": "01_image_across_page_boundary_p1_b0002",
+    "block_type": "figure",
+    "content": "Top half of a service architecture flow diagram displayed on a grid background. The diagram contains four rows of connected service nodes, each row consisting of three rounded-rectangle boxes connected left-to-right by arrows. Row 1 (top): 'Service 1 / ID SVC-100' (light blue) \u2192 'Service 2 / ID SVC-101' (light green) \u2192 'Service 3 / ID SVC-102' (light orange/peach). Row 2: 'Service 4 / ID SVC-103' (light purple/lavender) \u2192 'Service 5 / ID SVC-104' (light blue) \u2192 'Service 6 / ID SVC-105' (light green). Row 3: 'Service 7 / ID SVC-106' (light orange/peach) \u2192 'Service 8 / ID SVC-107' (light purple/lavender) \u2192 'Service 9 / ID SVC-108' (light blue). Row 4 (partially visible at bottom, cut by page boundary): 'Service 10 / ID SVC-109' (light green) \u2192 'Service 11 / ID SVC-110' (light orange/peach) \u2192 'Service 12 / ID SVC-111' (light purple/lavender). Diagonal black lines connect the end of each row to the beginning of the next row below. A thick horizontal red line marks the page boundary across the bottom of the diagram. A red text label reads: 'IMPORTANT: THIS FIGURE CONTINUES ON NEXT PAGE - boundary line must reconcile'.",
+    "page_number": 1,
+    "source_file": "01_image_across_page_boundary.pdf",
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "sequence": 2,
+    "confidence": 0.85,
+    "extraction_method": "vision",
+    "heading_level": null,
+    "is_truncated": true,
+    "is_continuation": false,
+    "bbox": null,
+    "metadata": {
+      "caption": "Figure 1a. Top half of architecture diagram. Continuation marker at bottom."
     }
   },
   {
@@ -145,70 +84,6 @@
     "metadata": {}
   },
   {
-    "block_id": "01_image_across_page_boundary_p2_b0005",
-    "block_type": "figure",
-    "content": "Bottom half of the same architecture diagram continuing from page 1. A red horizontal line at the top marks the page boundary continuation point with red text reading: 'IMPORTANT: THIS FIGURE CONTINUES ON NEXT PAGE - boundary line must reconcile'. The diagram shows three rows of connected service nodes: Row 4 (continued from page 1): Service 10 (ID SVC-109, green) -> Service 11 (ID SVC-110, orange) -> Service 12 (ID SVC-111, purple). Row 5: Service 13 (ID SVC-112, blue) -> Service 14 (ID SVC-113, green) -> Service 15 (ID SVC-114, orange). Row 6: Service 16 (ID SVC-115, purple) -> Service 17 (ID SVC-116, blue) -> Service 18 (ID SVC-117, green). Diagonal connector lines link rows sequentially.",
-    "page_number": 2,
-    "source_file": "01_image_across_page_boundary.pdf",
-    "chunk_id": "01_image_across_page_boundary_chunk000",
-    "sequence": 5,
-    "confidence": 0.85,
-    "extraction_method": "vision",
-    "heading_level": null,
-    "is_truncated": false,
-    "is_continuation": true,
-    "bbox": null,
-    "metadata": {
-      "services": [
-        {
-          "name": "Service 10",
-          "id": "SVC-109",
-          "color": "green"
-        },
-        {
-          "name": "Service 11",
-          "id": "SVC-110",
-          "color": "orange"
-        },
-        {
-          "name": "Service 12",
-          "id": "SVC-111",
-          "color": "purple"
-        },
-        {
-          "name": "Service 13",
-          "id": "SVC-112",
-          "color": "blue"
-        },
-        {
-          "name": "Service 14",
-          "id": "SVC-113",
-          "color": "green"
-        },
-        {
-          "name": "Service 15",
-          "id": "SVC-114",
-          "color": "orange"
-        },
-        {
-          "name": "Service 16",
-          "id": "SVC-115",
-          "color": "purple"
-        },
-        {
-          "name": "Service 17",
-          "id": "SVC-116",
-          "color": "blue"
-        },
-        {
-          "name": "Service 18",
-          "id": "SVC-117",
-          "color": "green"
-        }
-      ]
-    }
-  },
-  {
     "block_id": "01_image_across_page_boundary_p2_b0006",
     "block_type": "paragraph",
     "content": "Figure 1b. Bottom half of same architecture diagram. Parser should merge with previous page.",
@@ -224,6 +99,24 @@
     "bbox": null,
     "metadata": {
       "style": "italic"
+    }
+  },
+  {
+    "block_id": "01_image_across_page_boundary_p2_b0005",
+    "block_type": "figure",
+    "content": "Bottom half of the same service architecture flow diagram, continuing from page 1. A thick horizontal red line appears near the top of the diagram marking the page boundary, with a red text label: 'IMPORTANT: THIS FIGURE CONTINUES ON NEXT PAGE - boundary line must reconcile'. Row 4 (continuation from previous page): 'Service 10 / ID SVC-109' (light green) \u2192 'Service 11 / ID SVC-110' (light orange/peach) \u2192 'Service 12 / ID SVC-111' (light purple/lavender). Row 5: 'Service 13 / ID SVC-112' (light blue) \u2192 'Service 14 / ID SVC-113' (light green) \u2192 'Service 15 / ID SVC-114' (light orange/peach). Row 6 (bottom): 'Service 16 / ID SVC-115' (light purple/lavender) \u2192 'Service 17 / ID SVC-116' (light blue) \u2192 'Service 18 / ID SVC-117' (light green). Diagonal black lines connect the end of each row to the beginning of the next row below. All nodes are rounded rectangles on a grid background.",
+    "page_number": 2,
+    "source_file": "01_image_across_page_boundary.pdf",
+    "chunk_id": "01_image_across_page_boundary_chunk000",
+    "sequence": 5,
+    "confidence": 0.85,
+    "extraction_method": "vision",
+    "heading_level": null,
+    "is_truncated": false,
+    "is_continuation": true,
+    "bbox": null,
+    "metadata": {
+      "caption": "Figure 1b. Bottom half of same architecture diagram. Parser should merge with previous page."
     }
   }
 ]
